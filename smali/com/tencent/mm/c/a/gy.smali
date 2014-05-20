@@ -1,0 +1,65 @@
+.class public final Lcom/tencent/mm/c/a/gy;
+.super Lcom/tencent/mm/sdk/b/e;
+.source "SourceFile"
+
+
+# static fields
+.field public static bLE:Z
+
+.field public static bLF:Z
+
+
+# instance fields
+.field public bQS:Lcom/tencent/mm/c/a/gz;
+
+.field public bQT:Lcom/tencent/mm/c/a/ha;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .prologue
+    const/4 v0, 0x0
+
+    .line 6
+    sput-boolean v0, Lcom/tencent/mm/c/a/gy;->bLE:Z
+
+    .line 7
+    sput-boolean v0, Lcom/tencent/mm/c/a/gy;->bLF:Z
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .prologue
+    .line 8
+    invoke-direct {p0}, Lcom/tencent/mm/sdk/b/e;-><init>()V
+
+    .line 13
+    new-instance v0, Lcom/tencent/mm/c/a/gz;
+
+    invoke-direct {v0}, Lcom/tencent/mm/c/a/gz;-><init>()V
+
+    iput-object v0, p0, Lcom/tencent/mm/c/a/gy;->bQS:Lcom/tencent/mm/c/a/gz;
+
+    .line 18
+    new-instance v0, Lcom/tencent/mm/c/a/ha;
+
+    invoke-direct {v0}, Lcom/tencent/mm/c/a/ha;-><init>()V
+
+    iput-object v0, p0, Lcom/tencent/mm/c/a/gy;->bQT:Lcom/tencent/mm/c/a/ha;
+
+    .line 8
+    const-string v0, "TalkRoomServer"
+
+    iput-object v0, p0, Lcom/tencent/mm/c/a/gy;->id:Ljava/lang/String;
+
+    sget-boolean v0, Lcom/tencent/mm/c/a/gy;->bLF:Z
+
+    iput-boolean v0, p0, Lcom/tencent/mm/c/a/gy;->gbY:Z
+
+    return-void
+.end method

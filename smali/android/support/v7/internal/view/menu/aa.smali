@@ -1,0 +1,34 @@
+.class final Landroid/support/v7/internal/view/menu/aa;
+.super Landroid/support/v7/internal/view/menu/u;
+.source "SourceFile"
+
+
+# direct methods
+.method constructor <init>(Landroid/view/MenuItem;)V
+    .locals 1
+    .parameter
+
+    .prologue
+    .line 26
+    const/4 v0, 0x0
+
+    invoke-direct {p0, p1, v0}, Landroid/support/v7/internal/view/menu/u;-><init>(Landroid/view/MenuItem;Z)V
+
+    .line 27
+    return-void
+.end method
+
+
+# virtual methods
+.method final b(Landroid/support/v4/view/n;)Landroid/support/v7/internal/view/menu/v;
+    .locals 1
+    .parameter
+
+    .prologue
+    .line 31
+    new-instance v0, Landroid/support/v7/internal/view/menu/ab;
+
+    invoke-direct {v0, p0, p1}, Landroid/support/v7/internal/view/menu/ab;-><init>(Landroid/support/v7/internal/view/menu/aa;Landroid/support/v4/view/n;)V
+
+    return-object v0
+.end method
