@@ -1,0 +1,17 @@
+package com.tencent.mm.ui.c;
+
+import android.os.Bundle;
+
+public abstract interface j
+{
+  public abstract void aPd();
+
+  public abstract void e(Bundle paramBundle);
+
+  public abstract void onCancel();
+}
+
+/* Location:           /Users/don/Desktop/mm/com.tencent.mm/classes-dex2jar.jar
+ * Qualified Name:     com.tencent.mm.ui.c.j
+ * JD-Core Version:    0.6.2
+ */
