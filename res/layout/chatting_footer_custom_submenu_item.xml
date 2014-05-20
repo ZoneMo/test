@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:gravity="left|center" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/SmallListHeight" style="@style/MMFooterMenuButtion"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

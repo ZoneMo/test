@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <PreferenceTitleCategory android:title="@string/settings_catalog_chat" />
+    <CheckBoxPreference android:title="@string/settings_voice_play_mode" android:key="settings_voice_play_mode" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/settings_enter_button_send" android:key="settings_enter_button_send" android:defaultValue="false" />
+    <Preference android:title="@string/settings_text_size" android:layout="@layout/mm_preference" android:key="settings_text_size" />
+    <Preference android:title="@string/settings_chatting_bg" android:layout="@layout/mm_preference" android:key="settings_chatting_bg" />
+    <Preference android:title="@string/settings_bakchat_ui" android:layout="@layout/mm_preference" android:key="settings_bak_chat" />
+    <Preference android:title="@string/settings_reset" android:layout="@layout/mm_preference" android:key="settings_reset" />
+    <PreferenceTitleCategory android:title="@string/settings_catalog_wechat" />
+    <CheckBoxPreference android:title="@string/settings_landscape_mode" android:key="settings_landscape_mode" android:defaultValue="false" />
+    <Preference android:title="@string/settings_language" android:layout="@layout/mm_preference" android:key="settings_language" />
+    <CheckBoxPreference android:title="@string/settings_voicerecorder_mode" android:key="settings_voicerecorder_mode" android:defaultValue="true" />
+    <Preference android:title="@string/settings_emoji_manager" android:layout="@layout/mm_preference" android:key="settings_emoji_manager" />
+    <IconPreference android:title="@string/settings_plugins" android:key="settings_plugins" />
+    <Preference android:title="@string/settings_WebWX" android:layout="@layout/mm_preference" android:key="settings_WebWX" />
+    <Preference android:title="@string/settngs_clean" android:layout="@layout/mm_preference" android:key="settngs_clean" />
+    <PreferenceCategory />
+</PreferenceScreen>

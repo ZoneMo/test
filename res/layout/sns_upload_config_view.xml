@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:id="@id/sns_address_ll" android:background="@drawable/sns_shoot_add" android:layout_width="wrap_content" android:layout_height="@dimen/SmallListHeight" android:layout_marginTop="@dimen/LargePadding">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/sns_address_iv" android:background="@drawable/sns_shoot_location_pressed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/sns_address_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:text="@string/sns_get_location" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/sns_sync_qzone_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_shoot_shareqzone_normal" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/sns_sync_weibo_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:src="@drawable/sns_shoot_weibo_normal" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/sns_sync_facebook_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:src="@drawable/sns_shoot_facebook_normal" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/sns_sync_twitter_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:src="@drawable/sns_shoot_twitter_normal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

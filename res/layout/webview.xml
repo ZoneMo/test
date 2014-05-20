@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.KeyboardLinearLayout android:id="@id/webview_keyboard_ll" android:background="@null" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/web_navigator" android:background="#ff2e3132" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ImageButton android:id="@id/web_back" android:background="@drawable/actionbar_menu_selector" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/webview_tab_back_btn" android:layout_alignParentLeft="true" />
+        <ImageView android:background="@color/actionbar_devider_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/web_back" />
+        <ImageButton android:id="@id/web_refresh" android:background="@drawable/actionbar_menu_selector" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/webview_tab_refresh_btn" android:layout_alignParentRight="true" />
+        <ImageView android:background="@color/actionbar_devider_color" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toLeftOf="@id/web_refresh" />
+    </RelativeLayout>
+</com.tencent.mm.ui.KeyboardLinearLayout>

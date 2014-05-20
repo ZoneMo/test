@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/fmessage_contact_item_layout" style="@style/MMListItem">
+        <com.tencent.mm.ui.base.MaskLayout android:id="@id/fmessage_contact_item_avatar" android:layout_width="@dimen/NormalAvatarWrapSize" android:layout_height="@dimen/NormalAvatarWrapSize" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:layout_centerVertical="true">
+            <ImageView android:id="@id/content" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" android:layout_centerInParent="true" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <RelativeLayout android:id="@id/fmessage_contact_item_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/SmallPadding" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <Button android:id="@id/fmessage_contact_add_btn" android:focusable="false" android:focusableInTouchMode="false" android:text="@string/fmessage_add_friend" style="@style/MMSmallGreyButton" />
+            <Button android:id="@id/fmessage_contact_verify_ok_btn" android:focusable="false" android:focusableInTouchMode="false" android:text="@string/fmessage_verify_ok" style="@style/MMSmallGreenButton" />
+            <TextView android:id="@id/fmessage_contact_item_verifying_tv" android:visibility="gone" android:text="@string/address_fmessage_contact_verifying" style="@style/MMFontTipInList" />
+            <TextView android:id="@id/fmessage_contact_item_added_tv" android:background="@null" android:visibility="gone" android:text="@string/address_fmessage_contact_added" style="@style/ContactSignature" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/fmessage_contact_item_state" android:layout_toRightOf="@id/fmessage_contact_item_avatar" android:layout_centerHorizontal="true">
+            <TextView android:id="@id/fmessage_contact_item_nick_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{nick}" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/MMFontTitleInList" />
+            <TextView android:id="@id/fmessage_contact_item_digest_tv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="{lastmsg}" android:singleLine="true" android:layout_below="@id/fmessage_contact_item_nick_tv" android:layout_alignParentLeft="true" style="@style/MMFontTipInList" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

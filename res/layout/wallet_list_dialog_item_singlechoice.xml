@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView android:textAppearance="@style/MMPreferenceTextLarge" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="left|center" android:background="@null" android:clickable="false" android:layout_width="fill_parent" android:layout_height="48.0dip" android:checkMark="@drawable/sns_shoot_select" android:maxHeight="48.0dip" android:minHeight="48.0dip" android:text="@string/settings_notification_ringtone_sys"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

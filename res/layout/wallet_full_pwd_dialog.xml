@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/transparent_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:wallet="http://schemas.android.com/apk/res-auto/com.tencent.mm">
+    <ScrollView android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginRight="@dimen/LargePadding" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:layout_gravity="center_horizontal" layout="@layout/wallet_pwd_dialog" />
+            <ImageView android:background="@color/menu_devider_color" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_button_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/mm_alert_cancel_btn" android:background="@drawable/alert_btn_bg" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/NormalButtonHeight" android:text="@string/app_cancel" android:layout_weight="1.0" />
+                <ImageView android:id="@id/mm_alert_btn_divider" android:background="@color/menu_devider_color" android:layout_width="@dimen/DividerHeight" android:layout_height="fill_parent" />
+                <Button android:textSize="@dimen/NormalTextSize" android:textColor="@color/wechat_green" android:id="@id/mm_alert_ok_btn" android:background="@drawable/alert_btn_bg" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="@dimen/NormalButtonHeight" android:text="@string/wallet_pwd_dialog_pay" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.tenpay.android.wechat.MyKeyboardWindow android:id="@id/tenpay_num_keyboard" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

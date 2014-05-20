@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/video_recorder_preview_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:id="@id/surface_camera" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/video_recorder_play_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/video_recorder_play_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/video_recorder_recorded_time_area" android:background="@drawable/mm_text_bg_trans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding">
+            <ImageView android:id="@id/video_recorder_recording_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/SmallPadding" android:src="@drawable/unread_dot" />
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/video_recorder_recorded_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/SmallPadding" />
+        </LinearLayout>
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargestPadding">
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/videorecord_time_limit_tv" android:background="@drawable/mm_text_bg_trans" android:padding="@dimen/SmallPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:id="@id/video_recorder_data_area" android:background="@drawable/mm_text_bg_trans" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/video_recorder_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/SmallPadding" />
+                <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/video_recorder_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/SmallPadding" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|left|center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/videorecord_camera_switch" android:background="@null" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/LargerPadding" android:src="@drawable/video_camera_icon" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/videorecord_control_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/LargerPadding" android:src="@drawable/video_recorder_start_btn" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/video_play_btn" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_recorder_play_btn" />
+    </LinearLayout>
+</FrameLayout>

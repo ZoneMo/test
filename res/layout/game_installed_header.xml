@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/GCNormalMargin" android:layout_marginRight="@dimen/GCNormalMargin" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="bottom" android:id="@id/haveDownloadTitle" android:background="@drawable/game_thicklinecell_bg" android:paddingBottom="@dimen/GCNormalMargin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/GCThickLineCellHeight">
+        <TextView android:textSize="@dimen/GCNormalTextSize" android:textColor="@color/gc_word_color" android:gravity="center_vertical" android:layout_gravity="left" android:id="@id/game_installed_list_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_installed_list" android:layout_alignParentLeft="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:id="@id/game_installed_show_all" android:background="@drawable/game_click_change_bg_selector" android:paddingLeft="@dimen/GCSmallPadding" android:paddingRight="@dimen/GCSmallPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/GCNormalTextSize" android:textColor="@color/gc_installed_game_show_all" android:gravity="center" android:paddingRight="@dimen/GCSmallPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_show_all_installed_game" />
+            <ImageView android:layout_width="@dimen/GCNormalTextSize" android:layout_height="@dimen/GCNormalTextSize" android:src="@drawable/game_moregameicon" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.tencent.mm.plugin.game.ui.ElasticHorizontalScrollView android:id="@id/installed_app_container" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="false" android:overScrollMode="never">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.game.ui.GameInstalledGridView android:layout_gravity="left" android:id="@id/game_installed_gv" android:background="@drawable/game_null_bg" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/game_null_bg" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" />
+        </LinearLayout>
+    </com.tencent.mm.plugin.game.ui.ElasticHorizontalScrollView>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:background="@drawable/game_thicklinecell_bg" android:paddingBottom="@dimen/GCNormalMargin" android:layout_width="fill_parent" android:layout_height="@dimen/GCThickLineCellHeight">
+        <TextView android:textSize="@dimen/GCNormalTextSize" android:textColor="@color/gc_word_color" android:gravity="left" android:layout_gravity="bottom" android:id="@id/game_uninstalled_list_title_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/game_uninstalled_list" />
+    </LinearLayout>
+</LinearLayout>

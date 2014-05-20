@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="transparent_background">#00000000</item>
+    <item type="drawable" name="wallet_white">#ffffffff</item>
+    <item type="drawable" name="wallet_green">#ffc7c7c7</item>
+    <item type="drawable" name="mall_order_list_item_extend_content_bg">#fff5f5f5</item>
+    <item type="drawable" name="game_thicklinecell_bg">@drawable/list_thicklinecell_bg</item>
+    <item type="drawable" name="game_null_bg">@color/gc_null_color</item>
+    <item type="drawable" name="game_white_bg">@color/white</item>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.player.MusicBannerView android:gravity="left|center" android:orientation="horizontal" android:id="@id/mbvview" android:background="@drawable/tips_bar_white_selector" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/mbv_icon" android:layout_width="@dimen/NormalIconSize" android:layout_height="@dimen/NormalIconSize" android:layout_marginRight="@dimen/SmallPadding" android:src="@drawable/music_player_icon" />
+        <com.tencent.mm.ui.player.ScrollAlwaysTextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:ellipsize="marquee" android:id="@id/mbvtxtView" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+    </com.tencent.mm.ui.player.MusicBannerView>
+</LinearLayout>

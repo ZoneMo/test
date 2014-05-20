@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_fr" android:background="@color/sns_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.KeyboardLinearLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scroll_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/upload_content" android:background="@color/white" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding">
+                    <com.tencent.mm.plugin.sns.ui.SnsEditText android:gravity="center_vertical" android:id="@id/sns_desc_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding" android:hint="@string/sns_upload_sns_hint" android:singleLine="false" android:layout_weight="1.0" android:inputType="textCapSentences|textAutoCorrect|textMultiLine|textShortMessage" style="@style/MMEditText" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/widget_content" android:background="@drawable/sns_shoot_add_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding" android:minHeight="@dimen/NormalListHeight" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/sns_tag_range" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight" android:layout_marginTop="@dimen/LargePadding">
+                    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/normal_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sns_tag_visibl_range" />
+                    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="right" android:id="@id/sns_tag_range_list" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/sns_tag_friends" android:singleLine="true" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/add_contact_no_vis" android:background="@drawable/sns_shoot_add" android:layout_width="wrap_content" android:layout_height="@dimen/SmallListHeight" android:layout_marginTop="@dimen/LargePadding" android:layout_weight="1.0">
+                    <ImageView android:id="@id/share_people_novis" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_shoot_at_normal" />
+                    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="left|center" android:id="@id/with_who_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:text="@string/sns_with_you" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/add_contact" android:background="@drawable/sns_shoot_add" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight" android:layout_marginTop="@dimen/LargePadding" android:layout_weight="1.0">
+                    <ImageView android:id="@id/share_people" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sns_shoot_at_pressed" />
+                    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="left|center" android:id="@id/with_who_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:text="@string/sns_with_you" />
+                    <com.tencent.mm.plugin.sns.ui.PreviewContactView android:id="@id/sns_upload_with" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="200.0dip" />
+                </LinearLayout>
+                <com.tencent.mm.plugin.sns.ui.SnsUploadConfigView android:id="@id/config_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </com.tencent.mm.ui.KeyboardLinearLayout>
+    <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mm.plugin.sns.ui.SnsUploadSayFooter android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/say_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

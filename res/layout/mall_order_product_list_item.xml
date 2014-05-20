@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginTop="23.0dip" android:layout_marginRight="@dimen/LargePadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/SmallerTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/item_product_seperator_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:layout_marginBottom="@dimen/SmallerPadding" android:text="@string/mall_order_transaction_info_text" />
+    <TextView android:id="@id/item_product_seperator_line" android:background="@drawable/list_thicklinecell_bg" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="114.599976dip">
+        <ImageView android:id="@id/item_product_logo_img" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/mall_order_trade_empty_icon" />
+        <RelativeLayout android:id="@id/item_product_descript_layout" android:layout_width="100.0dip" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="0.5">
+            <TextView android:textSize="@dimen/SmallerTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:ellipsize="end" android:id="@id/item_product_descript_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:layout_alignParentTop="true" />
+            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:ellipsize="end" android:id="@id/item_product_catalog_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="right" android:layout_width="55.0dip" android:layout_height="70.0dip" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <TextView android:textSize="@dimen/SmallerTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/item_product_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            <TextView android:textSize="@dimen/SmallerTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:ellipsize="end" android:id="@id/item_product_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="2" android:layout_below="@id/item_product_price_tv" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

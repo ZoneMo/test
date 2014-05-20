@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="148.0dip" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginTop="23.0dip" android:layout_marginRight="@dimen/LargePadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/SmallerTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:layout_marginBottom="@dimen/SmallerPadding" android:text="@string/mall_order_transaction_info_text" />
+    <TextView android:background="@drawable/list_thicklinecell_bg" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingTop="@dimen/LargePadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/order_product_item_x4_1_layout" layout="@layout/mall_order_product_icon_text" />
+        <include android:id="@id/order_product_item_x4_2_layout" layout="@layout/mall_order_product_icon_text" />
+        <include android:id="@id/order_product_item_x4_3_layout" layout="@layout/mall_order_product_icon_text" />
+        <include android:id="@id/order_product_item_x4_4_layout" android:layout_marginRight="0.0dip" layout="@layout/mall_order_product_icon_text" />
+    </LinearLayout>
+</LinearLayout>

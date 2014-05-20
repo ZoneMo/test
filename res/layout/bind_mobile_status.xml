@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/MMScroll">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" style="@style/MMBody">
+            <ImageView android:id="@id/bind_m_contact_status_state_icon" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/bind_mcontact_success" />
+            <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/bind_m_contact_status_bind_state_title" android:layout_marginBottom="10.0dip" android:text="@string/bind_mcontact_security_succ_title_1" style="@style/MMTitle" />
+            <TextView android:gravity="center" android:id="@id/bind_m_contact_status_bind_state_hint" android:layout_marginBottom="20.0dip" android:text="@string/bind_mcontact_security_succ_content_1" style="@style/MMBriefText" />
+            <Button android:textSize="20.0dip" android:id="@id/bind_m_contact_status_ok_btn" android:text="@string/bind_mcontact_status_ok_btn_text" style="@style/MMLineActionButton" />
+            <RelativeLayout android:id="@id/bind_m_contact_status_RL" android:background="@drawable/bind_preference_first_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:minHeight="42.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/settings_find_me_by_mobile" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MMBriefText" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/bind_setttings_find_me_by_mobile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/selecter_selected_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/bind_m_contact_status_RL1" android:background="@drawable/bind_preference_last_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="42.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/contact_info_recommend_mobilefriends_to_me" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/MMBriefText" />
+                <ImageView android:layout_gravity="right|center" android:id="@id/bind_settings_recommend_friends_with_contacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/selecter_selected_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:id="@id/mm_preference_ll_id" android:background="@drawable/comm_list_item_selector" android:paddingBottom="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/avatar_iv" android:background="@drawable/mini_avatar_shadow" android:layout_width="@dimen/BigAvatarSize" android:layout_height="@dimen/BigAvatarSize" android:layout_marginRight="@dimen/LargePadding" />
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/SmallPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/avatar_iv" android:layout_centerVertical="true">
+        <TextView android:id="@id/nick_name_tv" android:text="{nick}" style="@style/MMFontPreferenceLarge" />
+        <TextView android:id="@id/user_name_tv" android:layout_marginTop="@dimen/SmallerPadding" android:text="{user}" style="@style/MMFontPreferenceSmall" />
+    </LinearLayout>
+    <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/right_prospect" android:background="@drawable/unread_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="100" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

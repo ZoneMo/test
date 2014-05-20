@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/comm_item_highlight_selector" android:layout_width="fill_parent" android:layout_height="@dimen/NormalListHeight" android:minHeight="@dimen/NormalListHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/nearby_bind_icon" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" android:src="@drawable/nearby_bind_mobile_headerview_icon" android:contentDescription="@string/app_name" />
+    <TextView android:textColor="@color/black" android:id="@id/nearby_header_text" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/SmallPadding" android:text="@string/bind_mobile_header_wording" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:layout="@layout/pluginsdk_helper_header" android:key="contact_info_header_helper" />
+    <PreferenceSmallCategory android:key="contact_info_tmessage_hide_cat" />
+    <Preference android:title="@string/contact_info_view_message" android:layout="@layout/mm_preference" android:key="contact_info_view_message" />
+    <CheckBoxPreference android:title="@string/contact_info_tmessage_recv_private_letter" android:layout="@layout/mm_preference" android:persistent="false" android:key="contact_info_tmessage_recv_private_letter" />
+    <Preference android:title="@string/contact_info_microblog_friends" android:layout="@layout/mm_preference" android:key="contact_info_microblog_friends" />
+    <Preference android:title="@string/contact_info_clear_data" android:layout="@layout/mm_preference" android:key="contact_info_tmessage_clear_data" />
+    <PreferenceSmallCategory android:key="contact_info_tmessage_hide_cat2" />
+    <Preference android:title="@string/settings_plugins_install" android:layout="@layout/install_btn" android:key="contact_info_tmessage_install" />
+    <Preference android:title="@string/settings_plugins_uninstall" android:layout="@layout/logout_btn" android:key="contact_info_tmessage_uninstall" />
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <PreferenceTitleCategory android:title="@string/settings_catalog_account" />
+    <Preference android:title="@string/settings_username" android:layout="@layout/mm_preference" android:key="settings_username" />
+    <Preference android:title="@string/settings_uin" android:layout="@layout/mm_preference" android:key="settings_uin" />
+    <Preference android:title="@string/settings_mobile" android:layout="@layout/mm_preference" android:key="settings_mobile" />
+    <Preference android:title="@string/settings_email_addr" android:layout="@layout/mm_preference" android:key="settings_email_addr" />
+    <Preference android:title="@string/settings_about_domainmail" android:layout="@layout/mm_preference" android:key="settings_about_domainmail" />
+    <Preference android:title="@string/hardcode_plugin_facebookapp_nick" android:layout="@layout/mm_preference" android:key="settings_facebook" />
+    <com.tencent.mm.ui.base.preference.PluginTextPreference android:key="settings_about_vusertitle" />
+    <com.tencent.mm.ui.setting.SelfVuserPreference android:key="settings_about_vuserinfo" />
+    <Preference android:title="@string/contact_info_verify_user_title_what" android:layout="@layout/mm_preference" android:key="settings_about_vuser_about" />
+    <PreferenceTitleCategory android:title="@string/settings_catalog_safe" />
+    <Preference android:title="@string/settings_independent_password" android:layout="@layout/mm_preference" android:key="settings_independent_password" />
+    <com.tencent.mm.ui.base.preference.IconSwitchKeyValuePreference android:title="@string/safe_device_account_protect" android:layout="@layout/mm_preference" android:key="settings_safe_device" />
+    <com.tencent.mm.ui.base.preference.IconSwitchKeyValuePreference android:title="@string/phone_security_title" android:layout="@layout/mm_preference" android:key="settings_phone_security" />
+    <com.tencent.mm.ui.base.preference.IconSummaryPreference android:title="@string/settings_room_right" android:key="settings_room_right" />
+    <Preference android:title="@string/settings_security_center" android:layout="@layout/mm_preference" android:key="settings_security_center" />
+    <Preference android:title="@string/settings_security_center_tip" android:layout="@layout/mm_preference_info" android:key="settings_security_center_tip" />
+    <PreferenceCategory />
+</PreferenceScreen>

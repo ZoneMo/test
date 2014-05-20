@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="@color/normal_text_color" android:textColorHint="@color/hint_color_white_bg" android:gravity="center_vertical" android:id="@id/text_edit" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginTop="@dimen/LargerPadding" android:layout_marginRight="@dimen/LargePadding" android:maxHeight="140.0dip" android:minLines="1" style="@style/MMMultiLineEditText" />
+    <TextView android:textColor="@color/normal_text_color" android:id="@id/state_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginTop="@dimen/SmallPadding" android:layout_marginRight="@dimen/LargePadding" />
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/location_info_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginTop="@dimen/SmallPadding" android:layout_marginRight="@dimen/LargePadding">
+        <ImageView android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/location_arrows" />
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/normal_text_color" android:id="@id/location_text_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/BasicPaddingSize" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

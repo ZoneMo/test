@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" style="@style/MMBody">
+        <TextView android:gravity="center" android:id="@id/send_verify_code_tips_tv" android:text="@string/safe_device_send_verify_code_tips" style="@style/MMLineLabel" />
+        <TextView android:gravity="center" android:id="@id/mobile_number_tv" android:layout_marginTop="5.0dip" style="@style/MMLineLabel" />
+        <EditText android:gravity="center" android:id="@id/bind_mcontact_verify_num" android:layout_width="180.0dip" android:layout_marginTop="5.0dip" android:hint="@string/safe_device_input_verify_code" android:inputType="phone" style="@style/MMLineEditText" />
+        <TextView android:gravity="center" android:id="@id/resend_verify_code_tips_tv" android:layout_marginTop="10.0dip" android:text="@string/safe_device_resend_verify_code" style="@style/MMLineLabel" />
+        <Button android:id="@id/resend_verify_code_btn" android:visibility="gone" android:layout_marginTop="15.0dip" android:text="@string/safe_device_resend_verify_code" style="@style/MMBigGreenButton" />
+        <Button android:layout_gravity="center" android:id="@id/close_account_protect_btn" android:text="@string/safe_device_protect_close" style="@style/HyperText" />
+    </LinearLayout>
+</ScrollView>

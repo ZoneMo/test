@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.chatting.ChatFooterCustom android:orientation="horizontal" android:id="@id/nav_footer_custom" android:background="@drawable/bottombar_bg" android:layout_width="fill_parent" android:layout_height="49.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chatting_footer_switch2input" android:background="@drawable/bottombar_button_bg" android:layout_width="@dimen/ChattingFootSwitcherWidth" android:layout_height="fill_parent" android:src="@drawable/chatting_footer_switcher_selector" android:scaleType="center" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/chatting_footer_menu_container" android:layout_width="0.0px" android:layout_height="fill_parent" android:weightSum="3.0" android:layout_weight="1.0">
+        <FrameLayout android:background="@drawable/bottom_btn_bg" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:drawableRight="@drawable/mmfooter_textmenuicon_normal" style="@style/MMFooterMenuButtion" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/bottom_btn_bg" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:drawableRight="@drawable/mmfooter_textmenuicon_normal" style="@style/MMFooterMenuButtion" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/bottom_btn_bg" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:drawableRight="@drawable/mmfooter_textmenuicon_normal" style="@style/MMFooterMenuButtion" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/bottom_btn_bg" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:drawableRight="@drawable/mmfooter_textmenuicon_normal" style="@style/MMFooterMenuButtion" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/bottom_btn_bg" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:drawableRight="@drawable/mmfooter_textmenuicon_normal" style="@style/MMFooterMenuButtion" />
+        </FrameLayout>
+        <FrameLayout android:background="@drawable/bottom_btn_bg" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:drawableRight="@drawable/mmfooter_textmenuicon_normal" style="@style/MMFooterMenuButtion" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/chatting_footer_menu_arrow" android:background="@drawable/bottom_btn_bg" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/mmfooter_listtotext_arrow1" />
+</com.tencent.mm.ui.chatting.ChatFooterCustom>

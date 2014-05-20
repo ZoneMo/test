@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fmessage_contact_header_container_ll" android:background="@drawable/mm_listitem" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:paddingTop="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/address_fmessage_contact_catalog_name" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fmessage_contact_viewall" android:background="@drawable/address_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ContactListHeight">
+        <com.tencent.mm.ui.base.MaskLayout android:id="@id/fmessage_avatar_iv" android:visibility="gone" android:layout_width="@dimen/ContactAvatarWrapSize" android:layout_height="@dimen/ContactAvatarWrapSize">
+            <ImageView android:id="@id/content" android:layout_width="@dimen/ContactAvatarSize" android:layout_height="@dimen/ContactAvatarSize" android:src="@drawable/mini_avatar" android:layout_centerVertical="true" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <com.tencent.mm.ui.base.MaskLayout android:id="@id/fmessage_avatar_iv_2" android:visibility="gone" android:layout_width="@dimen/ContactAvatarWrapSize" android:layout_height="@dimen/ContactAvatarWrapSize" android:layout_marginLeft="@dimen/SmallPadding">
+            <ImageView android:id="@id/content" android:layout_width="@dimen/ContactAvatarSize" android:layout_height="@dimen/ContactAvatarSize" android:src="@drawable/mini_avatar" android:layout_centerVertical="true" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <com.tencent.mm.ui.base.MaskLayout android:id="@id/fmessage_avatar_iv_3" android:visibility="gone" android:layout_width="@dimen/ContactAvatarWrapSize" android:layout_height="@dimen/ContactAvatarWrapSize" android:layout_marginLeft="@dimen/SmallPadding">
+            <ImageView android:id="@id/content" android:layout_width="@dimen/ContactAvatarSize" android:layout_height="@dimen/ContactAvatarSize" android:src="@drawable/mini_avatar" android:layout_centerVertical="true" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <com.tencent.mm.ui.base.MaskLayout android:id="@id/fmessage_avatar_iv_4" android:visibility="gone" android:layout_width="@dimen/ContactAvatarWrapSize" android:layout_height="@dimen/ContactAvatarWrapSize" android:layout_marginLeft="@dimen/SmallPadding">
+            <ImageView android:id="@id/content" android:layout_width="@dimen/ContactAvatarSize" android:layout_height="@dimen/ContactAvatarSize" android:src="@drawable/mini_avatar" android:layout_centerVertical="true" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/SmallerTextSize" android:textColor="@color/white" android:gravity="center" android:id="@id/fmessage_contact_unread_tv" android:background="@drawable/unread_count_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

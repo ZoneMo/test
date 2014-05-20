@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargerPadding" android:paddingRight="@dimen/LargePadding" android:paddingBottom="@dimen/LargePadding" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/edittext_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.base.MMClearEditText android:id="@id/regqq_qq" android:background="@null" android:paddingLeft="85.0dip" android:hint="@string/regbyqq_account_hint" style="@style/MMLineEditText" />
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@drawable/mm_trans" android:paddingLeft="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:text="@string/regbyqq_account" android:singleLine="false" style="@style/MMLineEditText" />
+    </FrameLayout>
+    <FrameLayout android:background="@drawable/edittext_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding">
+        <com.tencent.mm.ui.base.MMClearEditText android:id="@id/regqq_password" android:background="@null" android:paddingLeft="85.0dip" android:hint="@string/regbyqq_password_hint" android:imeOptions="actionNext" style="@style/MMLineEditPass" />
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@drawable/mm_trans" android:paddingLeft="10.0dip" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:text="@string/regbyqq_password" android:singleLine="false" style="@style/MMLineEditText" />
+    </FrameLayout>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_marginTop="@dimen/LargePadding" style="@style/MMLine">
+        <CheckBox android:textSize="@dimen/SmallerTextSize" android:textColor="@color/black" android:id="@id/agree_cb" android:checked="true" android:text="@string/license_agree" style="@style/RegUICheckBox" />
+        <Button android:textSize="@dimen/SmallerTextSize" android:id="@id/agree_btn" android:paddingLeft="5.0dip" android:paddingRight="0.0dip" android:paddingBottom="5.0dip" android:text="@string/license_detail" style="@style/RegUIHyperText" />
+    </LinearLayout>
+    <Button android:id="@id/next_btn" android:layout_marginTop="@dimen/LargePadding" android:text="@string/app_nextstep" style="@style/MMBigGreenButton" />
+    <Button android:layout_gravity="bottom|left|center" android:id="@id/login_foget_btn" android:paddingLeft="0.0dip" android:visibility="gone" android:layout_marginLeft="10.0dip" android:text="@string/loginby_encounter_problems" style="@style/RegUIHyperText" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fmessage_contact_header_container_ll" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fmessage_contact_viewall" android:background="@drawable/address_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ContactListHeight">
+        <com.tencent.mm.ui.base.MaskLayout android:id="@id/fmessage_avatar_iv" android:layout_width="@dimen/ContactAvatarWrapSize" android:layout_height="@dimen/ContactAvatarWrapSize">
+            <ImageView android:id="@id/content" android:layout_width="@dimen/ContactAvatarSize" android:layout_height="@dimen/ContactAvatarSize" android:src="@drawable/mini_avatar" android:layout_centerVertical="true" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <TextView android:gravity="center_vertical" android:paddingRight="@dimen/LargePadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_fmessage_contact_view_all" android:singleLine="true" style="@style/MMFontTitleInList" />
+        <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/white" android:gravity="center" android:id="@id/fmessage_contact_unread_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

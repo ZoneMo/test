@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/confirm_dialog_container_ll" android:background="@color/semitransparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/ConfirmDialog">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/confirm_dialog_thumb_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargePadding" android:src="@drawable/confirm_dialog_failweb" style="@style/ConfirmDialogThumb" />
+            <TextView android:textColor="@color/white" android:id="@id/confirm_dialog_message_tv" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding" android:layout_marginBottom="@dimen/LargePadding" android:text="message" android:maxLines="6" style="@style/ConfirmDialogTitle" />
+        </LinearLayout>
+        <ImageView android:id="@id/mm_alert_btn_divider" android:background="@color/menu_devider_color" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" />
+        <Button android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/confirm_dialog_btn1" android:background="@drawable/alert_btn_bg" android:layout_width="fill_parent" android:layout_height="@dimen/NormalButtonHeight" android:text="@string/app_ok" />
+    </LinearLayout>
+</LinearLayout>

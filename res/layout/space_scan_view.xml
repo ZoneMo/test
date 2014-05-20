@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/list_item_normal" android:padding="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/normal_text_color" android:id="@id/space_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/clean_scan_space_tip" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/normal_text_color" android:id="@id/space_free_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/clean_scan_free_space_tip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/space_view" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/wechat_fac" android:background="@drawable/cleanstorage_wechat_bg" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/wechat_other" android:background="@drawable/cleanstorage_others_bg" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/wechat_free" android:background="@drawable/cleanstorage_available_bg" android:layout_width="0.0dip" android:layout_height="20.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:id="@id/clean_stg_wechat_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/clean_stg_wechat" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/normal_text_color" android:gravity="center_vertical" android:id="@id/clean_stg_wechat_tv" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:text="@string/clean_scan_space_wechat_tip" android:includeFontPadding="false" android:layout_toRightOf="@id/clean_stg_wechat_iv" />
+        <ImageView android:id="@id/clean_stg_other_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="40.0dip" android:src="@drawable/clean_stg_others" android:scaleType="fitXY" android:layout_toRightOf="@id/clean_stg_wechat_tv" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/normal_text_color" android:gravity="center_vertical" android:id="@id/clean_stg_other_tv" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:text="@string/clean_scan_space_others_tip" android:includeFontPadding="false" android:layout_toRightOf="@id/clean_stg_other_iv" />
+        <ImageView android:id="@id/clean_stg_ali_iv" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginLeft="40.0dip" android:src="@drawable/clean_stg_aliable" android:scaleType="fitXY" android:layout_toRightOf="@id/clean_stg_other_tv" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/normal_text_color" android:gravity="center_vertical" android:id="@id/clean_stg_ali_tv" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginLeft="5.0dip" android:text="@string/clean_scan_space_free_tip" android:includeFontPadding="false" android:layout_toRightOf="@id/clean_stg_ali_iv" android:layout_alignTop="@id/clean_stg_wechat_iv" />
+    </RelativeLayout>
+</LinearLayout>

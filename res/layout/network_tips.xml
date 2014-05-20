@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/network_tips_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/network_wap_limited" />
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/white" android:id="@id/network_tips_subcontent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/NormalPadding" android:layout_marginBottom="@dimen/NormalPadding" android:text="@string/network_cost_warning" />
+    <CheckBox android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/network_tips_cb" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="20.0dip" android:text="@string/network_do_not_remind" />
+</LinearLayout>

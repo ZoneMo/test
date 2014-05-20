@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/navpage" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.account.ResizeLayout android:orientation="vertical" android:id="@id/resize_lv" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mm.ui.account.MMKeyboardUperView android:id="@id/scrollView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/LargerIconSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/last_avatar" android:layout_width="@dimen/LargerIconSize" android:layout_height="@dimen/LargerIconSize" android:src="@drawable/signup_change_avatar_bg" />
+                <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/normal_text_color" android:gravity="center" android:id="@id/login_account_auto" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding" android:layout_marginBottom="@dimen/SmallPadding" android:text="account" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/input_bar_bg_active" android:duplicateParentState="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginTop="@dimen/LargestPadding" android:layout_marginRight="@dimen/LargePadding">
+                    <ImageView android:paddingTop="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/code_tips_icon" />
+                    <com.tencent.mm.ui.base.MMClearEditText android:id="@id/login_password_et" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:hint="@string/login_password_tip" android:password="false" android:imeOptions="actionDone" style="@style/MMLineEditPass" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:id="@id/login_btn" android:layout_marginTop="@dimen/LargerPadding" android:text="@string/login_login" style="@style/MMBigGreenButton" />
+                    <Button android:textSize="@dimen/HintTextSize" android:textColor="@color/link_color_selector" android:layout_gravity="right" android:id="@id/login_foget_btn" android:background="@null" android:paddingTop="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loginby_encounter_problems" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.tencent.mm.ui.account.MMKeyboardUperView>
+        <RelativeLayout android:id="@id/fix_bottom_lv" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:id="@id/login_create_account_btn" android:layout_marginBottom="@dimen/LargestPadding" android:minWidth="@dimen/NormalButtonWidth" android:text="@string/intro_create_account_qq" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/MMSmallGreyButton" />
+        </RelativeLayout>
+    </com.tencent.mm.ui.account.ResizeLayout>
+</LinearLayout>

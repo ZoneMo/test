@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/terms_of_privacy_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_about_safe_tip" style="@style/HyperText" />
+    <TextView android:textSize="@dimen/SmallestTextSize" android:gravity="center" android:id="@id/copyright_desc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_copyright" style="@style/MMBriefText" />
+</LinearLayout>

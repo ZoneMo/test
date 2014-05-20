@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.contact.profile.BizInfoHeaderPreference android:layout="@layout/contact_info_header_bizinfo" android:key="contact_info_header_bizinfo" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:title="@string/contact_info_isnot_verify_user_title" android:layout="@layout/mm_preference" android:key="contact_info_user_desc" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:title="@string/contact_info_verify_user_title" android:layout="@layout/mm_preference" android:key="contact_info_verifyuser" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:title="@string/contact_info_privilege_title" android:key="contact_info_privilege" />
+    <Preference android:title="@string/contact_info_time_expired" android:layout="@layout/mm_preference_info" android:key="contact_info_time_expired" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference android:title="@string/contact_info_weibo" android:layout="@layout/mm_preference" android:key="contact_info_verifyuser_weibo" />
+    <CheckBoxPreference android:title="@string/contact_info_subscribe_bizinfo" android:layout="@layout/mm_preference" android:persistent="false" android:key="contact_info_subscribe_bizinfo" />
+    <CheckBoxPreference android:title="@string/contact_info_locate" android:layout="@layout/mm_preference" android:persistent="false" android:key="contact_info_locate" />
+    <Preference android:title="@string/contact_info_biz_view" android:layout="@layout/mm_preference" android:key="contact_info_biz_view" />
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/contact_info_biz_add" android:layout="@layout/install_btn" android:key="contact_info_biz_add" />
+    <Preference android:title="@string/contact_info_biz_remove" android:layout="@layout/logout_btn" android:key="contact_info_biz_remove" />
+    <PreferenceCategory />
+</PreferenceScreen>

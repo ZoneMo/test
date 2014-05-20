@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/maill_product_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/maill_product_item_padding" android:paddingRight="@dimen/maill_product_item_padding" android:layout_width="fill_parent" android:layout_height="@dimen/MediumListHeight">
+        <TextView android:gravity="left|center" android:id="@id/title_tv" android:paddingRight="5.0dip" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="80.0dip" android:singleLine="true" style="@style/MallDefaultText" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff999999" android:gravity="right|center" android:id="@id/summary_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:minHeight="@dimen/maill_product_item_height" android:layout_weight="1.0" />
+        <ImageView android:id="@id/indecator_iv" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:src="@drawable/mm_submenu" android:scaleType="center" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.mall.ui.HtmlTextView android:id="@id/detail_htv" android:visibility="gone" android:scrollbars="none" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

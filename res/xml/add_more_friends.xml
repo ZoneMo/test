@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <InputPreference android:layout="@layout/mm_preference_input" android:key="find_friends_by_input" />
+    <PreferenceSmallCategory />
+    <BigIconPreference android:title="@string/find_friends_by_qq" android:icon="@drawable/find_more_friend_qq_icon" android:key="find_friends_by_qq" />
+    <BigIconPreference android:title="@string/find_friends_by_mobile" android:icon="@drawable/find_more_friend_mobile_icon" android:key="find_friends_by_mobile" />
+    <BigIconPreference android:title="@string/find_friends_by_google_account" android:icon="@drawable/find_more_friend_google_icon" android:key="find_friends_by_google_account" />
+    <BigIconPreference android:title="@string/find_friends_by_facebook" android:icon="@drawable/find_more_friend_fb_icon" android:key="find_friends_by_facebook" />
+    <BigIconPreference android:title="@string/explore_all_verified_users" android:icon="@drawable/find_more_friend_star_icon" android:key="find_friends_by_web" />
+    <BigIconPreference android:title="@string/find_friends_by_radar" android:icon="@drawable/find_more_friend_radar" android:key="find_friends_by_radar" />
+    <PreferenceCategory />
+</PreferenceScreen>

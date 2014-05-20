@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/tab_item_bg" android:layout_width="fill_parent" android:layout_height="@dimen/DefaultTabbarHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/wechat_green" android:ellipsize="end" android:id="@id/tab_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/BasicPaddingSize" android:text="@string/main_title" android:singleLine="true" android:layout_centerInParent="true" />
+    <ImageView android:textColor="@color/white" android:id="@id/tab_point_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/unread_dot" android:layout_toRightOf="@id/tab_title_tv" android:layout_centerVertical="true" />
+    <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tab_unread_tv" android:background="@drawable/to_read_tips_onbackbtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/tab_title_tv" android:layout_centerVertical="true" />
+</RelativeLayout>

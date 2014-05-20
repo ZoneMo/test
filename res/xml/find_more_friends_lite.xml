@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <IconPreference android:title="@string/contact_search_title" android:icon="@drawable/find_friends_by_micromsg" android:key="find_friends_by_micromsg" />
+    <IconPreference android:title="@string/find_friends_by_qrcode" android:icon="@drawable/find_more_friend_scan" android:key="find_friends_by_qrcode" />
+    <PreferenceCategory />
+    <IconPreference android:title="@string/find_friends_by_qq" android:icon="@drawable/find_more_friend_qq_icon" android:key="find_friends_by_qq" />
+    <IconPreference android:title="@string/find_friends_by_mobile" android:icon="@drawable/find_more_friend_mobile_icon" android:key="find_friends_by_mobile" />
+    <IconPreference android:title="@string/find_friends_by_google_account" android:icon="@drawable/find_more_friend_mobile_icon" android:key="find_friends_by_google_account" />
+    <IconPreference android:title="@string/find_friends_by_facebook" android:icon="@drawable/find_more_friend_fb_icon" android:key="find_friends_by_facebook" />
+    <PreferenceCategory />
+    <IconPreference android:title="@string/nearby_friend_title" android:icon="@drawable/find_more_friend_near_icon" android:key="find_friends_by_near" />
+</PreferenceScreen>

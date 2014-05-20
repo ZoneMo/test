@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chatting_footer_submenu" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/chatting_footer_submenu_lv" android:background="@drawable/sub_menu_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:listSelector="@drawable/chatting_footer_submenu_selector" android:cacheColorHint="@null" android:divider="@color/sub_menu_devider_color" android:dividerHeight="@dimen/OneDPPadding" android:footerDividersEnabled="false" />
+</RelativeLayout>

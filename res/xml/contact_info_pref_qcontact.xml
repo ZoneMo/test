@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.pluginsdk.ui.preference.NormalUserHeaderPreference android:layout="@layout/contact_info_header_normal" android:key="contact_info_header_normal" />
+    <Preference android:title="@string/contact_info_qcontact_sex" android:layout="@layout/mm_preference" android:key="contact_info_qcontact_sex" />
+    <Preference android:title="@string/contact_info_qcontact_age" android:layout="@layout/mm_preference" android:key="contact_info_qcontact_age" />
+    <Preference android:title="@string/contact_info_qcontact_birthday" android:layout="@layout/mm_preference" android:key="contact_info_qcontact_birthday" />
+    <Preference android:title="@string/contact_info_qcontact_address" android:layout="@layout/mm_preference" android:key="contact_info_qcontact_address" />
+</PreferenceScreen>

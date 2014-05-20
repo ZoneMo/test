@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/mm_listitem" android:layout_width="fill_parent" android:layout_height="@dimen/emoji_item_list_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/emoji_store_manager_list_item_updonw" android:paddingRight="@dimen/emoji_item_text_image_marge" android:layout_width="wrap_content" android:layout_height="@dimen/emoji_item_list_height" android:src="@drawable/emotionstore_emotionalign_icon" android:maxHeight="@dimen/emoji_item_list_height" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <ImageView android:id="@id/emoji_store_manager_list_item_icon" android:paddingRight="@dimen/emoji_item_text_image_marge" android:layout_width="@dimen/emoji_item_list_height" android:layout_height="@dimen/emoji_item_list_height" android:layout_toRightOf="@id/emoji_store_manager_list_item_updonw" android:layout_alignParentTop="true" />
+    <TextView android:gravity="center_vertical" android:id="@id/emoji_store_manager_list_item_title" android:layout_width="wrap_content" android:layout_height="@dimen/emoji_item_list_height" android:layout_toLeftOf="@id/emoji_store_manager_list_item_checkbox_lg" android:layout_toRightOf="@id/emoji_store_manager_list_item_icon" android:layout_alignParentTop="true" style="@style/MMFontTitleInList" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/emoji_store_manager_list_item_checkbox_lg" android:layout_width="@dimen/emoji_item_list_check_box" android:layout_height="@dimen/emoji_item_list_height" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <CheckBox android:id="@id/emoji_store_manager_list_item_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

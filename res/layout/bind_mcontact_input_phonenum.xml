@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/MMScroll">
+        <LinearLayout android:gravity="center_vertical" style="@style/MMBody">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/bind_mcontact_icon" android:layout_width="96.0dip" android:layout_height="96.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/bind_mcontact_warning" />
+            </LinearLayout>
+            <TextView android:gravity="center_horizontal" android:id="@id/bind_mcontact_title_tv" android:text="@string/bind_mcontact_security_bind_title_hint" style="@style/MMLineLabel" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" style="@style/MMBody">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/country_code_ll" android:background="@drawable/mm_edit" android:layout_width="wrap_content" android:layout_height="50.0dip">
+                    <TextView android:textSize="15.0dip" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/country_code" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="@string/country_normal_code" android:singleLine="true" />
+                    <TextView android:textSize="8.0dip" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/country_name" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="@string/country_normal_name" android:singleLine="true" />
+                </LinearLayout>
+                <EditText android:id="@id/bind_mcontact_mobile" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:hint="@string/bind_mcontact_your_mobile" android:inputType="phone" style="@style/MMLineEditText" />
+            </LinearLayout>
+            <Button android:textSize="20.0dip" android:id="@id/bind_m_contact_bind_mobile" android:text="@string/bind_mcontact_bind_mobile_asap" style="@style/MMLineActionButton" />
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/bind_mcontact_sync_contact_cb_ll" android:layout_marginLeft="6.0dip" android:layout_marginTop="12.0dip" style="@style/MMLine">
+                <CheckBox android:textSize="13.0dip" android:textColor="@color/black" android:id="@id/bind_mcontact_agree_cb" android:paddingLeft="25.0dip" android:checked="false" android:text="@string/bind_mcontact_input_mobile_find_friends_cb_tips" style="@style/BindUICheckBox" />
+                <CheckBox android:textSize="13.0dip" android:textColor="@color/black" android:id="@id/bind_mcontact_agree_cb_recom_friend" android:paddingLeft="25.0dip" android:layout_marginTop="10.0dip" android:checked="false" android:text="@string/contact_info_recommend_mobilefriends_to_me" style="@style/BindUICheckBox" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:id="@id/bind_m_contact_bind_mobile_hint" android:background="@drawable/pluginsdk_header_hint_bg" android:padding="6.0dip" android:layout_marginTop="16.0dip" android:text="@string/bind_mcontact_bind_mobile_warnning_hint" style="@style/MMBriefText" />
+            <Button android:id="@id/bind_mcontact_voice_code" android:visibility="gone" android:text="@string/bind_mcontact_voice_verify_entrance" style="@style/MMBigGreyButton" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/bind_mcontact_skip_bind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_mcontact_input_mobile_bind_skip_hint" style="@style/HyperText" />
+    </LinearLayout>
+</LinearLayout>

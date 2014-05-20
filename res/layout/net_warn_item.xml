@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.conversation.NetWarnView android:gravity="left|center" android:orientation="horizontal" android:id="@id/nwview" android:background="@drawable/tips_bar_red_selector" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/nw_icon" android:layout_width="@dimen/NormalIconSize" android:layout_height="@dimen/NormalIconSize" android:src="@drawable/net_warn_icon" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/SmallPadding">
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/nw_detail" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/nw_detail_tip" android:layout_weight="1.0" style="@style/MMFontPreferenceSmall" />
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/nw_hint_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/nw_prog" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/smallCustomProgressBar" />
+        <TextView android:id="@id/nw_btn" android:text="@string/net_warn_show_page" style="@style/MMSmallGreyButton" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/silent_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_mute_notify_normal" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/forward_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/close_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bottle_close_frame_state" />
+    </com.tencent.mm.ui.conversation.NetWarnView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/LargePadding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/MinDialogWidth">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mm_alert_content_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/mm_alert_title_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/MediumListHeight">
+                    <ImageView android:id="@id/mm_alert_title_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/NormalPadding" />
+                    <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/wechat_green" android:gravity="center" android:id="@id/mm_alert_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView android:background="@color/wechat_green" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" />
+            </LinearLayout>
+            <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mm_alert_msg_area" android:padding="@dimen/LargePadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="80.0dip">
+                    <ImageView android:id="@id/mm_alert_msg_icon" android:visibility="gone" android:layout_width="@dimen/SmallListHeight" android:layout_height="@dimen/SmallListHeight" android:layout_marginRight="@dimen/SmallPadding" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/mm_alert_msg_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/dialog_msg_color" android:id="@id/mm_alert_msg_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <FrameLayout android:id="@id/mm_alert_custom_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:background="@color/menu_devider_color" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_bottom_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_button_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/mm_alert_cancel_btn" android:background="@drawable/alert_btn_bg" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/NormalButtonHeight" android:layout_weight="1.0" />
+                <ImageView android:id="@id/mm_alert_btn_divider" android:background="@color/menu_devider_color" android:layout_width="@dimen/DividerHeight" android:layout_height="fill_parent" />
+                <Button android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/mm_alert_ok_btn" android:background="@drawable/alert_btn_bg" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="@dimen/NormalButtonHeight" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

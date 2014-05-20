@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/qqmail_addrlist_item_category" android:background="@drawable/list_thicklinecell_bg" android:paddingLeft="@dimen/SmallPadding" android:paddingTop="@dimen/LargePadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallerPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="A" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/qqmail_addrlist_item_ll" android:background="@drawable/mm_listitem" android:layout_width="fill_parent" android:layout_height="@dimen/NormalListHeight">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/SmallPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/qqmail_addrlist_item_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/MMFontTitleInList" />
+            <TextView android:id="@id/qqmail_addrlist_item_addr_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <CheckBox android:id="@id/qqmail_addrlist_item_select_cb" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/SmallPadding" />
+    </LinearLayout>
+</LinearLayout>

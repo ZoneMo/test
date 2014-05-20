@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" style="@style/MMPreferencePage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/MMScroll">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/setting_bind_linkedin_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargerPadding" android:layout_marginBottom="@dimen/LargerPadding" android:src="@drawable/linkedin_icon" />
+            <TextView android:id="@id/setting_bind_linkedin_brief" android:padding="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/NormalPadding" android:text="@string/contact_info_linkedin_account_brief_unbinded" android:singleLine="false" android:lineSpacingExtra="4.0dip" style="@style/MMBriefText" />
+            <TextView android:gravity="left|center" android:id="@id/setting_bind_linkedin_account" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingTop="@dimen/NormalPadding" android:paddingBottom="@dimen/NormalPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/NormalPadding" android:text="@string/contact_info_linkedin_account_info_unbind" android:lineSpacingExtra="4.0dip" style="@style/MMFontPreferenceLarge" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/show_name_option" android:background="@drawable/comm_list_item_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargePadding" android:baselineAligned="false" android:minHeight="@dimen/SmallListHeight">
+                <TextView android:gravity="left|center" android:paddingLeft="@dimen/SmallPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/contact_info_linkedin_show_name_option" android:singleLine="true" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+                <CheckBox android:gravity="right|center" android:id="@id/show_name_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/BigTextSize" android:id="@id/bind_linkedin_btn" android:visibility="gone" android:layout_marginBottom="@dimen/LargePadding" android:text="@string/contact_info_linkedin_bind_btn" style="@style/MMBigGreenButton" />
+            <TextView android:textSize="@dimen/BigTextSize" android:id="@id/unbind_linkedin_btn" android:visibility="gone" android:layout_marginBottom="@dimen/LargePadding" android:text="@string/contact_info_linkedin_unbind_btn" style="@style/MMBigRedButton" />
+            <TextView android:textSize="@dimen/BigTextSize" android:id="@id/cancel_bind_linkedin_btn" android:visibility="gone" android:text="@string/contact_info_linkedin_cancel_btn" style="@style/MMBigGreyButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

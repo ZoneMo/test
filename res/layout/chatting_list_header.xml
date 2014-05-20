@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chatting_addcontact_container" android:background="@drawable/bottombar_bg" android:padding="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/add_friends_avatar" android:layout_width="@dimen/SmallAvatarSize" android:layout_height="@dimen/SmallAvatarSize" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/banner_add_friends" />
+    </LinearLayout>
+    <Button android:id="@id/chatting_addcontact_btn" android:layout_marginLeft="@dimen/SmallButtonWidth" android:minWidth="@dimen/SmallButtonWidth" android:text="@string/chatting_addcontact_btn" style="@style/MMSmallGreenButton" />
+</LinearLayout>

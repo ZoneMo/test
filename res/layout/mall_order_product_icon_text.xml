@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/order_product_item_x4_1_layout" android:layout_width="@dimen/maill_order_product_item_logo_img_width" android:layout_height="wrap_content" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_product_logo_img" android:clickable="false" android:layout_width="@dimen/maill_order_product_item_logo_img_width" android:layout_height="@dimen/maill_order_product_item_logo_img_width" android:src="@drawable/mall_order_trade_empty_icon" />
+    <TextView android:textSize="@dimen/SmallerTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:ellipsize="end" android:gravity="center" android:id="@id/item_product_descript_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:maxLines="2" />
+</LinearLayout>

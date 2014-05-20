@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/sendrequest" android:padding="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:gravity="center" android:id="@id/sendrequest_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sendrequest_tip" android:singleLine="false" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/SmallPadding">
+        <EditText android:textColor="@color/white" android:id="@id/sendrequest_content" android:paddingRight="@dimen/LargerPadding" style="@style/MMLineEditText" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/white" android:layout_gravity="bottom|right|center" android:id="@id/wordcount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" />
+    </FrameLayout>
+</LinearLayout>

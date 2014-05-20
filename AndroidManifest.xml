@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="380" android:versionName="5.2" android:installLocation="auto" package="com.tencent.mm"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <permission android:name="com.tencent.mm.oauth.permission.SEND" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.plugin.permission.WRITE" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.plugin.permission.READ" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.permission.MM_MESSAGE" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.permission.GET_QRCODE_INFO" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.permission.LOGOUT" android:protectionLevel="signature" />
+    <permission android:name="com.tencent.mm.permission.MM_VIDEO_RECORDER_UI" android:protectionLevel="signature" />
+    <uses-permission android:name="com.tencent.mm.oauth.permission.SEND" />
+    <uses-permission android:name="com.tencent.mm.plugin.permission.READ" />
+    <uses-permission android:name="com.tencent.mm.plugin.permission.WRITE" />
+    <uses-permission android:name="com.tencent.mm.plugin.permission.SEND" />
+    <uses-permission android:name="com.tencent.mm.permission.MM_MESSAGE" />
+    <uses-permission android:name="com.tencent.mm.permission.GET_QRCODE_INFO" />
+    <uses-permission android:name="com.tencent.mm.permission.LOGOUT" />
+    <uses-permission android:name="com.tencent.mm.permission.MM_VIDEO_RECORDER_UI" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.mm.location.permission.SEND_VIEW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <application android:theme="@style/MMTheme.Holo" android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.tencent.mm.app.MMApplication" android:hardwareAccelerated="true" android:largeHeap="true">
+        <uses-library android:name="com.google.android.maps" android:required="false" />
+        <uses-library android:name="com.sec.android.app.multiwindow" android:required="false" />
+        <meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W" android:value="632.0dip" />
+        <meta-data android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H" android:value="598.0dip" />
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W" android:value="632.0dip" />
+        <meta-data android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H" android:value="598.0dip" />
+        <meta-data android:name="wx_qlauncher_coop" android:value="fun1" />
+        <activity android:label="@string/launcher_name" android:name="com.tencent.mm.ui.LauncherUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.BIZSHORTCUT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.mm.ui.LauncherUIProxy" android:exported="true" />
+        <activity android:name="com.tencent.mm.ui.DataTransferUI" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.chatting.ChattingUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.tencent.mm.ui.chatting.ImageDownloadUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.chatting.AtSomeoneUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.chatting.HelperAddressUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.chatting.AppAttachDownloadUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.chatting.ChatMoreSelectUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.transmit.SelectConversationUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.transmit.MulSelectConversationUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.conversation.MainUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.MoreTabUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.MoreTabLiteUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.AddressUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.mm.ui.contact.SelectContactUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.mm.ui.friend.FMessageConversationUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.mm.ui.contact.GroupCardSelectUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.pluginapp.ContactSearchUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.RoomInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.GrantRoomUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.RoomRightUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.RoomInfoDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.SendContactCardUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.pluginapp.FindMoreFriendsUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.pluginapp.AddMoreFriendsUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.conversation.BizConversationUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.ui.transmit.MsgRetransmitUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.ui.transmit.SendAppMessageWrapperUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.ui.transmit.TaskRedirectUI" android:taskAffinity="com.tencent.mm.openapi.taskredirect" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.player.MusicDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.player.MainMusicPlayerUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.mm.ui.contact.profile.ContactInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.ModRemarkNameUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.contact.ContactRemarkInfoModUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.contact.ContactRemarkInfoViewUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.ui.contact.ContactRemarkImagePreviewUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.ContactQZoneWebView" android:process=":tools" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.pluginapp.ContactSearchResultUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.SayHiEditUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.ExposeUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.voicetranstext.VoiceTransTextUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsLanguageUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsAboutMicroMsgUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsPrivacyUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsPersonalInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsTWeiboUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsAccountInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsAliasUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsPluginsUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsNotificationUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SetTextSizeUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsAboutSystemUI" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.DISPLAY_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.mm.ui.setting.SettingsRingtoneUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsModifyNameUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsModifyEmailAddrUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsModifyPasswordUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsActiveTimeUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsNetStatUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.EditSignatureUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.qrcode.ShareToQQUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsPluginsNotifyUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SendFeedBackUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsFAQWebUI" android:process=":tools" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsChattingBackgroundUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingsSelectBgUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.ui.tools.NewTaskUI" android:launchMode="singleInstance" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.tools.MultiStageCitySelectUI" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.GET_ADRESS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.mm.ui.tools.CountryCodeUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.tools.CropImageNewUI" android:process=":tools" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.Transparent" android:name="com.tencent.mm.ui.tools.ImageGalleryUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.ui.tools.ImageGalleryGridUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" />
+        <activity android:name="com.tencent.mm.ui.tools.ShowImageUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.video.VideoPlayerUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.video.VideoDownloadUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.gallery.GestureGalleryUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.SnsAddressUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.VoipAddressUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:icon="@drawable/icon" android:name="com.tencent.mm.ui.tools.ShareImgUI" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter android:label="@string/app_share_to_weixin">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="application/*" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_share_to_weixin">
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:icon="@drawable/share_to_time_line_icon" android:name="com.tencent.mm.ui.tools.ShareToTimeLineUI" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter android:label="@string/app_share_to_timeline">
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter android:label="@string/app_share_to_timeline">
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.ui.tools.ShareImageRedirectUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.tools.ShareImageUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.backup.ui.BakChatUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.backup.ui.BakChatRecoverCheckUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.backup.ui.BakChatUploadSelectUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.backup.ui.BakChatUploadingUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.backup.ui.BakChatRecoveringUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.backup.ui.BakchatSetCryptUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.backup.ui.BakchatSelcetCryptUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.backup.ui.BakChatInputCryptUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <receiver android:name="com.tencent.mm.booter.NotifyReceiver" android:exported="false" />
+        <receiver android:name="com.tencent.mm.booter.LogoutReceiver" android:permission="com.tencent.mm.permission.LOGOUT" android:exported="true">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.LOGOUT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.mm.sandbox.monitor.CrashUploadAlarmReceiver" android:exported="false" />
+        <receiver android:name="com.tencent.mm.booter.MountReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_STARTED" />
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.tencent.mm.booter.NotifyReceiver$NotifyService" />
+        <service android:name="com.tencent.mm.modelfriend.AddrBookObserver$AddrBookService" />
+        <receiver android:name="com.tencent.mm.booter.BluetoothReceiver">
+            <intent-filter>
+                <action android:name="android.media.SCO_AUDIO_STATE_CHANGED" />
+                <action android:name="android.media.ACTION_SCO_AUDIO_STATE_UPDATED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.MMReceivers$ToolsProcessReceiver" android:exported="false" android:process=":tools" />
+        <service android:name="com.tencent.mm.booter.CoreService" android:process=":push" />
+        <service android:name="com.tencent.mm.booter.cache.CacheService" android:process=":push" />
+        <receiver android:name="com.tencent.mm.booter.MMReceivers$BootReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.MMReceivers$ConnectionReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.tencent.mm.booter.MMReceivers$AlarmReceiver" android:process=":push" />
+        <receiver android:name="com.tencent.mm.jni.platformcomm.Alarm" android:exported="false" android:process=":push" />
+        <provider android:name="com.tencent.mm.plugin.base.stub.MMPluginProvider" android:writePermission="com.tencent.mm.plugin.permission.WRITE" android:exported="true" android:authorities="com.tencent.mm.sdk.plugin.provider" />
+        <provider android:name="com.tencent.mm.plugin.base.stub.WXCommProvider" android:exported="true" android:authorities="com.tencent.mm.sdk.comm.provider" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.base.stub.WXEntryActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTop" />
+        <activity android:theme="@style/MMTheme.Transparent" android:name="com.tencent.mm.plugin.base.stub.WXPayEntryActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTop" />
+        <receiver android:name="com.tencent.mm.plugin.base.stub.WXEntryActivity$EntryReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_REGISTER" />
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_HANDLE_APP_UNREGISTER" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.base.stub.UIEntryStub" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.base.stub.OAuthUI" android:process=":tools" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true" />
+        <activity android:name="com.tencent.mm.ui.openapi.AddAppUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.openapi.AppProfileUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.webwx.ui.WebWXLogoutUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.webwx.ui.WebWeiXinIntroductionUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.voicesearch.VoiceSearchResultUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.mm.ui.voicesearch.SearchConversationResultUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.voicereminder.ui.RemindDialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.qrcode.QRCodeIntroductionWebViewUI" android:process=":tools" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:theme="@style/MMTheme.Transparent" android:name="com.tencent.mm.ui.qrcode.GetQRCodeInfoUI" android:permission="com.tencent.mm.permission.GET_QRCODE_INFO" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="weixin.qq.com" android:pathPrefix="/r/" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="weixin" android:host="qr" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.mm.ui.setting.SelfQRCodeUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.qrcode.ShareMicroMsgChoiceUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.qrcode.ShowQRCodeStep1UI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingDeleteAccountAgreementUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingDeleteAccountInputPassUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.setting.SettingDeleteAccountUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.chatting.ResourcesExceedUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.ChatroomContactUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.ui.tools.AccountDeletedAlphaAlertUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.nearby.ui.NearbyFriendsIntroUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.nearby.ui.NearbyFriendShowSayHiUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.nearby.ui.NearbyFriendsUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.nearby.ui.NearbyPersonalInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.nearby.ui.NearbySayHiListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.brandservice.ui.BrandServiceIndexUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.brandservice.ui.SearchOrRecommendBizUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.ui.ShakeSayHiListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.shakemedia.ui.ShakeMusicPlayerUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.ui.ShakeReportUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.ui.ShakePhotoViewerUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.ui.ShakeTranImgGalleryUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.ui.ShakePersonalInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.ui.ShakeTranImgIntroUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.ui.ShakeItemListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.shakemedia.ui.ShakeTVDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.shake.ui.TVInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo" android:name="com.tencent.mm.plugin.voip.ui.VideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.ui.base.MMSuperAlert" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.voip.ui.InviteRemindDialog" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo" android:name="com.tencent.mm.plugin.voip.audio.ui.VoipAudioUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqsync.ui.QQSyncUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.gallery.ui.GalleryUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.plugin.gallery.ui.ImagePreviewUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.gallery.ui.AlbumPreviewUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Launcher" android:name="com.tencent.mm.plugin.gallery.ui.GalleryEntryUI" android:process=":tools" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.radar.ui.RadarSearchUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsAnimation$SnsPostAnimationUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsUserUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsTimeLineUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsCommentDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsStrangerCommentDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsUploadUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.plugin.sns.ui.SnsGalleryUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.plugin.sns.ui.ArtistBrowseUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.plugin.sns.ui.SnsBrowseUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.sns.ui.SnsSelectContactDialog" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsMsgUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SettingSnsBackgroundUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.ArtistUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.plugin.sns.ui.SnsUploadBrowseUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsCommentUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsTagUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsTagDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsBlackDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsTagPartlyUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.contact.SnsTagContactListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsPermissionUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsSingleTextViewUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.sns.ui.SnsLongMsgUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.account.FacebookAuthUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.account.FacebookFriendUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.account.ShowNonWeixinFriendUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.account.LoginSelectorUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.account.LoginHistoryUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.tencent.mm.ui.account.LoginUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.tencent.mm.ui.account.FacebookLoginUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.tencent.mm.ui.accountn.RegByQQAuthUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.RegByMobileRegUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.MobileVerifyUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.RegByMobileRegAIOUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.tencent.mm.ui.account.RegByMobileWaitingSMSUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.account.RegByMobileVoiceVerifyUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.RegByMobileVoiceVerifySelectUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.RegByMobileSetPwdUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.RegByMobileSetNickUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.SimpleLoginUI" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.tencent.mm.ui.account.RegByFacebookSetPwdUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.RegByQQUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.RegByEmailUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.EmailVerifyUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.RegSetInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.tencent.mm.ui.account.LoginByMobileUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.LoginIndepPass" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.BindFacebookUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.account.mobile.MobileInputUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.account.mobile.MobileVerifyUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.tencent.mm.ui.account.mobile.MobileLoginOrForceReg" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.bindmobile.MobileFriendUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.friend.QQFriendUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.friend.InviteFriendUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.friend.InviteRecommendChoiceUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.friend.RecommendFriendUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.friend.InviteFacebookFriendsUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.accountsync.ui.ContactsSyncUI" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="com.tencent.mm.login.ACTION_LOGIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.login" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.chatting.profile" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.plugin.sns.timeline" />
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.tencent.mm.chatting.phonenum" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.mm.ui.bindmobile.BindMContactIntroUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindmobile.BindMContactUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.tencent.mm.ui.bindmobile.BindMContactVerifyUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.tencent.mm.ui.bindmobile.BindMContactStatusUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindmobile.FindMContactIntroUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.friend.FindMContactAddUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.friend.FindMContactInviteUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.account.bind.BindMobileStatusUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.mm.ui.account.bind.BindMobileVerifyUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.mm.ui.account.bind.BindMobileUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" />
+        <service android:name="com.tencent.mm.plugin.accountsync.model.AccountAuthenticatorService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator" />
+        </service>
+        <service android:name="com.tencent.mm.plugin.accountsync.model.ContactsSyncService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/sync_contacts" />
+            <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@xml/contacts" />
+        </service>
+        <activity android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseIntroUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.traceroute.ui.NetworkDiagnoseReportUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.RoomInfoShareQrUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.ComposeUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.MailAddrListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.ReadMailUI" android:process=":tools" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.MailAddrProfileUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.MailWebViewUI" android:process=":tools" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.CompressPreviewUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.AttachDownloadPage" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qqmail.ui.MailImageDownloadUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.qqmail.stub.QQMailStubProxyUI" />
+        <activity android:name="com.tencent.mm.plugin.readerapp.ui.ReaderAppUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.readerapp.ui.ReaderAppIntroUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.readerapp.ui.ReaderAppSubscribeUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.plugin.scanner.ui.BaseScanUI" android:launchMode="singleTask" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.scanner.ui.ProductUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.scanner.ui.VcardContactUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Talkroom" android:name="com.tencent.mm.plugin.talkroom.ui.TalkRoomUI" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <service android:name="com.tencent.mm.plugin.talkroom.component.TalkRoomService" />
+        <receiver android:name="com.tencent.mm.plugin.talkroom.model.TalkRoomReceiver" />
+        <activity android:label="@string/app_name" android:name="com.tencent.mm.plugin.shoot.ui.ShootMainUI" android:process=":tools" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
+            <intent-filter />
+        </activity>
+        <activity android:theme="@*android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.tencent.mm.plugin.shoot.ui.ShootFlashUI" android:process=":tools" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <receiver android:name="com.tencent.mm.plugin.shoot.remote.RemoteNetSceneMgr$RespReceiver" android:exported="false" android:process=":tools"> -->
+</receiver>
+        <receiver android:name="com.tencent.mm.plugin.shootstub.communicate.ReqReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.SHOOT_STUB_REQ" />
+            </intent-filter>
+        </receiver>
+        <activity android:theme="@style/MMTheme.Transparent" android:name="com.tencent.mm.sandbox.updater.AppUpdaterUI" android:process=":sandbox" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <service android:name="com.tencent.mm.sandbox.monitor.ExceptionMonitorService" android:process=":sandbox" />
+        <activity android:name="com.tencent.mm.plugin.bottle.ui.BottleWizardStep1" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.bottle.ui.BottleWizardStep2" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.plugin.bottle.ui.BottleBeachUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.bottle.ui.BottleConversationUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.bottle.ui.BottleChattingUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.tencent.mm.plugin.bottle.ui.BottlePersonalInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.CustomSmileyPreviewUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.EmojiCustomUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.EmojiStoreUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.EmojiPaidUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.EmojiStoreDetailUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.EmojiSettingsUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.EmojiManagerUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.AppMsgEmojiDownloadUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.emoji.ui.EmojiStoreGiftUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.game.ui.GameCenterUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.game.ui.GameDetailInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.game.ui.AuthorizedGameListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.game.ui.GameSettingsUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.game.ui.GameGestureGalleryUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.game.ui.GameRankUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.game.ui.GameMessageUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.game.ui.GameDownloadTipsUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/MMTheme.Launcher" android:name="com.tencent.mm.plugin.game.ui.GameMD5CheckUI" android:exported="false" android:taskAffinity="com.tencent.mm.game.md5check" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.tencent.mm.game.md5check" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.mm.plugin.location.ui.RedirectUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.soso.SosoMapUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.google.GGmapUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.google.POIGGmapUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.soso.POISosoMapUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.RemarkUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.google.GGSendUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.google.GGViewUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.soso.SosoSendUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.soso.SoSoProxyUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.google.GoogleProxyUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.soso.SosoViewUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.location.ui.soso.SosoTrackUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.mm.plugin.masssend.ui.MassSendSelectContactUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.masssend.ui.MassSendMsgUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.tencent.mm.plugin.masssend.ui.MassSendHistoryUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.qmessage.ui.QConversationUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.tmessage.ui.TConversationUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.tools.jsapi.ShareToQQWeiboUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.tools.WebViewUI" android:process=":tools" android:screenOrientation="sensor" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.webview.stub.WebViewStubProxyUI" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.ui.tools.BrowserChooseActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <service android:name="com.tencent.mm.plugin.webview.stub.WebViewStubService" />
+        <activity android:name="com.tencent.mm.plugin.whatsnew.ui.HighCapacityTroopUI" android:process=":tools" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.whatsnew.ui.ThirdAnniversaryUI" android:screenOrientation="portrait" />
+        <activity android:name="com.tencent.mm.plugin.chatroom.ui.RoomUpgradeUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.chatroom.ui.RoomUpgradeResultUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.chatroom.ui.RoomAlphaProcessUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.chatroom.ui.RoomAnnouncementUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.FavoriteIndexUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustPan" />
+        <activity android:theme="@style/MMTheme.Transparent" android:name="com.tencent.mm.plugin.favorite.ui.FavOpenApiEntry" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Launcher" android:name="com.tencent.mm.plugin.favorite.ui.FavTipsUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.FavTextEditUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.FavSelectUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteTextDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteImgDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteFileDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteVoiceDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.detail.FavoriteMusicDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.favorite.ui.post.FavPostTextUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:theme="@style/MMTheme.Launcher" android:name="com.tencent.mm.plugin.favorite.ui.post.FavPostVoiceUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.clean.ui.CleanListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.safedevice.ui.SecurityAccountIntroUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.safedevice.ui.SecurityAccountVerifyUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.plugin.safedevice.ui.MySafeDeviceListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.safedevice.ui.ModSafeDeviceNameUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.safedevice.ui.BindSafeDeviceUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindqq.BindQQUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindqq.VerifyQQUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity android:name="com.tencent.mm.ui.bindqq.StartUnbindQQ" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindqq.SuccUnbindQQ" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindqq.QQGroupUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindgooglecontact.BindGoogleContactIntroUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindgooglecontact.GoogleFriendUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindgooglecontact.BindGoogleContactUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.ui.bindlinkedin.BindLinkedInUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.mall.ui.MallIndexUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.mall.recharge.ui.MallRechargeUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowAnimationStyle="@null" android:windowSoftInputMode="stateUnchanged" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.mall.order.ui.MallOrderRecordListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.mall.order.ui.MallOrderDetailInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.mall.order.ui.MallOrderTransactionInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.mall.order.ui.MallOrderProductListUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.Transparent" android:name="com.tencent.mm.plugin.mall.ui.MallGalleryUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.mall.product.ui.MallProductUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.mall.product.ui.MallProductSelectSkuUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.mall.product.ui.MallProductSubmitUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.mall.product.ui.MallProductReceiptUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletBankcardManageUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletBindUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletInputCardIDUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletCardElmentUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletCardImportUI" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletBankcardDetailUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletCardSelectUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.wallet.bind.ui.WalletResetInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletLauncherUI" android:permission="com.tencent.mm.plugin.permission.READ" android:exported="false" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.WALLET_PAY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletPayUI" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletVerifyCodeUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletOrderInfoUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletBrandUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.wallet.pay.ui.OrderHandlerUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.wallet.pay.ui.WalletChangeBankcardUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletSetPasswordUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletPwdConfirmUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletPasswordSettingUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletCheckPwdUI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/MMTheme.FullTranslucent" android:name="com.tencent.mm.plugin.wallet.pwd.ui.WalletForgotPwdUI" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:theme="@style/MMTheme.NoTitleTranslucent" android:name="com.tencent.mm.plugin.wallet.iap.ui.WalletIapUI" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.wallet.address.ui.WalletAddAddressUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible" />
+        <activity android:name="com.tencent.mm.plugin.wallet.address.ui.WalletSelectAddrUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.wallet.address.ui.WalletMultiRcptSelectUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name="com.tencent.mm.plugin.wallet.offline.ui.WalletOfflinePayAuthenFinishUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.tencent.mm.plugin.wallet.offline.ui.WalletOfflineQRCodePayUI" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.mm.plugin.gwallet.GWalletUI">
+            <intent-filter>
+                <action android:name="com.tencent.mm.gwallet.ACTION_PAY_REQUEST" />
+                <action android:name="com.tencent.mm.gwallet.ACTION_QUERY_REQUEST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <provider android:name="com.tencent.mm.plugin.gwallet.GWalletQueryProvider" android:permission="com.tencent.mm.plugin.permission.READ" android:authorities="com.tencent.mm.plugin.gwallet.queryprovider" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.mm.plugin.gms.MMGoogleAuthUtil">
+            <intent-filter>
+                <action android:name="com.tencent.mm.gms.ACTION_GET_TOKEN" />
+                <action android:name="com.tencent.mm.gms.ACTION_CHOOSE_ACCOUNT" />
+                <action android:name="com.tencent.mm.gms.CHECK_GP_SERVICES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MMTheme.Transparent" android:name="com.tencent.mm.plugin.search.ui.SearchContactUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.ui.video.VideoRecorderUI" android:permission="com.tencent.mm.permission.MM_VIDEO_RECORDER_UI" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.tencent.mm.action.VIDEO" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MMTheme.Holo.OverlayActionBar" android:name="com.tencent.mm.ui.video.VideoRecorderPreviewUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.tencent.mm.plugin.extqlauncher.ui.QLauncherCreateShortcutUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <provider android:name="com.tencent.mm.plugin.ext.provider.ExtContentProviderBase" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE" android:authorities="com.tencent.mm.plugin.ext.ExtContentProviderBase" />
+        <provider android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderMsg" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE" android:authorities="com.tencent.mm.plugin.ext.message" />
+        <provider android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderSearchContact" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE" android:authorities="com.tencent.mm.plugin.ext.SearchContact" />
+        <provider android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderNearBy" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE" android:authorities="com.tencent.mm.plugin.ext.NearBy" />
+        <provider android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderSNS" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE" android:authorities="com.tencent.mm.plugin.ext.SNS" />
+        <provider android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderAccountSync" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE" android:authorities="com.tencent.mm.plugin.ext.AccountSync" />
+        <provider android:name="com.tencent.mm.plugin.ext.provider.ExtControlProviderEntry" android:readPermission="com.tencent.mm.ext.permission.READ" android:writePermission="com.tencent.mm.ext.permission.WRITE" android:authorities="com.tencent.mm.plugin.ext.entry" />
+        <activity android:name="com.tencent.mm.pluginsdk.ui.tools.FileExplorerUI" android:configChanges="keyboardHidden|orientation|screenSize" />
+        <service android:name="com.tencent.mm.pluginsdk.model.downloader.FileDownloadManger$FileDownloadService" />
+        <receiver android:name="com.tencent.mm.pluginsdk.model.downloader.FileDownloadManger$FileDownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.tencent.mm.ui.tools.MMTextInputUI" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustPan" />
+        <service android:name="com.tencent.mm.remoteservice.RemoteService" />
+        <receiver android:name="com.tencent.mm.modelstat.WatchDogPushReceiver" android:exported="false" android:process=":push" />
+    </application>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="com.tencent.mm.gwallet.BILLING" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.tencent.mm.plugin.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+</manifest>

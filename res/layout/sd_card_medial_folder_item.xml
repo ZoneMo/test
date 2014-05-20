@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/comm_list_item_selector_no_divider" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginTop="@dimen/BasicPaddingSize" android:layout_marginRight="@dimen/SmallPadding" android:layout_marginBottom="@dimen/BasicPaddingSize">
+        <ImageView android:id="@id/folder_thumb" android:layout_width="@dimen/LargerIconSize" android:layout_height="@dimen/LargerIconSize" android:scaleType="centerCrop" />
+        <ImageView android:id="@id/video_mask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_mask" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/SmallPadding">
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/normal_text_color" android:id="@id/folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/media_files_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

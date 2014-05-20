@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/ChattingUIContent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/chatting_state_iv" style="@style/ChattingUIState" />
+            <ProgressBar android:layout_gravity="center_vertical" android:id="@id/uploading_pb" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/smallCustomProgressBar" />
+            <com.tencent.mm.pluginsdk.ui.EmojiView android:layout_gravity="center" android:id="@id/chatting_content_iv" android:background="@null" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/EmojiCommonStyle" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/downloadIv" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/smiley_expressiondown" />
+    </LinearLayout>
+    <include layout="@layout/chatting_item_avatar_to" />
+</LinearLayout>

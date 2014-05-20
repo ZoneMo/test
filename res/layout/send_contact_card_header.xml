@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/list_item_normal" android:padding="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/send_card_avatar_iv_card" android:background="@drawable/default_avatar" android:layout_width="60.0dip" android:layout_height="60.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding">
+            <TextView android:textColor="@color/black" android:id="@id/send_card_nickname_tv" android:layout_marginBottom="@dimen/BasicPaddingSize" style="@style/ChattingUIFMessageText" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/HintTextSize" android:id="@id/send_card_source_tv" android:paddingRight="2.0dip" android:visibility="visible" style="@style/ChattingUIFMessageText" />
+                <TextView android:textSize="@dimen/HintTextSize" android:textColor="#ff609c01" android:id="@id/send_card_username_tv" style="@style/ChattingUIFMessageText" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/black" android:paddingLeft="@dimen/SmallPadding" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/NormalPadding" android:text="@string/send_card_tip" />
+</LinearLayout>

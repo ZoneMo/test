@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginTop="23.0dip" android:layout_marginRight="@dimen/LargePadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/SmallerTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:layout_marginBottom="@dimen/SmallerPadding" android:text="@string/mall_order_transaction_info_text" />
+    <TextView android:background="@drawable/list_thicklinecell_bg" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/item_product_descript_layout" android:background="@drawable/comm_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:gravity="left" android:id="@id/item_product_descript_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginTop="@dimen/LargePadding" android:layout_marginRight="@dimen/SmallPadding" android:layout_marginBottom="@dimen/LargePadding" android:lineSpacingExtra="3.0dip" />
+    </LinearLayout>
+</LinearLayout>

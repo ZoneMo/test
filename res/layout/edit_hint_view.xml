@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tip_tv" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/BasicPaddingSize" android:minWidth="68.0dip" android:text="@string/wallet_card_select_type_tips" android:singleLine="true" />
+    <com.tenpay.android.wechat.TenpaySecureEditText android:gravity="center_vertical" android:id="@id/hint_et" android:background="@null" android:paddingRight="32.0dip" android:layout_height="fill_parent" android:minHeight="48.0dip" android:singleLine="true" android:layout_toRightOf="@id/tip_tv" style="@style/MMLineEditText" />
+    <ImageView android:id="@id/info_iv" android:background="@null" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="wrap_content" android:src="@drawable/payinfoicon" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

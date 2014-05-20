@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nearby_friend_intro_comfirm" />
+    <CheckBox android:textSize="@dimen/HintTextSize" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/lbs_open_dialog_cb" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/NormalPadding" android:text="@string/app_down_show_nexttime" />
+</LinearLayout>

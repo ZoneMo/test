@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/NormalButtonHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/divider" android:background="@color/actionbar_devider_color" android:layout_width="@dimen/DividerHeight" android:layout_height="@dimen/LargerPadding" />
+    <TextView android:textColor="@color/actionbar_text_white_selector" android:gravity="center" android:id="@id/action_option_button" android:background="@drawable/actionbar_menu_selector" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="wrap_content" android:layout_height="@dimen/NormalButtonHeight" android:text="send" />
+    <TextView android:id="@id/action_option_style_button" android:visibility="gone" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:text="send" style="@style/MMSmallGreenButton" />
+</LinearLayout>

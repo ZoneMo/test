@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/nav_item" android:background="@drawable/comm_list_item_selector" android:paddingRight="@dimen/SmallPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight" android:text="@string/cropimg_share_to_sns" android:drawableLeft="@drawable/find_more_friend_photograph_icon" android:drawablePadding="5.0dip" style="@style/MMFontTitleInList" />
+    <TextView android:id="@id/fav_item" android:paddingRight="@dimen/SmallPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight" android:text="@string/chatting_fav" android:drawableLeft="@drawable/more_my_favorite" android:drawablePadding="5.0dip" style="@style/MMFontTitleInList" />
+    <TextView android:id="@id/contactitem_catalog" android:visibility="gone" android:layout_height="wrap_content" android:text="@string/mul_select_contact_ui_title" style="@style/MMListCatalog" />
+    <TextView android:id="@id/more_contact" android:background="@drawable/comm_list_item_selector" android:paddingRight="@dimen/SmallPadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight" android:text="@string/mul_select_contact_all" style="@style/MMFontTitleInList" />
+</LinearLayout>

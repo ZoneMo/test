@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/game_burst_aircharft_bkg_big" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/game_ann_title" android:layout_width="fill_parent" android:text="@string/shoot_ann_title" android:layout_centerHorizontal="true" style="@style/GameTitleText" />
+    <View android:background="@drawable/game_burst_aircraft_bkg_big_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_margin="4.0dip" />
+    <TextView android:id="@id/game_ann_content_title" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GameDialogListItemUserTv" />
+    <TextView android:id="@id/game_ann_content_msg" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/GameDialogListItemScoreTv" />
+    <View android:background="@drawable/game_burst_aircraft_bkg_big_line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_margin="4.0dip" />
+    <Button android:id="@id/game_ok" android:background="@drawable/game_burst_aircraft_button_bule_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shoot_confirm_ok" style="@style/GameButtonText" />
+</LinearLayout>

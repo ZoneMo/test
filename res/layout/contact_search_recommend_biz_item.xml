@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/contactitem_catalog" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:visibility="gone" style="@style/MMListCatalog" />
+    <LinearLayout android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_height="@dimen/ContactListHeight" android:minHeight="@dimen/ContactListHeight" style="@style/MMListItem">
+        <com.tencent.mm.ui.base.MaskLayout android:id="@id/contactitem_avatar" android:layout_width="@dimen/ContactAvatarWrapSize" android:layout_height="@dimen/ContactAvatarWrapSize">
+            <ImageView android:id="@id/content" android:layout_width="@dimen/ContactAvatarSize" android:layout_height="@dimen/ContactAvatarSize" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </com.tencent.mm.ui.base.MaskLayout>
+        <TextView android:id="@id/contactitem_nick" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="{nick}" android:layout_weight="1.0" style="@style/MMFontTitleInList" />
+        <TextView android:id="@id/contactitem_which" android:visibility="gone" android:text="signature" style="@style/ContactSignature" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:wallet="http://schemas.android.com/apk/res-auto/com.tencent.mm">
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/wallet_pwd_title" android:paddingLeft="@dimen/NormalPadding" android:paddingTop="@dimen/LargePadding" android:paddingRight="@dimen/NormalPadding" android:paddingBottom="@dimen/NormalPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/wechat_green" android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:text="@string/wallet_pwd_dialog_titile" />
+        <ImageView android:layout_gravity="right|center" android:id="@id/chatting_user_iv" android:layout_width="30.0dip" android:layout_height="30.0dip" android:scaleType="fitEnd" android:layout_weight="1.0" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@id/line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@color/wechat_green" />
+    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:gravity="left" android:id="@id/content" android:padding="@dimen/NormalPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/input_et" android:focusable="true" android:focusableInTouchMode="true" android:layout_margin="@dimen/NormalPadding" wallet:editType="password" wallet:hintTextBg="@drawable/transparent_background" style="@style/MMWalletPwdEt" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/download_ll" android:background="@color/dark_bg_color" android:paddingLeft="@dimen/NormalPadding" android:paddingRight="@dimen/NormalPadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/download_type_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffe9e9e9" android:id="@id/download_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/download_progress_area" android:paddingLeft="50.0dip" android:paddingTop="64.0dip" android:paddingRight="50.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/download_pb" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="?android:attr/progressBarStyleHorizontal" />
+            <ImageView android:id="@id/download_stop_btn" android:background="@drawable/progress_cancel_btn_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/progress_cancel_btn_padding" />
+        </LinearLayout>
+        <Button android:id="@id/download_continue_btn" android:visibility="gone" android:layout_marginTop="64.0dip" android:minWidth="220.0dip" android:text="@string/download_continue" style="@style/MMBigGreenButton" />
+        <Button android:id="@id/download_open_btn" android:visibility="gone" android:layout_marginTop="64.0dip" android:minWidth="220.0dip" android:text="@string/download_open" style="@style/MMBigGreenButton" />
+        <Button android:id="@id/download_start_btn" android:visibility="gone" android:layout_marginTop="64.0dip" android:minWidth="220.0dip" android:text="@string/download_start" style="@style/MMBigGreenButton" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/download_data_area" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="#ff777777" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_ing" />
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="#ff777777" android:id="@id/download_data_size" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="#ff777777" android:id="@id/download_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="60.0dip" android:text="@string/download_ing" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/load_fail_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/download_fail_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_download_fail_icon" />
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/white" android:id="@id/download_fail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_fail_or_clean" />
+    </LinearLayout>
+</LinearLayout>

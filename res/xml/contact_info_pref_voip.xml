@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.contact.profile.HelperHeaderPreference android:layout="@layout/contact_info_header_helper" android:key="contact_info_header_helper" />
+    <PreferenceSmallCategory />
+    <CheckBoxPreference android:title="@string/voip_notify_sound" android:layout="@layout/mm_preference" android:persistent="true" android:key="contact_info_voip_sound_notify" />
+    <Preference android:title="@string/voip_setting_sound_tip" android:layout="@layout/mm_preference_info" android:key="contact_info_voip_sound_tip" />
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/settings_plugins_install" android:layout="@layout/install_btn" android:key="contact_info_voip_install" />
+    <Preference android:title="@string/settings_plugins_uninstall" android:layout="@layout/logout_btn" android:key="contact_info_voip_uninstall" />
+    <PreferenceCategory />
+</PreferenceScreen>

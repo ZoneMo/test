@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.tools.TestTimeForChatting android:orientation="vertical" android:id="@id/chatting_bg_ll" android:background="@null" android:focusable="false" android:focusableInTouchMode="false" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/chatting_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.tencent.mm.ui.base.MMPullDownView android:id="@id/chatting_pull_down_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/chatting_history_lv" android:background="@null" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/mm_chat_listitem" android:cacheColorHint="#00000000" android:divider="@null" />
+        </com.tencent.mm.ui.base.MMPullDownView>
+        <ViewStub android:id="@id/viewstub_bizwait" android:layout="@layout/chatting_viewstub_bizwait" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/viewstub_empty_search" android:layout="@layout/chatting_viewstub_empty_search" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/viewstub_chatting_animframe" android:layout="@layout/chatting_viewstub_chatting_animframe" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/viewstub_talkroom_popup_nav" android:layout="@layout/talkroom_popup_nav_viewstub_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/search_chat_content_ly" android:layout="@layout/search_chat_content" android:inflatedId="@id/search_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.tencent.mm.pluginsdk.ui.chat.ChatFooter android:id="@id/nav_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/viewstub_nav_footer_brand_qa" android:layout="@layout/nav_footer_brand_qa_viewstub_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/nav_custom_footer_viewstub" android:layout="@layout/chatting_footer_custom_viewstub" android:layout_width="fill_parent" android:layout_height="49.0dip" />
+    <ViewStub android:id="@id/viewstub_chatting_more_btn" android:layout="@layout/chatting_viewstub_more_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.tencent.mm.ui.tools.TestTimeForChatting>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/control_tab" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/tab_item_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/action_bar_tittle_color" android:gravity="center" android:id="@id/root_tab" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/plugin_qqmail_file_explorer_root_tag" android:layout_weight="1.0" />
+            <View android:id="@id/root_tab_selector" android:background="@color/wechat_green" android:layout_width="fill_parent" android:layout_height="@dimen/SmallestPadding" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/tab_item_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/action_bar_tittle_color" android:gravity="center" android:id="@id/sdcard_tab" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/plugin_qqmail_file_explorer_sdcard_tag" android:layout_weight="1.0" />
+            <View android:id="@id/sdcard_tab_selector" android:background="@color/wechat_green" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/SmallestPadding" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/qqmail_file_explorer_list_lv" android:layout_weight="1.0" style="@style/MMList" />
+</LinearLayout>

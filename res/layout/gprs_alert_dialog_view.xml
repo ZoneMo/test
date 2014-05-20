@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/main_gprs_alert_tips" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="@dimen/NormalPadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <CheckBox android:id="@id/gprs_alert_cb" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_down_show_nexttime" />
+    </LinearLayout>
+</LinearLayout>

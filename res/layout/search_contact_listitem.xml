@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/fmessage_contact_item_layout" android:layout_width="fill_parent" style="@style/MMListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/avatar_iv" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" android:layout_marginRight="@dimen/SmallerPadding" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/SmallerPadding" android:layout_weight="1.0">
+        <TextView android:id="@id/nickname_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:text="{nick}" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/MMFontTitleInList" />
+        <TextView android:id="@id/chatmember_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/nickname_tv" android:layout_alignBaseline="@id/nickname_tv" style="@style/MMFontTitleInList" />
+        <TextView android:id="@id/last_msg_tv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="{lastmsg}" android:singleLine="true" android:layout_below="@id/nickname_tv" android:layout_alignParentLeft="true" style="@style/MMFontTipInList" />
+    </RelativeLayout>
+</LinearLayout>

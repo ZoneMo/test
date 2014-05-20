@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="@color/semitransparent" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/popup_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mm_alert_content_view" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_title_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/mm_alert_title_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voip_attention_icon" />
+                <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/white" android:id="@id/mm_alert_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/voip_protect_disturb" />
+            </LinearLayout>
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_msg_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/hint_text_color" android:gravity="left" android:id="@id/mm_alert_msg_title" android:paddingLeft="7.0dip" android:paddingTop="13.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voip_send_request_title" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            <FrameLayout android:id="@id/mm_alert_custom_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mm_alert_bottom_view" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/mm_alert_ok_btn" android:layout_marginTop="14.0dip" android:text="@string/voip_send_invite_remind_msg" style="@style/MMBigGreenButton" />
+            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/hint_text_color" android:gravity="center" android:id="@id/mm_alert_msg_content" android:paddingTop="2.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/voip_invite_remind_tip" />
+            <Button android:id="@id/mm_alert_cancel_btn" android:layout_marginTop="10.0dip" android:layout_marginBottom="14.0dip" android:text="@string/app_cancel" style="@style/MMBigRedButton" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

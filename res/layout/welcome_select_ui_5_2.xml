@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff72c854" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="#ffffffff" android:layout_gravity="right" android:id="@id/welcome_language_tv" android:paddingLeft="15.0dip" android:paddingBottom="15.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginRight="13.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/welcome_logo_iv_source" android:layout_width="86.0dip" android:layout_height="86.0dip" android:src="@drawable/home_logo" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/welcome_5_2_icon_ll" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="96.0dip">
+        <ImageView android:id="@id/welcome_logo_iv_dest" android:layout_width="86.0dip" android:layout_height="86.0dip" android:src="@drawable/home_logo" />
+        <ImageView android:id="@id/welcome_5_2_app_name_iv" android:layout_width="120.0dip" android:layout_height="32.0dip" android:layout_marginTop="8.0dip" />
+        <TextView android:textSize="24.0dip" android:textColor="#ffd9ffcc" android:id="@id/welcome_5_2_hint1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" />
+        <TextView android:textSize="24.0dip" android:textColor="#ffd9ffcc" android:id="@id/welcome_5_2_hint2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/welcome_5_2_reg_ll" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textColor="#ff45c01a" android:id="@id/select_register_btn" android:background="@drawable/btn_style_white" android:layout_width="fill_parent" android:layout_height="46.0dip" android:text="@string/intro_create_account_qq" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffd0ffc0" android:id="@id/welcome_login_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="@string/welcome_aleady_have_account" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/welcome_login_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" android:text="@string/intro_existed_login" />
+    </LinearLayout>
+</FrameLayout>

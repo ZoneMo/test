@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/navpage" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/navpage" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mm.ui.base.MMPullDownView android:id="@id/pull_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ListView android:id="@id/clean_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:scrollingCache="false" android:divider="@null" />
+        </com.tencent.mm.ui.base.MMPullDownView>
+        <LinearLayout android:orientation="horizontal" android:id="@id/select_area" android:background="@drawable/bottombar_bg" android:padding="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_gravity="center_vertical" android:id="@id/info_tv" android:singleLine="true" android:layout_weight="1.0" style="@style/MMFontTitleInList" />
+            <Button android:layout_gravity="center_vertical" android:id="@id/del_btn" android:minWidth="@dimen/NormalButtonWidth" android:text="@string/app_delete" style="@style/MMSmallGreenButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0dip" android:textColor="@color/grey" android:gravity="center" android:layout_gravity="center" android:id="@id/empty_tip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/clean_nothing" />
+    </LinearLayout>
+</FrameLayout>

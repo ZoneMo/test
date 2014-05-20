@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.base.MaskLayout android:id="@id/chatting_avatar_mask" android:focusable="false" style="@style/ChattingUIAvatarMaskFrom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/chatting_avatar_iv" android:focusable="false" android:layout_marginRight="0.0dip" style="@style/ChattingUIAvatarFrom" />
+</com.tencent.mm.ui.base.MaskLayout>

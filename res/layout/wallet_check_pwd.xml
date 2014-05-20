@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wallet="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/input_tip" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginRight="@dimen/LargePadding" android:text="@string/wallet_check_pwd_tip" style="@style/WalletInputTips" />
+    <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/input_et" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginRight="@dimen/LargePadding" wallet:editType="password" wallet:hintTextBg="@drawable/transparent_background" style="@style/MMWalletPwdEt" />
+    <include layout="@layout/cft_keyboard_layout" />
+</LinearLayout>

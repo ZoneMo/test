@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/download_fail_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_download_fail_icon" />
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/white" android:id="@id/download_fail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/imgdownload_fail_or_cleaned" />
+    </LinearLayout>
+</RelativeLayout>

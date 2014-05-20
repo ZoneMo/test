@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/shake_item_default_bgimg" android:layout="@layout/mm_preference" android:key="shake_item_default_bgimg" />
+    <Preference android:title="@string/shake_item_change_bgimg" android:layout="@layout/mm_preference" android:key="shake_item_change_bgimg" />
+    <CheckBoxPreference android:title="@string/shake_item_sound" android:layout="@layout/mm_preference" android:persistent="false" android:key="shake_item_sound" />
+    <PreferenceTitleCategory android:title=" " />
+    <Preference android:title="@string/say_hi_list_shake_title" android:layout="@layout/mm_preference" android:key="say_hi_list_shake_title" />
+    <Preference android:title="@string/shake_item_shake_person_list" android:layout="@layout/mm_preference" android:key="shake_item_shake_person_list" />
+    <Preference android:title="@string/shake_item_shake_music_list" android:layout="@layout/mm_preference" android:key="shake_item_shake_music_list" />
+    <Preference android:title="@string/shake_item_shake_webpage_list" android:layout="@layout/mm_preference" android:key="shake_item_shake_webpage_list" />
+    <Preference android:title="@string/shake_item_shake_tv_list" android:layout="@layout/mm_preference" android:key="shake_item_shake_tv_list" />
+    <PreferenceTitleCategory android:title=" " />
+    <com.tencent.mm.ui.base.preference.SwitchKeyValuePreference android:title="@string/shake_item_shake_tran_img" android:layout="@layout/mm_preference" android:key="shake_item_shake_tran_img" />
+    <com.tencent.mm.ui.base.preference.SwitchKeyValuePreference android:title="@string/shake_item_shake_bookmark" android:layout="@layout/mm_preference" android:key="shake_item_shake_bookmark" />
+    <PreferenceSmallCategory />
+</PreferenceScreen>

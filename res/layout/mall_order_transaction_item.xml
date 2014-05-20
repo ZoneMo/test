@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargerPadding" android:paddingRight="@dimen/LargePadding" android:paddingBottom="@dimen/LargerPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mall_order_normal_padding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_info_spid_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/wallet_order_info_spid" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_info_spid" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mall_order_normal_padding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_info_trans_id_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/wallet_order_info_trans_id" />
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_info_trans_id" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mall_order_normal_padding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_info_cre_time_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/wallet_order_info_cre_time" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_info_cre_time" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mall_order_normal_padding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_info_status_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/wallet_order_info_status" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/wallet_order_info_status" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_info_bankcard_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/wallet_order_info_bankcard" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_info_bankcard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/mall_order_receipt_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mall_order_normal_padding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_receipt_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/mall_order_receipt_title" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_receipt" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/mall_order_merchant_assured_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mall_order_normal_padding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_merchant_assured_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/mall_order_merchant_assured_title" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_merchant_assured" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/mall_order_price_root_layout" android:background="@drawable/comm_list_item_selector" android:paddingTop="@dimen/LargerPadding" android:paddingBottom="@dimen/LargerPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginRight="@dimen/LargePadding">
+        <LinearLayout android:id="@id/mall_order_product_total_price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mall_order_normal_padding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_product_total_price_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/mall_order_product_total_price_title" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_product_total_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/mall_order_deliver_price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mall_order_normal_padding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_deliver_price_tile" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/mall_order_deliver_price_title" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_deliver_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/mall_order_preferential_price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_preferential_price_title" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/mall_order_preferential_price_title" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_preferential_price" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/mall_order_total_price_layout" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargerPadding" android:paddingRight="@dimen/LargePadding" android:paddingBottom="@dimen/LargerPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/mall_order_total_price_title" android:paddingTop="7.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/mall_order_total_price_title" android:singleLine="true" />
+        <TextView android:textSize="46.0dip" android:textColor="@color/mall_order_detail_item_title_color" android:gravity="right|center" android:id="@id/mall_order_total_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

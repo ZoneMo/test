@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/mall_index_topbar_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bankcard_area" android:background="@drawable/submenu_item_selector" android:paddingTop="11.0dip" android:paddingBottom="17.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/bankcard_pic" android:layout_marginLeft="47.0dip" android:src="@drawable/mall_index_bankcard_bind" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/MallIndexEntrancePic" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/wallet_index_ui_bankcard" android:layout_toRightOf="@id/bankcard_pic" android:layout_centerVertical="true" style="@style/MallIndexEntranceText" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/offline_area" android:background="@drawable/submenu_item_selector" android:paddingTop="11.0dip" android:paddingBottom="17.0dip" android:visibility="gone" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/offline_pic" android:src="@drawable/mall_index_card" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/MallIndexEntrancePic" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:text="@string/wallet_index_ui_offline_entrance" android:layout_below="@id/offline_pic" android:layout_centerHorizontal="true" style="@style/MallIndexEntranceText" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/msg_area" android:background="@drawable/submenu_item_selector" android:paddingTop="11.0dip" android:paddingBottom="17.0dip" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/msg_pic" android:layout_marginLeft="38.0dip" android:src="@drawable/mall_index_msg" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/MallIndexEntrancePic" />
+        <TextView android:id="@id/msg_tip" android:visibility="gone" android:layout_alignTop="@id/msg_pic" android:layout_alignRight="@id/msg_pic" style="@style/NewTipsStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/wallet_index_ui_my_msg" android:layout_toRightOf="@id/msg_pic" android:layout_centerVertical="true" style="@style/MallIndexEntranceText" />
+    </RelativeLayout>
+</LinearLayout>

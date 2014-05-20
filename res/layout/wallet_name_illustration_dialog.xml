@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/wallet_illustrate_dialog_subtitle_color" android:textColorLink="#ff718bc1" android:gravity="left" android:autoLink="phone" android:padding="@dimen/LargePadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_card_name_illustraction_detail"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

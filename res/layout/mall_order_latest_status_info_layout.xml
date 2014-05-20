@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/order_latest_status_info_layout" android:paddingLeft="@dimen/LargerPadding" android:paddingRight="@dimen/LargerPadding" android:visibility="visible" android:layout_height="100.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" style="@style/MallOrderDetailItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/order_merchant_logo_img" android:background="@drawable/mall_order_detail_frame" android:layout_width="53.299988dip" android:layout_height="53.299988dip" android:src="@drawable/mall_order_trade_state_icon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:ellipsize="end" android:id="@id/order_latest_status_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:ellipsize="end" android:id="@id/order_latest_status_subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/HintTextSize" android:textColor="@color/white" android:id="@id/order_confirm_result_btn" android:background="@drawable/btn_style_green" android:visibility="gone" android:layout_width="69.0dip" android:layout_height="33.299988dip" android:layout_marginLeft="10.0dip" android:text="@string/mall_order_confirm_result_text" />
+</LinearLayout>

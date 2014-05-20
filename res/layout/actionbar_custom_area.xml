@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/click_area" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/arrow_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/SmallPadding" android:src="@drawable/actionbar_up_indicator" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:layout_width="39.0dip" android:layout_height="36.0dip" android:layout_toRightOf="@id/arrow_area" android:layout_centerVertical="true">
+            <ImageView android:id="@id/logo_area" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/actionbar_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="11.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/unread_area" android:background="@drawable/to_read_tips_onbackbtn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/action_bar_tittle_color" android:ellipsize="end" android:gravity="center" android:id="@id/title_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+        <TextView android:textSize="@dimen/HintTextSize" android:ellipsize="end" android:id="@id/sub_title_area" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/mute_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/BasicPaddingSize" android:src="@drawable/chat_mute_notify_title_icon" />
+    <ImageView android:id="@id/phone_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/BasicPaddingSize" android:src="@drawable/chat_phone_notify_title_icon" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/oldversion_container" android:background="@drawable/tipbar_bg_red_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/oldversion_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:src="@drawable/favorites_warning_red" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/oldversion_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:text="@string/favorite_oldversion_title" android:layout_toRightOf="@id/oldversion_icon" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/oldversion_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/favorite_oldversion_content" android:layout_below="@id/oldversion_title" android:layout_alignLeft="@id/oldversion_title" />
+</RelativeLayout>

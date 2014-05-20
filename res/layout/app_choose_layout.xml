@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/popup_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/LargestTextSize" android:layout_marginBottom="@dimen/LargestTextSize" android:minWidth="@dimen/MinDialogWidth" android:dividerPadding="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/wechat_green" android:gravity="center_vertical" android:id="@id/app_title" android:background="@color/menu_normal_color" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/NormalListHeight" />
+    <ImageView android:id="@id/app_title_divider" android:background="@color/wechat_green" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" />
+    <ListView android:layout_gravity="center" android:id="@id/app_list" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/alert_btn_bg" android:cacheColorHint="@null" android:divider="@color/menu_devider_color" android:dividerHeight="@dimen/DividerHeight" android:layout_weight="1.0" />
+    <ImageView android:background="@color/menu_devider_color" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/app_button_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:enabled="false" android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/app_button_always" android:background="@drawable/alert_btn_bg" android:layout_width="0.0dip" android:layout_height="@dimen/NormalButtonHeight" android:text="@string/app_use_always" android:layout_weight="1.0" />
+        <ImageView android:id="@id/mm_alert_btn_divider" android:background="@color/menu_devider_color" android:layout_width="@dimen/DividerHeight" android:layout_height="fill_parent" />
+        <Button android:enabled="false" android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/app_button_once" android:background="@drawable/alert_btn_bg" android:layout_width="0.0dip" android:layout_height="@dimen/NormalButtonHeight" android:text="@string/app_use_once" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

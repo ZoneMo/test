@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <PreferenceTitleCategory android:title="@string/settings_auto_friends_addressbook_tip" android:key="settings_add_friends_addressbook_tip" />
+    <CheckBoxPreference android:title="@string/settings_need_verify" android:layout="@layout/mm_preference" android:key="settings_need_verify" />
+    <CheckBoxPreference android:title="@string/contact_info_recommend_qqfriends_to_me" android:key="settings_recommend_qqfriends_to_me" />
+    <CheckBoxPreference android:title="@string/contact_info_recommend_mobilefriends_to_me" android:key="settings_recommend_mobilefriends_to_me" />
+    <CheckBoxPreference android:title="@string/settings_find_google_contact" android:layout="@layout/mm_preference" android:key="settings_find_google_contact" />
+    <CheckBoxPreference android:title="@string/contact_info_autoadd_mobilefriends" android:persistent="false" android:key="settings_autoadd_mobilefriends" />
+    <Preference android:title="@string/settings_private_blacklist" android:layout="@layout/mm_preference" android:key="settings_about_blacklist" />
+    <PreferenceTitleCategory android:title="@string/settings_catalog_can_search_me" />
+    <CheckBoxPreference android:title="@string/settings_find_me_by_weixin" android:layout="@layout/mm_preference" android:key="settings_find_me_by_weixin" />
+    <CheckBoxPreference android:title="@string/settings_find_me_by_mobile" android:layout="@layout/mm_preference" android:key="settings_find_me_by_mobile" />
+    <CheckBoxPreference android:title="@string/settings_find_me_by_QQ" android:layout="@layout/mm_preference" android:key="settings_find_me_by_QQ" />
+    <CheckBoxPreference android:title="@string/settings_find_me_by_google" android:layout="@layout/mm_preference" android:key="settings_find_me_by_google" />
+    <PreferenceTitleCategory android:title="@string/settings_auto_friends_timeline_tip" android:key="settings_add_friends_timeline_tip" />
+    <Preference android:title="@string/sns_outside_permiss" android:key="timline_outside_permiss" />
+    <Preference android:title="@string/sns_black_permiss" android:key="timeline_black_permiss" />
+    <Preference android:title="@string/settings_privacy_edit_sns_group" android:key="edit_timeline_group" />
+    <CheckBoxPreference android:title="@string/contact_info_feedsapp_stranger" android:layout="@layout/mm_preference" android:key="timeline_stranger_show" />
+    <PreferenceCategory />
+</PreferenceScreen>

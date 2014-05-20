@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/game_burst_aircharft_bkg_big" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/game_props_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="{title}" android:singleLine="true" style="@style/GameTitleText" />
+    <TextView android:textSize="16.0dip" android:textColor="@*android:color/black" android:gravity="center" android:id="@id/game_props_sub_title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="@drawable/game_burst_aircraft_bkg_big_line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <GridView android:id="@id/game_props_gridview" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="4.0dip" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:listSelector="@*android:color/transparent" android:numColumns="3" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="@*android:color/black" android:gravity="left" android:id="@id/game_props_name" android:background="@color/game_props_explanation_color" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/game_props_name_color" android:gravity="left" android:id="@id/game_props_explanation" android:background="@color/game_props_explanation_color" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:maxLines="2" android:lines="2" android:minLines="2" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/game_lift_layout" android:paddingLeft="12.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tools_life" />
+        <TextView android:id="@id/game_lift_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/GameMessageText" />
+    </LinearLayout>
+    <View android:background="@drawable/game_burst_aircraft_bkg_big_line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/game_bottom_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="7.0dip">
+        <Button android:id="@id/game_btn1" android:background="@drawable/game_burst_aircraft_button_bule_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/shoot_back_to_wechat" android:layout_weight="1.0" style="@style/GameButtonText" />
+        <Button android:id="@id/game_btn2" android:background="@drawable/game_burst_aircraft_button_bule_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/shoot_play_game" android:layout_weight="1.0" style="@style/GameButtonText" />
+    </LinearLayout>
+</LinearLayout>

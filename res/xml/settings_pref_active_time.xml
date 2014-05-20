@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <CheckBoxPreference android:title="@string/settings_active_time_full" android:layout="@layout/mm_preference" android:persistent="true" android:key="settings_active_time_full" />
+    <Preference android:title="@string/settings_active_begin_time" android:layout="@layout/mm_preference" android:key="settings_active_begin_time" />
+    <Preference android:title="@string/settings_active_end_time" android:layout="@layout/mm_preference" android:key="settings_active_end_time" />
+    <Preference android:title="@string/settings_active_time_tip" android:layout="@layout/mm_preference_info" android:key="settings_active_time_tip" />
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/NormalListHeight" android:minHeight="@dimen/NormalListHeight" style="@style/MMListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/icon_iv" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" />
+    <TextView android:textColor="@color/search_listbtn_text_color" android:layout_gravity="center_vertical" android:id="@id/nickname_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0" style="@style/MMFontTitleInList" />
+</LinearLayout>

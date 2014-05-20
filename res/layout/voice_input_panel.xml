@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/voice_panel_display_view" android:layout_width="fill_parent" android:layout_height="215.0dip">
+        <com.tencent.mm.pluginsdk.ui.VoiceSearchLayout android:layout_gravity="center" android:id="@id/voice_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/bottombar_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:weightSum="2.0">
+            <Button android:textColor="@color/normal_text_color" android:id="@id/clear_btn" android:background="@drawable/bottom_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/voice_search_clear_btn" android:layout_weight="1.0" />
+            <Button android:textColor="@color/normal_text_color" android:id="@id/send_btn" android:background="@drawable/bottom_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/voice_search_send_btn" android:layout_weight="1.0" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:layout="@layout/pluginsdk_helper_header" android:key="contact_info_header_helper" />
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/contact_info_lbs_go_lbs" android:layout="@layout/mm_preference" android:key="contact_info_lbs_go_lbs" />
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/contact_info_lbs_clear_info" android:layout="@layout/normal_pref_btn" android:key="contact_info_lbs_clear_info" />
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/settings_plugins_install" android:layout="@layout/install_btn" android:key="contact_info_lbs_install" />
+    <Preference android:title="@string/settings_plugins_uninstall" android:layout="@layout/logout_btn" android:key="contact_info_lbs_uninstall" />
+    <PreferenceCategory />
+</PreferenceScreen>

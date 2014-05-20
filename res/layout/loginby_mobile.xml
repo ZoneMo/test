@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/navpage" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargestPadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/SmallPadding" android:text="@string/regbymobile_reg_tip" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/country_code_ll" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight" android:layout_marginBottom="@dimen/LargerPadding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/regbymoile_reg_country" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/wechat_green" android:id="@id/country_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/country_normal_name" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargerPadding">
+            <EditText android:textSize="@dimen/NormalTextSize" android:textColor="@color/hint_text_color" android:gravity="center" android:id="@id/country_code" android:background="@drawable/input_bar_bg_active" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="@string/country_normal_code" android:inputType="phone" />
+            <com.tencent.mm.ui.base.MMClearEditText android:textSize="@dimen/NormalTextSize" android:textColorHint="@color/hint_color_white_bg" android:id="@id/regbymobilereg_mobile_et" android:background="@drawable/input_special_bar_bg_active" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/regbymoile_reg_addr_hint" android:inputType="phone">
+                <requestFocus />
+            </com.tencent.mm.ui.base.MMClearEditText>
+        </LinearLayout>
+        <Button android:textSize="@dimen/HintTextSize" android:textColor="@color/link_color_selector" android:id="@id/login_problem" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loginby_encounter_problems" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/HintTextSize" android:id="@id/login_other_way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="33.0dip" android:text="@string/loginby_mobile_other_login" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/MMBigGreyButton" />
+</RelativeLayout>

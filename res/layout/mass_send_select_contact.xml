@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/mass_send_contactlist" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/AddressScrollBarWidth" android:focusable="true" android:scrollbars="none" android:transcriptMode="disabled" style="@style/MMList" />
+        <com.tencent.mm.ui.base.AlphabetScrollBar android:id="@id/mass_send_scrollbar" android:layout_width="@dimen/AddressScrollBarWidth" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:background="@drawable/bottombar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/mass_send_next" android:layout_margin="@dimen/SmallPadding" android:minWidth="@dimen/NormalButtonWidth" android:text="@string/app_send" style="@style/MMSmallGreenButton" />
+    </LinearLayout>
+</LinearLayout>

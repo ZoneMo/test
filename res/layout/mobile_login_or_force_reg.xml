@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/NormalPadding" android:paddingTop="@dimen/LargerPadding" android:paddingRight="@dimen/NormalPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/no_avatar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/avatar_question_mark_iv" android:layout_width="105.0dip" android:layout_height="105.0dip" android:src="@drawable/signup_question_mark" />
+            <TextView android:textSize="@dimen/BigerTextSize" android:textStyle="bold" android:textColor="@color/normal_text_color" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/bind_mcontact_verify_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding" android:singleLine="true" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/normal_text_color" android:gravity="center" android:id="@id/no_avatar_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/NormalPadding" android:text="@string/mobile_input_already_bind_no_avatar" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/has_avatar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/avatar_iv" android:layout_width="@dimen/LargerIconSize" android:layout_height="@dimen/LargerIconSize" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/normal_text_color" android:gravity="center" android:id="@id/nickname_tv" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/SmallPadding" android:layout_marginBottom="@dimen/SmallPadding" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:gravity="center" android:id="@id/has_avatar_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mobile_input_already_bind_has_avatar" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/white" android:gravity="center" android:id="@id/mm_alert_msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <Button android:id="@id/continue_login" android:layout_marginTop="@dimen/NormalPadding" android:text="@string/mobile_input_continue_login" style="@style/MMBigGreenButton" />
+        <Button android:id="@id/force_reg" android:layout_marginTop="@dimen/NormalPadding" android:text="@string/mobile_input_force_reg" style="@style/MMBigGreyButton" />
+    </LinearLayout>
+</ScrollView>

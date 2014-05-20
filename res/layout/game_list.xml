@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/game_list_lv" android:background="@color/white" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/game_null_bg" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0dip" />
+    <RelativeLayout android:id="@id/empty_game_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="#ff737373" android:gravity="center" android:background="@null" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/game_authorized_list_empty" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

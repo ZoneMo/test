@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/comm_list_item_selector_no_divider" android:paddingTop="@dimen/LargePadding" android:paddingBottom="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/contact_info_avatar_iv" android:layout_width="@dimen/BigAvatarSize" android:layout_height="@dimen/BigAvatarSize" android:layout_marginRight="@dimen/LargePadding" android:src="@drawable/default_avatar" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:ellipsize="end" android:id="@id/contact_info_nickname_tv" android:layout_width="wrap_content" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
+                    <ImageView android:id="@id/contact_info_sex_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallerPadding" android:src="@drawable/ic_sex_male" />
+                    <ImageView android:id="@id/contact_info_vuserinfo_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallerPadding" />
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="right" android:id="@id/contact_info_sns_black_iv" android:background="@null" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:src="@drawable/circle_notreceive" android:lines="0" />
+                    <ImageView android:layout_gravity="right" android:id="@id/contact_info_sns_iv" android:background="@null" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallerPadding" android:button="@null" android:src="@drawable/circle_notvisible" android:lines="0" />
+                    <CheckBox android:layout_gravity="right" android:id="@id/contact_info_star_iv" android:background="@null" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallerPadding" android:button="@null" android:lines="0" android:drawableTop="@drawable/star_checkbox" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@id/contact_info_account_deleted_tv" android:visibility="gone" android:text="@string/contact_info_account_deleted" style="@style/MMFontPreferenceWarning" />
+            <TextView android:id="@id/contact_info_username_tv" android:text="@string/app_field_username" style="@style/MMFontPreferenceSmall" />
+            <TextView android:id="@id/contact_info_chatroom_nickname_tv" android:visibility="gone" android:text="@string/contact_info_chatroom_nickname" style="@style/MMFontPreferenceSmall" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@id/contact_info_nickname_when_has_remark_tv" android:visibility="gone" android:layout_width="0.0dip" android:text="@string/contact_info_nickname" android:layout_weight="1.0" style="@style/MMFontPreferenceSmall" />
+                <Button android:id="@id/contact_info_remarkname_btn" android:layout_height="wrap_content" android:text="@string/contact_info_change_remarkname" style="@style/MMSmallGreyButton" />
+                <Button android:id="@id/contact_info_snspermission_btn" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:text="@string/contact_info_mod_snspermission" style="@style/MMSmallGreyButton" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:gravity="center" android:id="@id/contact_info_edit_btn" android:visibility="gone" android:text="@string/app_edit" style="@style/MMSmallGreenButton" />
+    </LinearLayout>
+    <com.tencent.mm.pluginsdk.ui.preference.FMessageListView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/contact_info_fmessage_listview" android:background="@drawable/preference_sayhi_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/SmallPadding" />
+    <TextView android:gravity="center" android:id="@id/contact_info_hing_tv" android:background="@drawable/pluginsdk_header_hint_bg" android:padding="@dimen/SmallPadding" android:visibility="gone" android:layout_marginTop="@dimen/SmallPadding" android:minHeight="@dimen/SmallListHeight" android:text="@string/contact_info_filehelper_hint" android:singleLine="false" style="@style/MMBriefText" />
+</LinearLayout>

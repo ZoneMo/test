@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="0.0dip" style="@style/MMPreferencePage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" layout="@layout/mm_preference_list_content" />
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="#ff225a8f" android:gravity="bottom|center" android:id="@id/expose_detail_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/biz_report_expose_succeed_detail_text" />
+</LinearLayout>

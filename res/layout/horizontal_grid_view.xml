@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.tencent.mm.ui.base.MMPageControlView android:gravity="center" android:id="@id/tips_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/activity_tip_area" android:background="@drawable/mall_index_entrance_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:layout_gravity="right|center" android:id="@id/activity_info" android:layout_width="100.0dip" android:singleLine="true" android:layout_toLeftOf="@id/tip_indicator" style="@style/NewTipsStyle" />
+            <ImageView android:id="@id/tip_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="6.0dip" android:src="@drawable/mm_submenu" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_horizontal" android:id="@id/roominfo_img" android:src="@drawable/default_avatar_shadow" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/RoomInfoItemAvatar" />
+    <ImageView android:gravity="center" android:id="@id/room_info_contact_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/appitem_del_btn" android:layout_alignLeft="@id/roominfo_img" android:layout_alignTop="@id/roominfo_img" />
+    <ImageView android:id="@id/room_info_contact_status" android:visibility="visible" android:layout_width="25.0dip" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/talk_room_avatar_fg" android:layout_alignRight="@id/roominfo_img" android:layout_alignBottom="@id/roominfo_img" />
+    <TextView android:id="@id/roominfo_contact_name" android:text="name" android:layout_below="@id/roominfo_img" android:layout_centerHorizontal="true" style="@style/RoomInfoItemName" />
+    <TextView android:id="@id/roominfo_contact_name_for_span" android:visibility="gone" android:layout_below="@id/roominfo_img" android:layout_centerHorizontal="true" style="@style/RoomInfoItemName" />
+</RelativeLayout>

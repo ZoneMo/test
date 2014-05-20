@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/normal_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tag_name" android:layout_width="wrap_content" android:layout_height="@dimen/SmallListHeight" android:maxWidth="200.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/normal_text_color" android:id="@id/sns_tag_count" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_toRightOf="@id/tag_name" android:layout_centerVertical="true" />
+    <Button android:id="@id/del_btn" android:visibility="visible" android:layout_marginRight="2.0dip" android:minWidth="60.0dip" android:text="@string/app_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/MMSmallRedButton" />
+</RelativeLayout>

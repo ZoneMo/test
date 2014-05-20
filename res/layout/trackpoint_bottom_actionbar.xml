@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/trackpoint_bottom_actionbar_ll" android:background="@drawable/transparent_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="center" android:id="@id/share_speak" android:background="@drawable/location_sharing_speak_btn" android:visibility="gone" android:layout_width="73.0dip" android:layout_height="73.0dip" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+</RelativeLayout>

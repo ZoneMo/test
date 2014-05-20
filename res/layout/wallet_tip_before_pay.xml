@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:padding="@dimen/LargePadding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/MinDialogWidth">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mm_alert_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/mm_alert_title_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/MediumListHeight">
+                    <ImageView android:id="@id/mm_alert_title_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/NormalPadding" />
+                    <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/wechat_green" android:gravity="center" android:id="@id/mm_alert_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_wechat_safe_purchase" />
+                </LinearLayout>
+                <ImageView android:background="@color/wechat_green" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" />
+            </LinearLayout>
+            <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/mm_alert_msg_area" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding">
+                        <ImageView android:id="@id/ed_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pay_edu_illustration1" android:layout_centerHorizontal="true" />
+                        <ImageView android:id="@id/head_area" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="30.0dip" android:scaleType="fitXY" android:layout_alignTop="@id/ed_content" android:layout_alignRight="@id/ed_content" />
+                    </RelativeLayout>
+                    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/dialog_msg_color" android:gravity="center" android:id="@id/mm_alert_msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/LargePadding" android:text="@string/wallet_tip_before_pay_message" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <ImageView android:background="@color/menu_devider_color" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_bottom_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mm_alert_button_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/mm_alert_ok_btn" android:background="@drawable/alert_btn_bg" android:layout_width="0.0dip" android:layout_height="@dimen/NormalButtonHeight" android:text="@string/voice_reminder_dialog_ignore" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

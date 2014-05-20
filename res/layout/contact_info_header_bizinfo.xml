@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingTop="@dimen/LargePadding" android:paddingBottom="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/frameLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/LargePadding">
+        <ImageView android:layout_gravity="center" android:id="@id/contact_info_avatar_iv" android:layout_width="@dimen/BigAvatarSize" android:layout_height="@dimen/BigAvatarSize" android:src="@drawable/brand_default_head" android:scaleType="fitXY" android:layout_centerInParent="true" />
+        <View android:id="@id/contact_info_avatar_iv_mask" android:background="@drawable/biz_icon_selector" android:layout_width="@dimen/BigAvatarSize" android:layout_height="@dimen/BigAvatarSize" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/frameLayout1" android:layout_alignTop="@id/frameLayout1" android:layout_alignBottom="@id/frameLayout1">
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/normal_text_color" android:ellipsize="end" android:id="@id/contact_info_nickname_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="{nick_name}" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/contact_info_username_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="{user_name}" />
+    </LinearLayout>
+    <ImageView android:id="@id/biz_favor" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/star_mark" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

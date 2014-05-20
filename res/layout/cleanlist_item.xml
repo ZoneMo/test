@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/contactitem_layout" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MMListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pre_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding">
+        <FrameLayout android:id="@id/content" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/content_iv" android:background="@color/darkgrey" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" />
+            <ImageView android:layout_gravity="center" android:id="@id/content_icon" android:layout_width="@dimen/SmallIconSize" android:layout_height="@dimen/SmallIconSize" android:src="@drawable/music_playicon_normal" android:scaleType="fitXY" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/info_ll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/LargePadding">
+            <TextView android:id="@id/size_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/BasicPaddingSize" android:text="{{size}}" android:singleLine="true" style="@style/MMFontTitleInList" />
+            <TextView android:id="@id/clean_filename" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="{{filename}}" android:singleLine="true" style="@style/MMFontTipInList" />
+            <TextView android:id="@id/clean_title" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="{{nick}}" android:singleLine="true" style="@style/MMFontTipInList" />
+        </LinearLayout>
+        <CheckBox android:id="@id/select_cb" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/SmallPadding" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

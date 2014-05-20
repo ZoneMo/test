@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/root" android:background="@drawable/submenu_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="@dimen/MinMenuWidth">
+        <ImageView android:id="@id/icon" android:layout_width="@dimen/MiniAvatarSize" android:layout_height="@dimen/MiniAvatarSize" android:layout_marginRight="@dimen/SmallPadding" />
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/new_tips" android:visibility="gone" android:layout_marginLeft="@dimen/SmallPadding" style="@style/NewTipsStyle" />
+        <ImageView android:id="@id/new_dot" android:visibility="gone" android:layout_marginLeft="@dimen/SmallPadding" style="@style/UnreadDotStyle" />
+        <TextView android:id="@id/unread_count" android:visibility="gone" android:layout_marginLeft="@dimen/SmallPadding" style="@style/UnreadCountTipsStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/navpage" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargestPadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/SmallPadding" android:text="@string/regbymobile_reg_tip" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/country_code_ll" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight" android:layout_marginBottom="@dimen/LargerPadding">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/regbymoile_reg_country" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/wechat_green" android:id="@id/country_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/country_normal_name" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargerPadding">
+            <EditText android:textSize="@dimen/NormalTextSize" android:textColor="@color/hint_text_color" android:gravity="center" android:id="@id/country_code" android:background="@drawable/input_bar_bg_active" android:layout_width="70.0dip" android:layout_height="fill_parent" android:text="@string/country_normal_code" android:inputType="phone" />
+            <com.tencent.mm.ui.base.MMClearEditText android:textSize="@dimen/NormalTextSize" android:textColorHint="@color/hint_color_white_bg" android:id="@id/regbymobilereg_mobile_et" android:background="@drawable/input_special_bar_bg_active" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/regbymoile_reg_addr_hint" android:inputType="phone">
+                <requestFocus />
+            </com.tencent.mm.ui.base.MMClearEditText>
+        </LinearLayout>
+        <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/reg_license" style="@style/MMLine">
+            <CheckBox android:textSize="13.0dip" android:textColor="@color/black" android:id="@id/agree_cb" android:paddingLeft="25.0dip" android:visibility="gone" android:checked="true" android:text="@string/license_agree" style="@style/RegUICheckBox" />
+            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/hint_text_color" android:id="@id/agree_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/license_agree_text" />
+            <Button android:textSize="@dimen/SmallestTextSize" android:textColor="@color/link_color_selector" android:id="@id/agree_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/license_detail" />
+        </LinearLayout>
+        <Button android:id="@id/login_tip" style="@style/RegUIHyperText" />
+    </LinearLayout>
+</ScrollView>

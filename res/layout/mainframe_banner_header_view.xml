@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@drawable/bottombar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/NormalListHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mainframe_banner_icon" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" android:layout_marginLeft="8.0dip" android:src="@drawable/userguide_avatar_icon" android:contentDescription="@string/app_name" />
+    <TextView android:textColor="@color/black" android:id="@id/mainframe_banner_text" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/SmallPadding" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+    <ImageView android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/userguide_enter_icon" />
+</LinearLayout>

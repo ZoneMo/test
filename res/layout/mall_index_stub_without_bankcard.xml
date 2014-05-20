@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/content" android:background="@drawable/comm_list_item_selector" android:paddingTop="8.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/LargePadding" android:minHeight="@dimen/SmallListHeight" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/wallet_index_ui_bind_bankcard" android:singleLine="true" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+    <TextView android:id="@id/summary" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="24.0dip" android:text="@string/wallet_index_use_wechat_pay" android:singleLine="true" style="@style/MMFontPreferenceSummary" />
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/voip_activity_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mm.plugin.voip.video.CaptureView android:id="@id/CaptureVideo" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/video_view_root" android:background="#ff141414" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.tencent.mm.plugin.voip.video.OpenGlView android:id="@id/bigVideo" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+            <Button android:id="@id/voip_switch_camera_btn" android:background="@drawable/voip_switch_camera" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" />
+            <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <TextView android:textSize="16.0dip" android:textColor="#fff6f6f6" android:gravity="center" android:id="@id/voip_time_tv" android:background="@drawable/voip_toast_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60.0dip" android:text="00:00" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/voip_small_talker_bg" android:background="@drawable/voip_top_bg_cover" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/voip_small_talker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip">
+                <ImageView android:id="@id/voip_avatar_small" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+                <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip">
+                    <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/voip_avatar_small_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/regsetinfo_name" android:singleLine="true" />
+                    <TextView android:textSize="14.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/voip_avatar_small_tips" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/voip_invited_video_tip" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/voip_wechaticon" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/voip_wechaticon" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/voip_big_talker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="340.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/voip_avatar_big" android:visibility="visible" android:layout_width="120.0dip" android:layout_height="120.0dip" />
+        <TextView android:textSize="20.0dip" android:textColor="#ffc8c8c8" android:ellipsize="end" android:gravity="center" android:id="@id/voip_avatar_big_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/regsetinfo_name" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="#ffc8c8c8" android:gravity="center" android:id="@id/voip_time_tv_center" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:minWidth="60.0dip" android:text="00:00" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/audio_talking_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="48.0dip" android:layout_above="@id/voip_tool_bar">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="64.0dip">
+            <com.tencent.mm.plugin.voip.ui.MMCheckBox android:id="@id/mute_switch_checkbox" android:background="@drawable/voip_switch_audio_btn" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffc8c8c8" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/voip_mute_on" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.tencent.mm.plugin.voip.ui.MMCheckBox android:id="@id/speaker_switch_checkbox" android:background="@drawable/voip_switch_speaker_btn" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="80.0dip" />
+            <TextView android:textSize="16.0dip" android:textColor="#ffc8c8c8" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/voip_speaker_on" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/voipcall_hint" android:background="@drawable/voip_toast_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:layout_marginBottom="8.0dip" android:layout_above="@id/voip_tool_bar" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/voip_tool_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/voip_talking_bar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <Button android:textColor="#ff5b5b5b" android:id="@id/voip_switchto_audio_btn" android:visibility="gone" android:layout_width="fill_parent" android:layout_marginBottom="10.0dip" android:text="@string/voip_switchto_audio" style="@style/MMBigGreyButton" />
+            <Button android:id="@id/voip_hangup_btn" android:layout_width="fill_parent" android:text="@string/app_cancel" style="@style/MMBigRedButton" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/voip_incall_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/voip_invite_reject_btn" android:layout_width="0.0dip" android:text="@string/voip_reject_btn" android:layout_weight="1.0" style="@style/MMBigRedButton" />
+                <Button android:id="@id/invite_accept_video" android:layout_width="0.0dip" android:layout_marginLeft="8.0dip" android:text="@string/voip_accept_call" android:layout_weight="1.0" style="@style/MMBigGreenButton" />
+            </LinearLayout>
+            <Button android:textColor="#ff5b5b5b" android:id="@id/invite_accept_audio" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/voip_audioaccpet" android:layout_weight="1.0" style="@style/MMBigGreyButton" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

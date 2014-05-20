@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.tools.SearchViewNotRealTimeHelper android:id="@id/search_view" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargePadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/BasicPaddingSize" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="left" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_search_recommend_biz_tip" style="MMFontPreferenceLarge" />
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/empty_blacklist_tip_tv" android:padding="@dimen/LargePadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/contact_search_recommend_biz_tip" style="MMFontPreferenceLarge" />
+    <com.tencent.mm.ui.base.MMPullDownView android:id="@id/pull_down_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/SmallPadding" android:layout_weight="1.0">
+        <ListView android:textColor="@color/mm_pref_summary" android:id="@id/result_contactlist" android:background="@color/white" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:scrollingCache="false" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0px" />
+    </com.tencent.mm.ui.base.MMPullDownView>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.ui.friend.FriendSnsPreference android:title="@string/sns_dyna_photo_ui_title" android:key="album_dyna_photo_ui_title" />
+    <PreferenceTitleCategory />
+    <BigIconPreference android:title="@string/find_friends_by_qrcode" android:icon="@drawable/find_more_friend_scan" android:key="find_friends_by_qrcode" />
+    <BigIconPreference android:title="@string/shake_report_title" android:icon="@drawable/find_more_friend_shake" android:key="find_friends_by_shake" />
+    <BigIconPreference android:title="@string/nearby_friend_title" android:icon="@drawable/find_more_friend_near_icon" android:key="find_friends_by_near" />
+    <BigIconPreference android:title="@string/bottle_beach_title" android:icon="@drawable/find_more_friend_bottle" android:key="voice_bottle" />
+    <BigIconPreference android:title="@string/add_more_friends_title" android:icon="@drawable/find_more_friend_addfriend_icon" android:key="add_more_friends" />
+    <PreferenceTitleCategory />
+    <BigIconPreference android:title="@string/game_recommand" android:icon="@drawable/more_game" android:key="more_tab_game_recommend" />
+    <BigIconPreference android:title="@string/emoji_store" android:icon="@drawable/more_emoji_store" android:key="settings_emoji_store" />
+    <BigIconPreference android:title="@string/settings_mm_card_package" android:icon="@drawable/more_card_package" android:key="settings_mm_card_package" />
+</PreferenceScreen>

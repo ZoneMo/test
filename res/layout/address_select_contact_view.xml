@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tencent.mm.ui.NoDrawingCacheLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/contactitem_catalog" android:background="@drawable/list_thicklinecell_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding" android:text="A" />
+    <RelativeLayout android:background="@drawable/comm_list_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/ContactListHeight">
+        <CheckBox android:id="@id/contactitem_select_cb" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/LargerPadding" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/account_delete_text_color" android:id="@id/contactitem_account_delete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/NormalPadding" android:text="@string/address_account_deleted" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.tencent.mm.ui.AddressView android:id="@id/myview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/contactitem_select_cb" />
+    </RelativeLayout>
+</com.tencent.mm.ui.NoDrawingCacheLinearLayout>

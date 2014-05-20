@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/SmallListHeight" android:src="@drawable/net_webwechat_bigicon" />
+    <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/normal_text_color" android:gravity="center" android:id="@id/status_desc" android:background="@drawable/pluginsdk_header_hint_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:minHeight="@dimen/SmallListHeight" android:text="@string/webwx_logout_desc" />
+</LinearLayout>

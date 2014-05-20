@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.pluginsdk.ui.preference.HelperHeaderPreference android:layout="@layout/pluginsdk_helper_header" android:key="contact_info_header_helper" />
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/contact_info_go_to_sync" android:layout="@layout/mm_preference" android:key="contact_info_go_to_sync" />
+    <CheckBoxPreference android:title="@string/contact_info_remind_me_syncing" android:layout="@layout/mm_preference" android:key="contact_info_remind_me_syncing" />
+    <Preference android:title="@string/contact_info_remind_me_syncing_tip" android:layout="@layout/mm_preference_info" android:key="contact_info_remind_me_syncing_tip" />
+    <Preference android:title="@string/contact_info_qqsync_intro" android:layout="@layout/mm_preference" android:key="contact_info_qqsync_intro" />
+    <Preference android:title="@string/contact_info_qqsync_agreement" android:layout="@layout/mm_preference" android:key="contact_info_qqsync_agreement" />
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/settings_plugins_install" android:layout="@layout/install_btn" android:key="contact_info_qqsync_install" />
+    <Preference android:title="@string/settings_plugins_uninstall" android:layout="@layout/logout_btn" android:key="contact_info_qqsync_uninstall" />
+    <PreferenceCategory />
+</PreferenceScreen>

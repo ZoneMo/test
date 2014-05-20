@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/video_recorder_play_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.tencent.mm.ui.base.VideoView android:id="@id/video_recorder_play_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargestPadding">
+            <ProgressBar android:id="@id/video_preview_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MMProgressHorizontalSmall" />
+        </FrameLayout>
+        <ImageView android:id="@id/video_preview_stop_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargestPadding" android:src="@drawable/video_recorder_start_btn" />
+    </LinearLayout>
+</FrameLayout>

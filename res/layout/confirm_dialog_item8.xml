@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/confirm_dialog_container_ll" android:background="@color/semitransparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" style="@style/ConfirmDialog">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:id="@id/confirm_dialog_title_tv" android:text="hello" style="@style/ConfirmDialogTitle" />
+            <ImageView android:background="@color/wechat_green" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <ImageView android:id="@id/confirm_dialog_thumb_iv" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" android:src="@drawable/default_avatar" style="@style/ConfirmDialogThumb" />
+                <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="left" android:id="@id/confirm_dialog_message_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginTop="@dimen/LargePadding" android:layout_marginRight="0.0dip" android:maxWidth="158.0dip" android:text="message" android:singleLine="true" style="@style/ConfirmDialogTitle" />
+                    <TextView android:textSize="@dimen/BigTextSize" android:gravity="left" android:id="@id/confirm_dialog_count_tv" android:layout_marginLeft="@dimen/SmallerPadding" android:text="count" style="@style/ConfirmDialogMessage" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/mm_alert_btn_divider" android:background="@color/menu_devider_color" android:layout_width="fill_parent" android:layout_height="@dimen/DividerHeight" android:layout_marginTop="@dimen/LargePadding" />
+        <include layout="@layout/confirm_dialog_footer_btn" />
+    </LinearLayout>
+</LinearLayout>

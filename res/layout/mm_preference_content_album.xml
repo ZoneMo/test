@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@*android:id/title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
+    <TextView android:gravity="center_vertical" android:id="@id/album_title" android:layout_width="@dimen/FixedTitleWidth" android:layout_height="wrap_content" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
+    <com.tencent.mm.ui.widget.QImageView android:id="@id/image_iv1" android:layout_width="@dimen/LargeIconSize" android:layout_height="@dimen/LargeIconSize" android:layout_marginTop="@dimen/SmallPadding" android:layout_marginBottom="@dimen/SmallPadding" android:scaleType="fitXY" />
+    <com.tencent.mm.ui.widget.QImageView android:id="@id/image_iv2" android:layout_width="@dimen/LargeIconSize" android:layout_height="@dimen/LargeIconSize" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginTop="@dimen/SmallPadding" android:layout_marginBottom="@dimen/SmallPadding" android:scaleType="fitXY" />
+    <com.tencent.mm.ui.widget.QImageView android:id="@id/image_iv3" android:layout_width="@dimen/LargeIconSize" android:layout_height="@dimen/LargeIconSize" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginTop="@dimen/SmallPadding" android:layout_marginBottom="@dimen/SmallPadding" android:scaleType="fitXY" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/contactitem_catalog" android:background="@drawable/list_thicklinecell_bg" android:paddingTop="@dimen/LargePadding" android:paddingBottom="@dimen/SmallerPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="A" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/contactitem_layout" android:background="@drawable/comm_list_item_selector" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/contactitem_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="111" android:singleLine="true" style="@style/MMFontTitleInList" />
+        </LinearLayout>
+        <TextView android:id="@id/contactitem_signature" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="signature" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/ContactSignature" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_exit" android:background="@drawable/submenu_item_selector" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/NormalListHeight">
+        <ImageView android:layout_width="@dimen/MiniAvatarSize" android:layout_height="@dimen/MiniAvatarSize" android:layout_marginRight="@dimen/LargePadding" android:src="@drawable/menu_exit_icon" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logout_menu_exit" />
+            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/hint_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logout_menu_exit_hint" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/menu_logout" android:background="@drawable/submenu_item_selector_no_divider" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/NormalListHeight">
+        <ImageView android:layout_width="@dimen/MiniAvatarSize" android:layout_height="@dimen/MiniAvatarSize" android:layout_marginRight="@dimen/LargePadding" android:src="@drawable/menu_logout_icon" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logout_menu_logout" />
+            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/hint_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logout_menu_logout_hint" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

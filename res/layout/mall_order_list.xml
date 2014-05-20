@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.base.MMLoadMoreListView android:id="@id/mall_order_list_lv" android:focusable="true" android:transcriptMode="disabled" style="@style/MMList" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/empty_tip_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="100.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_order_nomessage_icon" />
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_list_empty_text_color" android:id="@id/empty_tip_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/wallet_order_list_ui_empty" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/order_action_item_divider_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="23.0dip" />
+    <TextView android:id="@id/order_action_item_divider_line" android:background="@drawable/list_thicklinecell_bg" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginRight="@dimen/LargePadding" />
+    <LinearLayout android:id="@id/order_action_item_content_layout" android:layout_height="56.0dip" style="@style/MallOrderDetailItem">
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:id="@id/order_action_item_title_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/order_action_item_subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" />
+    </LinearLayout>
+</LinearLayout>

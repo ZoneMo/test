@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="none" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MMBody">
+        <ImageView android:id="@id/security_account_state_icon" android:paddingBottom="33.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/accounts_warning_icon" android:contentDescription="@string/app_app" />
+        <TextView android:gravity="center" android:id="@id/security_account_tips" android:text="@string/safe_device_need_verify_phone" style="@style/MMBriefText" />
+        <Button android:id="@id/operation_btn" android:layout_marginTop="15.0dip" android:text="@string/safe_device_start_verify" style="@style/MMBigGreenButton" />
+        <Button android:id="@id/close_account_protect_btn" android:visibility="gone" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/safe_device_protect_close" style="@style/MMBigGreyButton" />
+    </LinearLayout>
+</ScrollView>

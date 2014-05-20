@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.tools.SearchViewNotRealTimeHelper android:id="@id/search_view_helper" android:background="@drawable/actionbar_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/DefaultActionbarHeightPort" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_bar" android:background="@drawable/actionbar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/DefaultActionbarHeightPort">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_btn_home" android:background="@drawable/actionbar_menu_selector" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/actionbar_up_indicator" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/actionbar_icon" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/white" android:ellipsize="end" android:gravity="left|center" android:id="@id/title" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/location_info" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/title_search_icon" android:background="@drawable/actionbar_menu_selector" android:focusable="true" android:layout_width="@dimen/DefaultActionbarHeightPort" android:layout_height="@dimen/DefaultActionbarHeightPort" android:src="@drawable/actionbar_search_icon" />
+        <ImageButton android:id="@id/title_btn_icon" android:background="@drawable/actionbar_menu_selector" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/DefaultActionbarHeightPort" android:layout_height="@dimen/DefaultActionbarHeightPort" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/title_btn_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/action_option_button" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:text="send" style="@style/MMSmallGreenButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0">
+                <RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.tencent.mm.plugin.location.ui.google.GoogleMapView android:id="@id/g_mapView" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:apiKey="05iGkFSm2uMe-_6wzcT2vhVQUfSWfJK8sRGXRVQ" />
+                    <FrameLayout android:gravity="center" android:layout_gravity="center" android:id="@id/control_id" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <RelativeLayout android:id="@id/tips_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageButton android:id="@id/locate_to_my_position" android:background="@drawable/poi_mylocation_btn_bg" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="16.699982dip" android:layout_marginBottom="16.699982dip" android:src="@drawable/poi_mylocation_btn_icon_normal" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <ImageView android:id="@id/devider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/poi_deep_devider" android:scaleType="fitXY" />
+                <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                    <com.tencent.mm.plugin.location.ui.PoiHeaderView android:id="@id/poi_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <com.tencent.mm.ui.base.MMLoadMoreListView android:id="@id/poi_list" android:background="@color/white" android:layoutAnimation="@anim/list_anim_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:layout_below="@id/poi_header" />
+                    <RelativeLayout android:id="@id/load" android:background="@drawable/comm_list_item_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/NormalListHeight" android:layout_alignParentBottom="true">
+                        <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/largeCustomProgressBar" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.tencent.mm.ui.base.MMLoadMoreListView android:id="@id/search_list" android:background="@color/white" android:focusable="true" android:visibility="gone" android:layoutAnimation="@anim/list_anim_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0px" />
+            <TextView android:gravity="center" android:id="@id/search_empty" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/location_no_search_result" />
+            <RelativeLayout android:id="@id/search_prg" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/largeCustomProgressBar" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

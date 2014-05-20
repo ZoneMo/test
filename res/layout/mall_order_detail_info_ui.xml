@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/mall_order_detail_root" android:background="@color/navpage" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/order_latest_status_info_layout" android:visibility="gone" layout="@layout/mall_order_latest_status_info_layout" />
+        <include android:id="@id/order_latest_status_info_for_msg_layout" android:visibility="gone" layout="@layout/mall_order_latest_status_info_for_msg_layout" />
+        <include android:id="@id/order_product_item_text_x4" android:visibility="gone" layout="@layout/mall_order_product_list_item" />
+        <include android:id="@id/order_product_item_icon_text_x4" android:visibility="gone" layout="@layout/mall_order_product_item_icon_text_x4" />
+        <include android:id="@id/order_product_item_text_x1" android:visibility="gone" layout="@layout/mall_order_product_item_text_x1" />
+        <LinearLayout android:id="@id/order_transaction_info_layout" android:visibility="gone" android:layout_height="56.0dip" style="@style/MallOrderDetailItem">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:id="@id/order_transaction_title_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/mall_order_merchant_info_text" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/order_transaction_subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" />
+        </LinearLayout>
+        <com.tencent.mm.ui.base.MaxListView android:id="@id/order_action_list" android:focusable="true" android:layout_height="wrap_content" android:transcriptMode="disabled" style="@style/MMList" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mall_order_contact_layout" android:background="@null" android:layout_height="wrap_content" style="@style/MallOrderDetailItem">
+            <LinearLayout android:orientation="horizontal" android:id="@id/hot_contact_phone_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="19.0dip">
+                <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_phone_link_color" android:id="@id/hot_contact_phone_title_tv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_order_hot_phone_text" />
+                <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_phone_link_color" android:id="@id/hot_contact_phone_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:text="@string/wallet_bankcard_detail_bankphone_number" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/wx_contact_service_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding" android:layout_marginBottom="@dimen/LargerPadding">
+                <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_phone_link_color" android:id="@id/wx_contact_service_title_tv" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mall_order_wx_service_text" />
+                <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_phone_link_color" android:id="@id/wx_contact_phone_tv" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

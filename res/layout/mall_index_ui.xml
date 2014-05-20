@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/wallet_main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/header_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/stub_with_bankcard" android:layout="@layout/mall_index_stub_with_bankcard" android:inflatedId="@id/stub_with_bankcard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ViewStub android:id="@id/stub_without_bankcard" android:layout="@layout/mall_index_stub_without_bankcard" android:inflatedId="@id/stub_without_bankcard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.tencent.mm.plugin.mall.ui.MallHorizontalGridView android:gravity="center" android:id="@id/mall_index_function_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:stretchMode="columnWidth" android:numColumns="2" android:dividerHeight="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

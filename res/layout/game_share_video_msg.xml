@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/video_msg_content_v" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MMGameCenterMsgMediaItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/video_msg_thumb_icon_iv" android:layout_width="@dimen/GCMsgMediaImgNormalSizeSize" android:layout_height="@dimen/GCMsgMediaImgNormalSizeSize" android:src="@null" android:contentDescription="@string/app_name" />
+        <ImageView android:id="@id/play_video_icon_iv" android:padding="@dimen/GCSmallPadding" android:visibility="gone" android:layout_width="@dimen/GCMsgMediaImgNormalSizeSize" android:layout_height="@dimen/GCMsgMediaImgNormalSizeSize" android:src="@drawable/video_download_btn_nor" android:contentDescription="@string/app_name" />
+    </FrameLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/video_msg_content_tv" android:paddingLeft="@dimen/GCSmallPadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" />
+</LinearLayout>

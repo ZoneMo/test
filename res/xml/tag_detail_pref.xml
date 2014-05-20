@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm">
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/sns_tag_name" android:layout="@layout/mm_preference" android:key="settings_tag_name" />
+    <PreferenceSmallCategory />
+    <com.tencent.mm.pluginsdk.ui.applet.ContactListExpandPreference android:key="roominfo_contact_anchor" />
+    <PreferenceSmallCategory />
+    <Preference android:title="@string/set_tag_del_tip" android:layout="@layout/logout_btn" android:key="delete_tag_name" />
+    <PreferenceSmallCategory />
+</PreferenceScreen>

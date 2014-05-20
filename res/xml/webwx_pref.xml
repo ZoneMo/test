@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:android1="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory />
+    <CheckBoxPreference android:title="@string/webwx_notification" android:layout="@layout/mm_preference" android:persistent="false" android:key="webwx_notification" />
+    <PreferenceCategory />
+    <Preference android:title="@string/webwx_logout_btn_txt" android:layout="@layout/logout_btn" android:key="webwx_logout" />
+    <PreferenceCategory />
+</PreferenceScreen>

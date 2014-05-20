@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/order_latest_status_info_layout" android:background="@drawable/list_item_normal" android:paddingLeft="@dimen/LargerPadding" android:paddingRight="@dimen/LargerPadding" android:layout_height="0.0dip" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:minHeight="100.0dip" android:layout_weight="1.0" style="@style/MallOrderDetailItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/order_merchant_logo_img" android:background="@drawable/mall_order_detail_frame" android:layout_width="53.299988dip" android:layout_height="53.299988dip" android:layout_marginTop="23.599976dip" android:src="@drawable/mall_order_trade_state_icon" />
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/LargePadding" android:layout_marginTop="23.599976dip" android:layout_marginBottom="23.599976dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/BigTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:id="@id/order_latest_status_title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:ellipsize="end" android:id="@id/order_latest_status_subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="1" />
+    </LinearLayout>
+</LinearLayout>

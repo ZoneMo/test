@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/MMScroll">
+        <LinearLayout android:gravity="center_horizontal" android:paddingLeft="@dimen/LargePadding" android:paddingRight="@dimen/LargePadding" style="@style/MMBody">
+            <TextView android:gravity="center" android:id="@id/show_qrcode_info_tv" android:layout_marginBottom="@dimen/LargePadding" android:lineSpacingExtra="4.0dip" style="@style/MMBriefText" />
+            <ImageView android:id="@id/self_qrcode_iv" android:layout_width="280.0dip" android:layout_height="280.0dip" android:layout_marginBottom="@dimen/LargePadding" />
+            <Button android:id="@id/self_qrcode_share_btn" android:text="@string/app_nextstep" style="@style/MMLineActionButton" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

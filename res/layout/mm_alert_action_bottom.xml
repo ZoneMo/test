@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/white" android:gravity="center" android:id="@id/mm_alert_msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/mm_alert_action_btn1" android:layout_marginTop="@dimen/NormalPadding" android:layout_weight="1.0" style="@style/MMBigGreenButton" />
+    <Button android:id="@id/mm_alert_action_btn2" android:layout_marginTop="@dimen/NormalPadding" android:layout_weight="1.0" style="@style/MMBigGreenButton" />
+</LinearLayout>

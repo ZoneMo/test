@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/com.tencent.mm"
+  xmlns:mm="http://schemas.android.com/apk/res/com.tencent.mm">
+    <com.tencent.mm.pluginsdk.ui.preference.HeadImgPreference mm:title="@string/settings_change_avatar" mm:layout="@layout/mm_preference" mm:key="settings_change_avatar" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference mm:title="@string/settings_name" mm:layout="@layout/mm_preference" mm:key="settings_name" />
+    <com.tencent.mm.ui.base.preference.DialogPreference mm:title="@string/settings_sex" mm:layout="@layout/mm_preference" mm:key="settings_sex" mm:entries="@array/sex" mm:entryValues="@array/sex_id" />
+    <com.tencent.mm.ui.base.preference.KeyValuePreference mm:title="@string/settings_district" mm:layout="@layout/mm_preference" mm:key="settings_district" />
+    <PreferenceCategory />
+    <com.tencent.mm.ui.setting.PersonalPreference mm:title="@string/settings_my_qrcode" mm:layout="@layout/mm_preference" mm:key="settings_my_qrcode" />
+</PreferenceScreen>

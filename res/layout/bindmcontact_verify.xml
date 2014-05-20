@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" style="@style/MMScroll">
+        <LinearLayout style="@style/MMBody">
+            <TextView android:gravity="center_horizontal" android:id="@id/bind_mcontact_verify_hint" android:layout_marginBottom="@dimen/NormalPadding" android:text="@string/bind_mcontact_verify_code_title_hint" style="@style/MMBriefText" />
+            <TextView android:gravity="center_horizontal" android:id="@id/bind_mcontact_verify_mobile_num" android:visibility="gone" android:layout_marginBottom="@dimen/NormalPadding" style="@style/MMLineLabel" />
+            <LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/bind_mcontact_verify_num" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/SmallPadding" android:layout_weight="1.0" android:inputType="phone" style="@style/MMLineEditText" />
+                <Button android:id="@id/bind_mcontact_verify_btn" android:layout_width="80.0dip" android:text="@string/bind_mcontact_next_btn_text" style="@style/MMSmallGreenButton" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <Button android:id="@id/bind_mcontact_voice_code" android:visibility="gone" android:layout_marginTop="10.0dip" android:text="@string/bind_mcontact_voice_verify_entrance" style="@style/MMSmallGreyButton" />
+                <Button android:layout_gravity="center" android:id="@id/close_account_protect" android:visibility="gone" android:text="@string/safe_device_protect_close" style="@style/RegUIHyperText" />
+            </LinearLayout>
+            <TextView android:gravity="center_horizontal" android:id="@id/bind_mcontact_sms_time_hint" android:visibility="gone" style="@style/MMBriefText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

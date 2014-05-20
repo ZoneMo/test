@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="150.0dip" android:layout_height="46.0dip" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mall_product_select_sku_remove" android:background="@drawable/mall_product_sku_left_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/mall_product_sku_remove_bg" android:scaleType="center" android:layout_weight="1.0" />
+    <TextView android:textSize="@dimen/DialogTitleTextSize" android:textColor="#ff353535" android:gravity="center" android:id="@id/mall_product_select_sku_count" android:background="@drawable/mall_product_sku_count_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ImageView android:id="@id/mall_product_select_sku_add" android:background="@drawable/mall_product_sku_right_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/mall_product_sku_add_bg" android:scaleType="center" android:layout_weight="1.0" />
+</LinearLayout>

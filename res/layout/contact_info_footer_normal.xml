@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="@dimen/NormalPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/contact_info_passive_verify" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/contact_info_verify_accept" android:layout_marginTop="@dimen/SmallPadding" android:text="@string/contact_info_verify_accept" style="@style/MMBigGreenButton" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/contact_info_verify_accept">
+            <Button android:id="@id/contact_info_verify_add_black" android:focusable="true" android:clickable="true" android:text="@string/contact_info_movein_blacklist" android:layout_weight="1.0" style="@style/MMBigGreyButton" />
+            <View android:id="@id/contact_info_verify_mid" android:layout_width="@dimen/SmallPadding" android:layout_height="wrap_content" />
+            <Button android:id="@id/contact_info_verify_expose_btn" android:focusable="true" android:clickable="true" android:text="@string/contact_info_expose" android:layout_weight="1.0" style="@style/MMBigGreyButton" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/contact_info_sayhi_item" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/contact_info_sayhi_request_btn" android:text="@string/contact_info_say_hi" android:layout_weight="1.0" style="@style/MMBigGreenButton" />
+        <Button android:id="@id/contact_info_sayhi_expose_btn" android:layout_marginTop="@dimen/SmallPadding" android:text="@string/contact_info_expose" android:layout_weight="1.0" style="@style/MMBigGreyButton" />
+    </LinearLayout>
+    <Button android:id="@id/contact_info_delete_contact" android:visibility="gone" android:layout_marginTop="@dimen/SmallPadding" android:text="@string/bind_mcontact_del_btn_text" style="@style/MMBigRedButton" />
+    <Button android:id="@id/contact_info_add_contact_btn" android:text="@string/contact_info_add" style="@style/MMBigGreenButton" />
+    <Button android:id="@id/contact_info_send_btn" android:text="@string/contact_info_send" style="@style/MMBigGreenButton" />
+    <Button android:id="@id/contact_info_black_list_expose_btn" android:visibility="gone" android:layout_marginTop="@dimen/SmallPadding" android:text="@string/contact_info_expose" style="@style/MMBigGreyButton" />
+    <TextView android:gravity="center_horizontal" android:id="@id/contact_info_movein_blacklist_tip_tv" android:paddingTop="@dimen/LargePadding" android:layout_width="fill_parent" android:text="@string/contact_info_movein_blacklist_tip" android:singleLine="false" style="@style/MMFontPreferenceSmall" />
+</LinearLayout>

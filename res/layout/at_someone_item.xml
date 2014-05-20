@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/item" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" style="@style/MMListItem"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.base.MaskLayout android:id="@id/at_someone_item_avatar" android:layout_width="@dimen/NormalAvatarWrapSize" android:layout_height="@dimen/NormalAvatarWrapSize">
+        <ImageView android:id="@id/content" android:layout_width="@dimen/NormalAvatarSize" android:layout_height="@dimen/NormalAvatarSize" android:src="@drawable/mini_avatar" android:layout_centerVertical="true" />
+    </com.tencent.mm.ui.base.MaskLayout>
+    <TextView android:gravity="left|center" android:id="@id/at_someone_item_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallerPadding" android:text="{nick}" android:singleLine="true" style="@style/MMFontTitleInList" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/main_ui_container" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/main_chatting_lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0.0px" android:layout_alignParentTop="true" />
+    <TextView android:id="@id/empty_conversation_tv" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/main_empty_conversation" android:singleLine="false" style="@style/MMFontEmptyMsgLarge" />
+    <TextView android:id="@id/empty_search_conversation_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/main_search_empty_conversation" android:singleLine="false" style="@style/MMFontEmptyMsgLarge" />
+    <TextView android:id="@id/enter_search_tips_tv" android:background="@color/navpage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/main_search_tips" android:singleLine="false" style="@style/MMFontEmptyMsgLarge" />
+</RelativeLayout>

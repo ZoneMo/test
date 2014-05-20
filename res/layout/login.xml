@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/navpage" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargestPadding" android:paddingRight="@dimen/LargePadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargerPadding">
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:id="@id/login_account_wording" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/LargePadding" android:text="@string/login_account" />
+        <com.tencent.mm.ui.base.MMClearEditText android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:id="@id/login_account_auto" android:hint="@string/login_account_hint" style="@style/MMLineEditText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/LargerPadding">
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:id="@id/login_pwd_wording" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/LargePadding" android:text="@string/regbyqq_password" />
+        <com.tencent.mm.ui.base.MMClearEditText android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:id="@id/login_password_et" android:hint="@string/login_password_hint" style="@style/MMLineEditPass" />
+    </LinearLayout>
+    <Button android:id="@id/login_btn" android:layout_marginBottom="@dimen/SmallPadding" android:text="@string/login_login" style="@style/MMBigGreenButton" />
+    <Button android:textSize="@dimen/HintTextSize" android:textColor="@color/link_color_selector" android:layout_gravity="right" android:id="@id/login_foget_btn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/loginby_encounter_problems" />
+    <LinearLayout android:gravity="bottom|center" android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/fblogin_tip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/LargestPadding">
+        <ImageView android:background="#00ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/share_to_facebook_icon" />
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mm_hyper_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/select_login_by_facebook" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

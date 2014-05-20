@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:id="@id/catalog" android:background="@drawable/list_thicklinecell_bg" android:paddingTop="@dimen/LargestPadding" android:paddingBottom="@dimen/SmallerPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

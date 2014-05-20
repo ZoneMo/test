@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/wallet_content" android:background="@color/navpage" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:wallet="http://schemas.android.com/apk/res-auto/com.tencent.mm" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/wallet_sv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/wallet_body" android:paddingTop="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/WalletBody">
+            <TextView android:id="@id/wallet_card_safeguard_tip" android:visibility="gone" android:text="@string/wallet_card_safeguard_tip" android:drawableLeft="@drawable/wallet_safeguard_logo" android:drawablePadding="7.0dip" style="@style/WalletElementTips" />
+            <TextView android:id="@id/wallet_card_forgot_id_tipmsg" android:text="@string/wallet_card_forgot_id_tip_msg" style="@style/WalletElementTips" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/wallet_card_forgot_id" wallet:hint="@string/wallet_card_num_hint" wallet:tipmsg="@string/wallet_card_num_tips" wallet:editType="bankcardId" style="@style/MMWalletEt" />
+            <TextView android:id="@id/wallet_card_forgot_id_err_tipmsg" android:text="@string/wallet_card_err_bankcard_id" style="@style/WalletErrMsgTips" />
+            <TextView android:id="@id/wallet_card_bankcard_type_tipmsg" android:text="@string/wallet_card_bankcard_type_tips" style="@style/WalletElementTips" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:gravity="right|center" android:id="@id/wallet_card_type" android:background="@drawable/mall_spinner" android:layout_marginRight="6.0dip" wallet:hint="@string/wallet_elment_select" wallet:tipmsg="@string/wallet_card_card_type" wallet:editable="false" style="@style/MMWalletEt" />
+            <TextView android:textColor="#ff888888" android:id="@id/wallet_card_cardtype_tipmsg" style="@style/WalletErrMsgTips" />
+            <TextView android:id="@id/wallet_card_cvv_tipmsg" android:text="@string/wallet_card_cvv_tip_msg" style="@style/WalletElementTips" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/cvv_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_cvv_hint" wallet:tipmsg="@string/wallet_card_cvv_tip" wallet:editType="cvv" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/date_et" wallet:hint="@string/wallet_card_date_hint" wallet:tipmsg="@string/wallet_card_date_tip" wallet:editType="date" style="@style/MMWalletEt" />
+            <TextView android:id="@id/wallet_card_cvv_err_tipmsg" android:text="@string/wallet_card_cvv_err_hint" style="@style/WalletErrMsgTips" />
+            <TextView android:id="@id/wallet_card_identify_tipmsg" android:text="@string/wallet_card_identify_tip_msg" style="@style/WalletElementTips" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/name_et" wallet:hint="@string/wallet_card_username_hint" wallet:tipmsg="@string/wallet_card_username_tip" wallet:editType="name" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/wallet_cre_type" wallet:hint="@string/wallet_card_cre_type_hint" wallet:tipmsg="@string/wallet_card_cre_type_tip" wallet:editable="false" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/identity_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_identify_hint" wallet:tipmsg="@string/wallet_card_identify_tip" wallet:editType="identifyCard" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/mobile_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_mobile_hint" wallet:tipmsg="@string/wallet_card_mobile_tip" wallet:editType="mobile" style="@style/MMWalletEt" />
+            <TextView android:id="@id/wallet_card_identify_err_hint" android:visibility="visible" android:text="@string/wallet_card_identify_security" style="@style/WalletErrMsgTips" />
+            <TextView android:id="@id/wallet_card_address_tipmsg" android:text="@string/wallet_card_billing_address_tip" style="@style/WalletElementTips" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/first_name_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_firstname_hint" wallet:tipmsg="@string/wallet_card_firstname_tip" wallet:editType="text" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/last_name_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_lastname_hint" wallet:tipmsg="@string/wallet_card_lastname_tip" wallet:editType="text" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/area_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_area_hint" wallet:tipmsg="@string/wallet_card_area_tip" wallet:editType="text" wallet:editable="false" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/address_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_address_hint" wallet:tipmsg="@string/wallet_card_address_tip" wallet:editType="text" wallet:maxLength="90" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/phone_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_phone_hint" wallet:tipmsg="@string/wallet_card_phone_tip" wallet:editType="phone" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/post_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_post_hint" wallet:tipmsg="@string/wallet_card_post_tip" wallet:editType="text" style="@style/MMWalletEt" />
+            <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/email_et" android:imeOptions="actionNext" wallet:hint="@string/wallet_card_email_hint" wallet:tipmsg="@string/wallet_card_email_tip" wallet:editType="email" style="@style/MMWalletEt" />
+            <TextView android:id="@id/wallet_card_address_err_tipmsg" android:text="@string/wallet_card_err_address" style="@style/WalletErrMsgTips" />
+            <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_marginTop="@dimen/LargePadding" style="@style/MMLine">
+                <CheckBox android:textSize="@dimen/NormalTextSize" android:textColor="@color/black" android:gravity="right|center" android:layout_gravity="left|center" android:id="@id/agree_wx_cb" android:paddingLeft="24.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:minHeight="22.0dip" android:text="@string/wallet_card_wx_check_agree" />
+                <Button android:textSize="@dimen/NormalTextSize" android:textColor="@color/wallet_link_color" android:ellipsize="marquee" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/agree_btn" android:paddingTop="5.0dip" android:paddingRight="0.0dip" android:paddingBottom="5.0dip" android:layout_marginLeft="0.0dip" android:minHeight="30.0dip" android:text="@string/wallet_card_wx_check" android:singleLine="true" style="@style/WalletHyperText" />
+            </LinearLayout>
+            <Button android:id="@id/next_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="38.0dip" android:text="@string/app_nextstep" style="@style/MMWalletBtn" />
+            <TextView android:layout_gravity="bottom" android:id="@id/wallet_power_by_tenpay" android:background="@color/navpage" android:paddingTop="5.0dip" android:layout_height="fill_parent" android:layout_margin="0.0dip" style="@style/WalletPowerByTenpayTips" />
+        </LinearLayout>
+    </ScrollView>
+    <com.tenpay.android.wechat.MyKeyboardWindow android:id="@id/tenpay_num_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

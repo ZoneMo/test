@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/emoji_gift_item" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/emoji_gift_avatar" android:background="@drawable/default_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/emoji_gift_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/emoji_gift_avatar" android:layout_centerVertical="true">
+        <TextView android:id="@id/emoji_gift_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{cpan}" />
+        <TextView android:id="@id/emoji_gift_error_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/emoji_gift_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:id="@id/emoji_gift_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="{无法赠送}" />
+        <ProgressBar android:id="@id/emoji_gift_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/smallCustomProgressBar" />
+    </LinearLayout>
+</RelativeLayout>

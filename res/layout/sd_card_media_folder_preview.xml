@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/album_ui_bg" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:gravity="center" android:layout_gravity="center" android:id="@id/media_in_folder_gv" android:background="@null" android:fadingEdgeLength="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/mm_trans" android:cacheColorHint="#00000000" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:divider="@null" android:dividerHeight="0.0px" android:overScrollMode="never" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/album_footer_bar" android:background="@color/dark_alpha_black" android:paddingLeft="@dimen/BasicPaddingSize" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="@dimen/SmallListHeight">
+        <HorizontalScrollView android:orientation="horizontal" android:scrollbars="none" android:layout_width="0.0dip" android:layout_height="@dimen/SmallListHeight" android:layout_marginRight="@dimen/SmallPadding" android:fillViewport="true" android:layout_weight="1.0">
+            <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/selectd_image_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:id="@id/dot_image" android:layout_width="@dimen/SmallAvatarSize" android:layout_height="@dimen/SmallAvatarSize" android:layout_marginRight="@dimen/BasicPaddingSize" android:src="@drawable/avatar_dotline_bg" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <Button android:enabled="false" android:id="@id/media_preview" android:minWidth="64.0dip" android:text="@string/gallery_pic_preview" style="@style/MMSmallBlackButton" />
+    </LinearLayout>
+</FrameLayout>

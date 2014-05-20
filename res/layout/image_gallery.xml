@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cropimage_fl" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.tencent.mm.ui.tools.MMGestureGallery android:id="@id/gallery" android:background="@color/album_ui_bg" android:focusable="false" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="0.0dip" android:unselectedAlpha="1.2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/cropimage_operator_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/cropimage_function_bar" android:background="@color/dark_alpha_black" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textColor="#ffbbbbbb" android:gravity="center_vertical" android:id="@id/gallery_image_author_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:maxWidth="128.0dip" android:singleLine="true" />
+                <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="#ffbbbbbb" android:gravity="center_vertical" android:id="@id/gallery_image_date_year_month" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" />
+                    <TextView android:textColor="#ffbbbbbb" android:gravity="center_vertical" android:id="@id/gallery_image_date_minutes_second" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:layout_gravity="center_vertical" android:id="@id/cropimage_function_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cropimage_view_hd_img" style="@style/MMSmallBlackButton" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="right" android:id="@id/goto_grid_gallery_ll" android:layout_width="60.0dip" android:layout_height="fill_parent">
+                    <View android:layout_gravity="center_vertical" android:background="@drawable/image_gallery_enter_grid_btn" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

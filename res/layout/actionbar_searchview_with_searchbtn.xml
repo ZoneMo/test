@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/title_search_back" android:background="@drawable/actionbar_menu_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/BasicPaddingSize">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/actionbar_up_indicator" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/actionbar_icon" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <EditText android:textColor="@color/white" android:textColorHint="@color/hint_text_color_dark_bg" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/edittext" android:background="@drawable/input_bar_bg_active" android:paddingLeft="@dimen/SmallerPadding" android:paddingRight="@dimen/NormalIconSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="1024.0dip" android:minHeight="@dimen/NormalIconSize" android:hint="@string/app_search" android:singleLine="true" android:drawableLeft="@drawable/actionbar_search_icon" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@null" />
+        <ImageButton android:id="@id/status_btn" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clear" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <Button android:layout_gravity="center_vertical" android:id="@id/button" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:text="@string/app_search" style="@style/MMSmallGreenButton" />
+</LinearLayout>

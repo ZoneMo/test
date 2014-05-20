@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/qrcode_container" android:scrollbars="none" android:persistentDrawingCache="all" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/LargerPadding" android:paddingRight="@dimen/LargePadding" android:paddingBottom="@dimen/LargePadding" style="@style/MMBody">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_area" android:background="@drawable/my_qrcard_name_btn" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="@dimen/BigAvatarSize" android:layout_height="@dimen/BigAvatarSize">
+                <ImageView android:id="@id/header_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/my_qrcard_photo" />
+                <View android:id="@id/mask_header_icon" android:background="@drawable/self_qrcode_header_icon_click" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/NormalPadding" android:layout_weight="3.0">
+                <TextView android:textSize="@dimen/BigTextSize" android:textStyle="bold" android:textColor="@color/normal_text_color" android:ellipsize="end" android:id="@id/nick_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableRight="@drawable/ic_sex_male" android:drawablePadding="4.0dip" />
+                <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/hint_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/district" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/BasicPaddingSize" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@id/self_qrcode_iv" android:padding="@dimen/BasicPaddingSize" android:layout_width="224.0dip" android:layout_height="224.0dip" android:layout_marginTop="@dimen/LargestPadding" android:layout_marginBottom="@dimen/BasicPaddingSize" />
+        <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/hint_text_color" android:gravity="center" android:id="@id/qrcode_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/SmallPadding" android:text="@string/self_qrcode_show" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="76.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="14.0dip">
+        <ImageView android:id="@id/order_list_item_type_icon_img" android:layout_width="17.0dip" android:layout_height="17.0dip" android:src="@drawable/mall_order_trade_icon" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/order_list_item_new_notify_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mall_order_new_notify_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginTop="@dimen/LargePadding" android:layout_marginBottom="@dimen/LargePadding" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_title_color" android:ellipsize="end" android:gravity="left" android:id="@id/order_list_item_title_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="title" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:gravity="right" android:id="@id/order_list_item_time_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/NormalTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:ellipsize="end" android:gravity="left" android:id="@id/order_list_item_content_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:lines="1" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/order_list_item_product_layout" android:background="@drawable/mall_order_list_item_extend_content_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <ImageView android:id="@id/order_list_item_product_icon_img" android:visibility="gone" android:layout_width="@dimen/maill_order_list_item_icon_img_width" android:layout_height="@dimen/maill_order_list_item_icon_img_width" android:layout_margin="6.0dip" android:src="@drawable/mall_order_trade_empty_icon" />
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:ellipsize="end" android:id="@id/order_list_item_product_extent_content_tv" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/SmallPadding" android:layout_marginBottom="@dimen/SmallPadding" android:maxLines="2" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/mall_order_detail_item_subtitle_color" android:id="@id/order_list_item_product_price_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/SmallPadding" android:text="$2000.00" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="#ff393939" android:paddingLeft="32.0dip" android:paddingTop="3.0dip" android:paddingRight="32.0dip" android:paddingBottom="3.0dip" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@drawable/wallet_qrcard_bg" android:persistentDrawingCache="all" android:alwaysDrawnWithCache="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="#ff737373" android:gravity="center" android:id="@id/qrcode_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="22.0dip" android:layout_marginRight="12.0dip" android:text="@string/wallet_wx_offline_pay_scanner_qrcode_pay" />
+        <ImageView android:id="@id/wallet_qrcode_iv" android:layout_width="245.0dip" android:layout_height="245.0dip" android:scaleType="fitCenter" />
+        <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="#ff737373" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="22.0dip" android:text="@string/wallet_wx_offline_pay_scanner_qrcode_pay_invalid_tips" />
+    </LinearLayout>
+    <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/wallet_qrcode_refresh_btn" android:background="@drawable/wallet_refresh_qrcode_icon_bg" android:layout_width="wrap_content" android:layout_height="33.299988dip" android:layout_marginTop="10.0dip" android:text="@string/wallet_wx_offline_pay_refresh_qrcode" />
+</LinearLayout>
