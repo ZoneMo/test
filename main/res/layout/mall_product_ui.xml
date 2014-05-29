@@ -24,7 +24,7 @@
         <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mall_product_sold_out_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MMBody">
             <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/mall_product_sold_out_icon" />
             <TextView android:textSize="@dimen/BigTextSize" android:textColor="#ff353535" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/LargePadding" android:layout_marginBottom="8.0dip" android:text="@string/mall_product_sold_out_title" />
-            <com.tencent.mm.ui.base.MaxListView android:id="@id/mall_product_sold_out_lv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@*android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
+            <com.tencent.mm.ui.base.MaxListView android:id="@id/mall_product_sold_out_lv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

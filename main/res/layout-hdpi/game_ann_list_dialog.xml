@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:gravity="center" android:id="@id/game_ann_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/shoot_ann_title" style="@style/GameTitleText" />
     <View android:background="@drawable/game_burst_aircraft_bkg_big_line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
-    <ListView android:id="@id/game_ann_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="4.0dip" android:listSelector="@*android:color/transparent" android:layout_weight="1.0" />
+    <ListView android:id="@id/game_ann_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="4.0dip" android:listSelector="@android:color/transparent" android:layout_weight="1.0" />
     <View android:background="@drawable/game_burst_aircraft_bkg_big_line" android:layout_width="fill_parent" android:layout_height="2.0dip" />
     <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/game_bottom_rl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="7.0dip">
         <Button android:id="@id/game_ok" android:background="@drawable/game_burst_aircraft_button_bule_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/shoot_confirm_ok" android:layout_weight="0.5" style="@style/GameButtonText" />

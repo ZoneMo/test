@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="abc_search_url_text_normal">#ff7fa87f</color>
-    <item type="color" name="abc_search_url_text_selected">@*android:color/black</item>
-    <item type="color" name="abc_search_url_text_pressed">@*android:color/black</item>
+    <item type="color" name="abc_search_url_text_selected">@android:color/black</item>
+    <item type="color" name="abc_search_url_text_pressed">@android:color/black</item>
     <color name="white">#ffffffff</color>
     <color name="black">#ff000000</color>
     <color name="mask_alpha_black">#3f000000</color>
@@ -103,12 +103,12 @@
     <color name="add_btn_text_color">#ff469f04</color>
     <color name="invite_btn_text_color">#ff04539c</color>
     <color name="search_listbtn_text_color">#ff7a93af</color>
-    <item type="color" name="common_signin_btn_dark_text_default">@*android:color/white</item>
-    <item type="color" name="common_signin_btn_dark_text_pressed">@*android:color/white</item>
+    <item type="color" name="common_signin_btn_dark_text_default">@android:color/white</item>
+    <item type="color" name="common_signin_btn_dark_text_pressed">@android:color/white</item>
     <color name="common_signin_btn_dark_text_disabled">#ffaaaaaa</color>
-    <item type="color" name="common_signin_btn_dark_text_focused">@*android:color/white</item>
+    <item type="color" name="common_signin_btn_dark_text_focused">@android:color/white</item>
     <color name="common_signin_btn_light_text_default">#ff737373</color>
-    <item type="color" name="common_signin_btn_light_text_pressed">@*android:color/white</item>
+    <item type="color" name="common_signin_btn_light_text_pressed">@android:color/white</item>
     <color name="common_signin_btn_light_text_disabled">#ffaaaaaa</color>
     <color name="common_signin_btn_light_text_focused">#ff737373</color>
     <color name="common_signin_btn_default_background">#ffdd4b39</color>

@@ -2,8 +2,8 @@
 <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/SmallListHeight"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:gravity="left|center" android:id="@id/content" android:background="@drawable/half_black_selector" android:paddingLeft="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding" android:minHeight="@dimen/SmallListHeight" android:layout_weight="1.0">
-        <TextView android:textColor="@color/tv_info_preference_text_color" android:id="@*android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
-        <TextView android:textColor="@color/tv_info_preference_text_color" android:id="@*android:id/summary" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:singleLine="true" style="@style/MMFontPreferenceSummary" />
+        <TextView android:textColor="@color/tv_info_preference_text_color" android:id="@android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+        <TextView android:textColor="@color/tv_info_preference_text_color" android:id="@android:id/summary" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:singleLine="true" style="@style/MMFontPreferenceSummary" />
     </LinearLayout>
     <TextView android:background="@color/tv_info_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/NormalPadding" android:layout_marginRight="@dimen/NormalPadding" />
 </LinearLayout>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/SmallListHeight" android:layout_weight="1.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:id="@*android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
+    <TextView android:id="@android:id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
     <LinearLayout android:gravity="right|center" android:paddingLeft="@dimen/LargePadding" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <TextView android:ellipsize="none" android:gravity="right" android:id="@*android:id/summary" android:singleLine="false" style="@style/MMFontPreferenceSummary" />
+        <TextView android:ellipsize="none" android:gravity="right" android:id="@android:id/summary" android:singleLine="false" style="@style/MMFontPreferenceSummary" />
     </LinearLayout>
 </LinearLayout>

@@ -2,8 +2,8 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginRight="@dimen/SmallPadding">
-        <TextView android:id="@*android:id/title" android:paddingLeft="@dimen/SmallPadding" android:paddingTop="@dimen/LargerPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/BasicPaddingSize" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/MMPreferenceTextSmall" />
-        <TextView android:id="@*android:id/summary" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="15.0dip" android:singleLine="true" style="@style/MMFontPreferenceSummary" />
+        <TextView android:id="@android:id/title" android:paddingLeft="@dimen/SmallPadding" android:paddingTop="@dimen/LargerPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/BasicPaddingSize" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/MMPreferenceTextSmall" />
+        <TextView android:id="@android:id/summary" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="15.0dip" android:singleLine="true" style="@style/MMFontPreferenceSummary" />
     </LinearLayout>
     <TextView android:id="@id/pref_divider" android:background="@color/scan_product_divider_color" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="@dimen/NormalPadding" android:layout_marginRight="@dimen/NormalPadding" />
 </LinearLayout>

@@ -2,5 +2,5 @@
 <LinearLayout android:orientation="vertical" style="@style/NavPage"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:id="@id/input_tip" android:visibility="gone" android:text="@string/wallet_input_card_ui_tips" style="@style/WalletInputTips" />
-    <ListView android:id="@id/settings_lv_address" android:background="@null" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
+    <ListView android:id="@id/settings_lv_address" android:background="@null" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
 </LinearLayout>

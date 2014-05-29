@@ -12,7 +12,7 @@
             <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
         </LinearLayout>
         <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
-            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@*android:color/black" android:id="@id/scan_network_flow" android:background="@drawable/qrcode_info_text_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+            <TextView android:textSize="@dimen/SmallestTextSize" android:textColor="@android:color/black" android:id="@id/scan_network_flow" android:background="@drawable/qrcode_info_text_bg" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
             <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
             <com.tencent.mm.plugin.scanner.ui.SelectScanModePanel android:id="@id/scan_select_scan_mode_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
         </LinearLayout>

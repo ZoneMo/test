@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:background="@drawable/list_thicklinecell_bg" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="left" android:id="@*android:id/title" android:paddingTop="@dimen/LargePadding" style="@style/MMBriefText" />
+    <TextView android:textSize="@dimen/HintTextSize" android:textColor="@color/hint_text_color" android:gravity="left" android:id="@android:id/title" android:paddingTop="@dimen/LargePadding" style="@style/MMBriefText" />
 </LinearLayout>

@@ -5,7 +5,7 @@
     <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
         <LinearLayout style="@style/WalletBody">
             <TextView android:id="@id/wallet_card_forget_tipmsg" android:text="@string/wallet_password_forget_passwd_select_tip" style="@style/WalletInputTipsNoTopPadding" />
-            <com.tencent.mm.ui.base.MaxListView android:id="@id/settings_lv_bankcard" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@*android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
+            <com.tencent.mm.ui.base.MaxListView android:id="@id/settings_lv_bankcard" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
             <LinearLayout android:orientation="vertical" android:id="@id/forget_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
                 <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/name_et" android:clickable="false" wallet:hint="@string/wallet_card_username_hint" wallet:tipmsg="@string/wallet_card_username_tip" wallet:editable="false" style="@style/MMWalletEt" />
                 <com.tencent.mm.plugin.wallet.ui.EditHintView android:id="@id/card_et" wallet:hint="@string/wallet_password_forget_input_card" wallet:tipmsg="@string/wallet_password_forget_input_card_tip_msg" wallet:editType="bankcardId" style="@style/MMWalletEt" />

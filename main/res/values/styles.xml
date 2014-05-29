@@ -154,25 +154,25 @@
         <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse</item>
         <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse</item>
     </style>
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title" parent="@*android:style/TextAppearance.Medium" />
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" parent="@*android:style/TextAppearance.Small">
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title" parent="@android:style/TextAppearance.Medium" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" parent="@android:style/TextAppearance.Small">
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" parent="@*android:style/TextAppearance.Medium.Inverse" />
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" parent="@*android:style/TextAppearance.Small.Inverse">
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" parent="@android:style/TextAppearance.Medium.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" parent="@android:style/TextAppearance.Small.Inverse">
         <item name="android:textColor">?android:textColorSecondaryInverse</item>
     </style>
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" parent="@*android:style/TextAppearance.Small">
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" parent="@android:style/TextAppearance.Small">
         <item name="android:textSize">12.0sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">?actionMenuTextColor</item>
     </style>
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title" parent="@*android:style/TextAppearance.Medium" />
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" parent="@*android:style/TextAppearance.Small" />
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" parent="@*android:style/TextAppearance.Medium.Inverse" />
-    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" parent="@*android:style/TextAppearance.Small.Inverse" />
-    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@*android:style/Widget.ProgressBar.Horizontal" />
-    <style name="Widget.AppCompat.Base.ProgressBar" parent="@*android:style/Widget.ProgressBar" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title" parent="@android:style/TextAppearance.Medium" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" parent="@android:style/TextAppearance.Small" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" parent="@android:style/TextAppearance.Medium.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.Small.Inverse" />
+    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal" />
+    <style name="Widget.AppCompat.Base.ProgressBar" parent="@android:style/Widget.ProgressBar" />
     <style name="Widget.AppCompat.Base.Spinner">
         <item name="android:gravity">left|center</item>
         <item name="android:background">@drawable/abc_spinner_ab_holo_dark</item>
@@ -196,22 +196,22 @@
         <item name="android:paddingRight">8.0dip</item>
     </style>
     <style name="Widget.AppCompat.Light.Base.DropDownItem.Spinner" parent="@style/Widget.AppCompat.Base.DropDownItem.Spinner" />
-    <style name="Widget.AppCompat.Base.ListView.DropDown" parent="@*android:style/Widget.ListView">
+    <style name="Widget.AppCompat.Base.ListView.DropDown" parent="@android:style/Widget.ListView">
         <item name="android:listSelector">@drawable/abc_list_selector_holo_dark</item>
     </style>
-    <style name="Widget.AppCompat.Light.Base.ListView.DropDown" parent="@*android:style/Widget.ListView">
+    <style name="Widget.AppCompat.Light.Base.ListView.DropDown" parent="@android:style/Widget.ListView">
         <item name="android:listSelector">@drawable/abc_list_selector_holo_light</item>
     </style>
-    <style name="TextAppearance.AppCompat.Widget.Base.DropDownItem" parent="@*android:style/TextAppearance.Small">
+    <style name="TextAppearance.AppCompat.Widget.Base.DropDownItem" parent="@android:style/TextAppearance.Small">
         <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
     </style>
-    <style name="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" parent="@*android:style/TextAppearance.Medium">
+    <style name="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
     </style>
-    <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="@*android:style/TextAppearance.Medium">
-        <item name="android:textColor">@*android:color/primary_text_light</item>
+    <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/primary_text_light</item>
     </style>
-    <style name="Widget.AppCompat.Base.ListView.Menu" parent="@*android:style/Widget.ListView.Menu">
+    <style name="Widget.AppCompat.Base.ListView.Menu" parent="@android:style/Widget.ListView.Menu">
         <item name="android:listSelector">?listChoiceBackgroundIndicator</item>
         <item name="android:divider">?dividerHorizontal</item>
     </style>
@@ -229,11 +229,11 @@
         <item name="android:dropDownHorizontalOffset">0.0dip</item>
         <item name="android:dropDownVerticalOffset">0.0dip</item>
     </style>
-    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" parent="@*android:style/TextAppearance.Widget">
+    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Widget">
         <item name="android:textSize">18.0sp</item>
         <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
     </style>
-    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" parent="@*android:style/TextAppearance.Widget">
+    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" parent="@android:style/TextAppearance.Widget">
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
     </style>
@@ -262,12 +262,12 @@
         <item name="android:textSize">14.0sp</item>
         <item name="android:textColor">?android:textColorSecondary</item>
     </style>
-    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="@*android:style/Widget.AutoCompleteTextView">
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="@android:style/Widget.AutoCompleteTextView">
         <item name="android:textColor">?actionMenuTextColor</item>
         <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_dark</item>
         <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
     </style>
-    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="@*android:style/Widget.AutoCompleteTextView">
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="@android:style/Widget.AutoCompleteTextView">
         <item name="android:textColor">?actionMenuTextColor</item>
         <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
         <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
@@ -362,8 +362,8 @@
     </style>
     <style name="Theme.AppCompat.CompactMenu" parent="@style/Theme.AppCompat.Base.CompactMenu" />
     <style name="Theme.AppCompat.CompactMenu.Dialog" parent="@style/Theme.AppCompat.Base.CompactMenu.Dialog" />
-    <style name="Theme.Base" parent="@*android:style/Theme" />
-    <style name="Theme.Base.Light" parent="@*android:style/Theme.Light" />
+    <style name="Theme.Base" parent="@android:style/Theme" />
+    <style name="Theme.Base.Light" parent="@android:style/Theme.Light" />
     <style name="Theme.Base.AppCompat" parent="@style/Theme.Base">
         <item name="android:windowNoTitle">true</item>
         <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_dark</item>
@@ -382,8 +382,8 @@
         <item name="actionMenuTextColor">?android:textColorPrimaryDisableOnly</item>
         <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_holo_dark</item>
         <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
-        <item name="buttonBarStyle">@*android:style/ButtonBar</item>
-        <item name="buttonBarButtonStyle">@*android:style/Widget.Button</item>
+        <item name="buttonBarStyle">@android:style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
         <item name="dividerVertical">@drawable/abc_list_divider_holo_dark</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_holo_dark</item>
@@ -422,8 +422,8 @@
         <item name="actionMenuTextColor">?android:textColorPrimaryDisableOnly</item>
         <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_holo_light</item>
         <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
-        <item name="buttonBarStyle">@*android:style/ButtonBar</item>
-        <item name="buttonBarButtonStyle">@*android:style/Widget.Button</item>
+        <item name="buttonBarStyle">@android:style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
         <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
         <item name="dividerVertical">@drawable/abc_list_divider_holo_light</item>
         <item name="dividerHorizontal">@drawable/abc_list_divider_holo_light</item>
@@ -469,22 +469,22 @@
         <item name="android:itemTextAppearance">@style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item</item>
     </style>
     <style name="Theme.AppCompat.Base.CompactMenu.Dialog">
-        <item name="android:listViewStyle">@*android:style/Widget.ListView.Menu</item>
+        <item name="android:listViewStyle">@android:style/Widget.ListView.Menu</item>
         <item name="android:itemTextAppearance">@style/TextAppearance.AppCompat.Base.CompactMenu.Dialog</item>
     </style>
-    <style name="largeCustomProgressBar" parent="@*android:style/Widget.ProgressBar.Large">
+    <style name="largeCustomProgressBar" parent="@android:style/Widget.ProgressBar.Large">
         <item name="android:indeterminateDrawable">@drawable/progress_large_holo</item>
     </style>
-    <style name="mediumCustomProgressBar" parent="@*android:style/Widget.ProgressBar">
+    <style name="mediumCustomProgressBar" parent="@android:style/Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
     </style>
-    <style name="smallCustomProgressBar" parent="@*android:style/Widget.ProgressBar.Small">
+    <style name="smallCustomProgressBar" parent="@android:style/Widget.ProgressBar.Small">
         <item name="android:indeterminateDrawable">@drawable/progress_small_holo</item>
     </style>
     <style name="ActionBarCustomProgressBar" parent="@style/Widget.AppCompat.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/progress_actionbar_holo</item>
     </style>
-    <style name="noBgDialog" parent="@*android:style/Theme.Dialog">
+    <style name="noBgDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
@@ -570,11 +570,11 @@
         <item name="android:password">true</item>
         <item name="android:inputType">textPassword</item>
     </style>
-    <style name="MMCheckBox" parent="@*android:style/Widget.CompoundButton.CheckBox">
+    <style name="MMCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:background">@drawable/mm_checkbox_btn</item>
         <item name="android:button">@null</item>
     </style>
-    <style name="MMRadioButton" parent="@*android:style/Widget.CompoundButton.RadioButton">
+    <style name="MMRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
         <item name="android:button">@drawable/round_selector</item>
     </style>
     <style name="MMDivider">
@@ -644,7 +644,7 @@
         <item name="android:ellipsize">end</item>
         <item name="android:singleLine">true</item>
     </style>
-    <style name="mmdialog" parent="@*android:style/Theme.Dialog">
+    <style name="mmdialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -658,15 +658,15 @@
         <item name="android:paddingLeft">@dimen/SmallPadding</item>
         <item name="android:paddingRight">@dimen/SmallPadding</item>
     </style>
-    <style name="DialogAnimation" parent="@*android:style/Animation.Dialog">
+    <style name="DialogAnimation" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/push_up_in</item>
         <item name="android:windowExitAnimation">@anim/push_down_out</item>
     </style>
-    <style name="DropMenuAnimation" parent="@*android:style/Animation">
+    <style name="DropMenuAnimation" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/dropdown_down</item>
         <item name="android:windowExitAnimation">@anim/dropdown_up</item>
     </style>
-    <style name="CenterMenuAnimation" parent="@*android:style/Animation">
+    <style name="CenterMenuAnimation" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/alpha_in</item>
         <item name="android:windowExitAnimation">@anim/alpha_out</item>
     </style>
@@ -693,7 +693,7 @@
         <item name="android:layout_width">fill_parent</item>
     </style>
     <style name="MMLineActionButton" parent="@style/MMBigGreenButton" />
-    <style name="mmalertdialog" parent="@*android:style/Theme.Dialog">
+    <style name="mmalertdialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -702,7 +702,7 @@
         <item name="android:background">@color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-    <style name="mmtipsdialog" parent="@*android:style/Theme.Dialog">
+    <style name="mmtipsdialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -749,7 +749,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/MMDialogAnim</item>
     </style>
-    <style name="MMDialogAnim" parent="@*android:style/Animation">
+    <style name="MMDialogAnim" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/push_up_in</item>
         <item name="android:windowExitAnimation">@anim/push_down_out</item>
     </style>
@@ -825,7 +825,7 @@
         <item name="android:layout_marginRight">@dimen/LargePadding</item>
         <item name="android:maxLines">1</item>
     </style>
-    <style name="ConfirmDialogEditText" parent="@*android:style/Widget.EditText">
+    <style name="ConfirmDialogEditText" parent="@android:style/Widget.EditText">
         <item name="android:textSize">@dimen/HintTextSize</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/edittext_bg_selector</item>
@@ -859,15 +859,15 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="AvatarAnimationLeft" parent="@*android:style/Animation.Dialog">
+    <style name="AvatarAnimationLeft" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/avatar_animation</item>
         <item name="android:windowExitAnimation">@anim/avatar_animation_out</item>
     </style>
-    <style name="AvatarAnimationRight" parent="@*android:style/Animation.Dialog">
+    <style name="AvatarAnimationRight" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/avatar_animation_right_in</item>
         <item name="android:windowExitAnimation">@anim/avatar_animation_right_out</item>
     </style>
-    <style name="AvatarAnimationBottomLeft" parent="@*android:style/Animation.Dialog">
+    <style name="AvatarAnimationBottomLeft" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/avatar_animation_bottom_left_in</item>
         <item name="android:windowExitAnimation">@anim/avatar_animation_bottom_left_out</item>
     </style>
@@ -1189,15 +1189,15 @@
     <style name="MMBigBlackButton" parent="@style/MMBigButton">
         <item name="android:background">@drawable/btn_style_black</item>
     </style>
-    <style name="MMProgressHorizontal" parent="@*android:style/Widget.ProgressBar.Horizontal">
+    <style name="MMProgressHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/mm_progress_horizontal</item>
         <item name="android:minHeight">@dimen/big_horizontal_progress_height</item>
     </style>
-    <style name="MMProgressTransparentHorizontal" parent="@*android:style/Widget.ProgressBar.Horizontal">
+    <style name="MMProgressTransparentHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/mm_progress_transparent_horizontal</item>
         <item name="android:minHeight">@dimen/big_horizontal_progress_height</item>
     </style>
-    <style name="MMProgressHorizontalSmall" parent="@*android:style/Widget.ProgressBar.Horizontal">
+    <style name="MMProgressHorizontalSmall" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/mm_progress_horizontal</item>
         <item name="android:minHeight">@dimen/small_horizontal_progress_height</item>
     </style>
@@ -1206,7 +1206,7 @@
         <item name="android:windowExitAnimation">@anim/toast_fade_out</item>
     </style>
     <style name="MMTheme.Holo" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:buttonStyle">@*android:style/Widget.Button</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:checkboxStyle">@style/MMCheckBox</item>
         <item name="android:listViewStyle">@style/MMListView</item>
@@ -1232,10 +1232,10 @@
         <item name="actionBarStyle">@style/MMActionBar.Overlay</item>
     </style>
     <style name="MMTheme.Holo.Transparent" parent="@style/MMTheme.Holo.OverlayActionBar">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
-    <style name="MMAnimation.Activity.Holo" parent="@*android:style/Animation">
+    <style name="MMAnimation.Activity.Holo" parent="@android:style/Animation">
         <item name="android:activityOpenEnterAnimation">@anim/pop_in</item>
         <item name="android:activityOpenExitAnimation">@anim/anim_not_change</item>
         <item name="android:activityCloseEnterAnimation">@anim/anim_not_change</item>
@@ -1296,12 +1296,12 @@
         <item name="android:dialogLayout">@layout/mm_preference_dialog_edittext</item>
     </style>
     <style name="MMPreference.DialogPreference.YesNoPreference" parent="@style/MMPreference.DialogPreference">
-        <item name="android:positiveButtonText">@*android:string/yes</item>
-        <item name="android:negativeButtonText">@*android:string/no</item>
+        <item name="android:positiveButtonText">@android:string/yes</item>
+        <item name="android:negativeButtonText">@android:string/no</item>
     </style>
     <style name="MMPreference.DialogPreference" parent="@style/MMPreference">
-        <item name="android:positiveButtonText">@*android:string/ok</item>
-        <item name="android:negativeButtonText">@*android:string/cancel</item>
+        <item name="android:positiveButtonText">@android:string/ok</item>
+        <item name="android:negativeButtonText">@android:string/cancel</item>
     </style>
     <style name="MMListView">
         <item name="android:scrollbars">vertical</item>
@@ -1309,7 +1309,7 @@
         <item name="android:divider">@null</item>
         <item name="android:dividerHeight">0.0px</item>
     </style>
-    <style name="MMTheme.Basic" parent="@*android:style/Theme">
+    <style name="MMTheme.Basic" parent="@android:style/Theme">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:checkboxStyle">@style/MMCheckBox</item>
         <item name="android:listViewStyle">@style/MMListView</item>
@@ -1322,7 +1322,7 @@
         <item name="android:ringtonePreferenceStyle">@style/MMPreference.RingtonePreference</item>
         <item name="android:preferenceLayoutChild">@style/MMPreference.Child</item>
     </style>
-    <style name="MMAnimation.Activity" parent="@*android:style/Animation">
+    <style name="MMAnimation.Activity" parent="@android:style/Animation">
         <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
         <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
@@ -1342,7 +1342,7 @@
         <item name="android:windowBackground">@color/semitransparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
     </style>
     <style name="MMTheme.Launcher" parent="@style/MMTheme.Basic">
         <item name="android:windowBackground">@drawable/mm_trans</item>
@@ -1360,7 +1360,7 @@
         <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
     </style>
     <style name="MMTheme.NoTitleTranslucent" parent="@style/MMTheme.Holo">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -1369,14 +1369,14 @@
         <item name="windowActionBar">false</item>
     </style>
     <style name="MMTheme.FullTranslucent" parent="@style/MMTheme.Holo">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
     <style name="noBgFullScreen">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -1470,7 +1470,7 @@
     </style>
     <style name="MMWalletLimitTitle">
         <item name="android:textSize">16.0dip</item>
-        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:textColor">@android:color/black</item>
         <item name="android:paddingTop">3.0dip</item>
         <item name="android:paddingBottom">3.0dip</item>
     </style>
@@ -1489,7 +1489,7 @@
     </style>
     <style name="MMWalletOrdersInfo">
         <item name="android:textSize">15.0dip</item>
-        <item name="android:textColor">@*android:color/black</item>
+        <item name="android:textColor">@android:color/black</item>
         <item name="android:gravity">right|center</item>
         <item name="android:paddingTop">3.0dip</item>
         <item name="android:paddingBottom">3.0dip</item>
@@ -1519,11 +1519,11 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="WalletProgressStyle" parent="@*android:style/Widget.ProgressBar.Small">
+    <style name="WalletProgressStyle" parent="@android:style/Widget.ProgressBar.Small">
         <item name="android:indeterminateOnly">true</item>
         <item name="android:indeterminateDrawable">@anim/progress_indeterminate_horizontal</item>
     </style>
-    <style name="WalletProgressDialogStyle" parent="@*android:style/Theme.Dialog">
+    <style name="WalletProgressDialogStyle" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -1584,7 +1584,7 @@
         <item name="android:layout_marginTop">5.0dip</item>
         <item name="android:text">@string/wallet_power_by_tenpay</item>
     </style>
-    <style name="SelectorDialog" parent="@*android:style/Theme.Dialog">
+    <style name="SelectorDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">false</item>
@@ -1644,8 +1644,8 @@
         <item name="android:layout_marginLeft">@dimen/LargePadding</item>
         <item name="android:layout_marginRight">@dimen/LargePadding</item>
     </style>
-    <style name="AppBaseTheme" parent="@*android:style/Theme.Light" />
-    <style name="AppTheme" parent="@*android:style/Theme.Light" />
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="AppTheme" parent="@android:style/Theme.Light" />
     <style name="FavListItem">
         <item name="android:background">@drawable/mm_listitem</item>
         <item name="android:paddingLeft">13.0dip</item>
@@ -1792,7 +1792,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/SmallPadding</item>
     </style>
-    <style name="trackDialog" parent="@*android:style/Theme.Dialog">
+    <style name="trackDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/mm_trans</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -1908,7 +1908,7 @@
         <item name="android:maxWidth">80.0dip</item>
         <item name="android:minWidth">36.0dip</item>
     </style>
-    <style name="bottleEditText" parent="@*android:style/Widget.TextView">
+    <style name="bottleEditText" parent="@android:style/Widget.TextView">
         <item name="android:textSize">@dimen/NormalTextSize</item>
     </style>
     <style name="bottleBoardText">
@@ -1960,14 +1960,14 @@
         <item name="android:shadowRadius">1.0</item>
         <item name="android:layout_weight">1.0</item>
     </style>
-    <style name="Translucent_NoTitle" parent="@*android:style/Theme.Dialog">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+    <style name="Translucent_NoTitle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:background">#00000000</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
-    <style name="GameDialog" parent="@*android:style/Theme.Dialog">
+    <style name="GameDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/mm_trans</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -2072,7 +2072,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/MMAnimation.Talkroom</item>
     </style>
-    <style name="MMAnimation.Talkroom" parent="@*android:style/Animation">
+    <style name="MMAnimation.Talkroom" parent="@android:style/Animation">
         <item name="android:activityOpenEnterAnimation">@anim/push_down_in</item>
         <item name="android:activityOpenExitAnimation">@anim/push_empty_out</item>
         <item name="android:wallpaperCloseEnterAnimation">@anim/push_down_in</item>
@@ -2146,7 +2146,7 @@
         <item name="android:textSize">@dimen/BigTextSize</item>
         <item name="android:textColor">@color/white</item>
     </style>
-    <style name="ScanLoginWebWxInfoDialog" parent="@*android:style/Theme.Dialog">
+    <style name="ScanLoginWebWxInfoDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/mm_trans</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -2362,7 +2362,7 @@
         <item name="android:layout_marginRight">3.0dip</item>
         <item name="android:layout_marginBottom">3.0dip</item>
     </style>
-    <style name="mmAvatarDialog" parent="@*android:style/Theme.Dialog">
+    <style name="mmAvatarDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/mm_trans</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -2372,7 +2372,7 @@
         <item name="android:background">@color/black</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-    <style name="mmAvatarAnimation" parent="@*android:style/Animation.Dialog">
+    <style name="mmAvatarAnimation" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/avatar_animation</item>
     </style>
     <style name="qq_sync_last_state_text" parent="@style/with_white_shadow_bottom">
@@ -2445,11 +2445,11 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowSoftInputMode">adjustPan</item>
     </style>
-    <style name="shakeInfoAnimation" parent="@*android:style/Animation.Dialog">
+    <style name="shakeInfoAnimation" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/fadedout_to_left_down</item>
         <item name="android:windowExitAnimation">@anim/fadedin_to_right_up</item>
     </style>
-    <style name="shakeInfoDialog" parent="@*android:style/Theme.Dialog">
+    <style name="shakeInfoDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/mm_trans</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -2463,11 +2463,11 @@
         <item name="android:textSize">14.0dip</item>
         <item name="android:textColor">#ffc0c0c0</item>
     </style>
-    <style name="shakeFriendsAnimation" parent="@*android:style/Animation.Dialog">
+    <style name="shakeFriendsAnimation" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/fadedout_to_left_down</item>
         <item name="android:windowExitAnimation">@anim/fadedin_to_right_up</item>
     </style>
-    <style name="shakefriendsDialog" parent="@*android:style/Theme.Dialog">
+    <style name="shakefriendsDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/mm_trans</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -2525,7 +2525,7 @@
         <item name="android:layout_marginLeft">1.0dip</item>
         <item name="android:layout_marginRight">1.0dip</item>
     </style>
-    <style name="mmSnsDialog" parent="@*android:style/Theme.Dialog">
+    <style name="mmSnsDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/mm_trans</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -2535,11 +2535,11 @@
         <item name="android:background">@drawable/mm_trans</item>
         <item name="android:backgroundDimEnabled">false</item>
     </style>
-    <style name="qrcodeHelpAnimation" parent="@*android:style/Animation.Dialog">
+    <style name="qrcodeHelpAnimation" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/fadedin_to_left_up</item>
         <item name="android:windowExitAnimation">@anim/fadedout_to_right_down</item>
     </style>
-    <style name="qrcodeHelpDialog" parent="@*android:style/Theme.Dialog">
+    <style name="qrcodeHelpDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@drawable/mm_trans</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -2683,7 +2683,7 @@
     <style name="MMChattingMoreFooterBtnStyleAlert" parent="@style/MMChatingMoreFooterBtnStyle">
         <item name="android:background">@drawable/btn_style_red</item>
     </style>
-    <style name="MMTheme.Basic.NoAnim" parent="@*android:style/Theme">
+    <style name="MMTheme.Basic.NoAnim" parent="@android:style/Theme">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:checkboxStyle">@style/MMCheckBox</item>
         <item name="android:listViewStyle">@style/MMListView</item>
@@ -2699,14 +2699,14 @@
         <item name="android:preferenceLayoutChild">@style/MMPreference.Child</item>
         <item name="android:windowAnimationStyle">@null</item>
     </style>
-    <style name="MMAnimation.SnsBrowser" parent="@*android:style/Animation">
+    <style name="MMAnimation.SnsBrowser" parent="@android:style/Animation">
         <item name="android:activityOpenEnterAnimation">@anim/sns_faded_in</item>
         <item name="android:activityOpenExitAnimation">@anim/sns_faded_out</item>
         <item name="android:activityCloseEnterAnimation">@anim/sns_faded_in</item>
         <item name="android:activityCloseExitAnimation">@anim/sns_faded_out</item>
     </style>
-    <style name="SettingsUI_Activity" parent="@*android:style/Theme">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+    <style name="SettingsUI_Activity" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -2724,7 +2724,7 @@
         <item name="android:preferenceLayoutChild">@style/MMPreference.Child</item>
         <item name="android:windowAnimationStyle">@style/SettingsUI_Animation</item>
     </style>
-    <style name="SettingsUI_Animation" parent="@*android:style/Theme">
+    <style name="SettingsUI_Animation" parent="@android:style/Theme">
         <item name="android:activityOpenEnterAnimation">@anim/push_up_in</item>
     </style>
 </resources>

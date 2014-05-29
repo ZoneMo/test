@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@*android:style/Widget.Holo.ProgressBar.Horizontal" />
-    <style name="Widget.AppCompat.Base.ProgressBar" parent="@*android:style/Widget.Holo.ProgressBar" />
-    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="@*android:style/Widget.Holo.AutoCompleteTextView" />
-    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="@*android:style/Widget.Holo.Light.AutoCompleteTextView" />
-    <style name="Theme.Base" parent="@*android:style/Theme.Holo">
+    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@android:style/Widget.Holo.ProgressBar.Horizontal" />
+    <style name="Widget.AppCompat.Base.ProgressBar" parent="@android:style/Widget.Holo.ProgressBar" />
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="@android:style/Widget.Holo.AutoCompleteTextView" />
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="@android:style/Widget.Holo.Light.AutoCompleteTextView" />
+    <style name="Theme.Base" parent="@android:style/Theme.Holo">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
-    <style name="Theme.Base.Light" parent="@*android:style/Theme.Holo.Light">
+    <style name="Theme.Base.Light" parent="@android:style/Theme.Holo.Light">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
     </style>
-    <style name="largeCustomProgressBar" parent="@*android:style/Widget.ProgressBar.Large">
+    <style name="largeCustomProgressBar" parent="@android:style/Widget.ProgressBar.Large">
         <item name="android:indeterminateDrawable">@drawable/progress_large_holo</item>
     </style>
-    <style name="mediumCustomProgressBar" parent="@*android:style/Widget.ProgressBar">
+    <style name="mediumCustomProgressBar" parent="@android:style/Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/progress_medium_holo</item>
     </style>
-    <style name="smallCustomProgressBar" parent="@*android:style/Widget.ProgressBar.Small">
+    <style name="smallCustomProgressBar" parent="@android:style/Widget.ProgressBar.Small">
         <item name="android:indeterminateDrawable">@drawable/progress_small_holo</item>
     </style>
-    <style name="ActionBarCustomProgressBar" parent="@*android:style/Widget.ProgressBar">
+    <style name="ActionBarCustomProgressBar" parent="@android:style/Widget.ProgressBar">
         <item name="android:indeterminateDrawable">@drawable/progress_actionbar_holo</item>
     </style>
-    <style name="noBgDialog" parent="@*android:style/Theme.Dialog">
+    <style name="noBgDialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">true</item>
@@ -111,11 +111,11 @@
         <item name="android:password">true</item>
         <item name="android:inputType">textPassword</item>
     </style>
-    <style name="MMCheckBox" parent="@*android:style/Widget.CompoundButton.CheckBox">
+    <style name="MMCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
         <item name="android:background">@drawable/mm_checkbox_btn</item>
         <item name="android:button">@null</item>
     </style>
-    <style name="MMRadioButton" parent="@*android:style/Widget.CompoundButton.RadioButton">
+    <style name="MMRadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
         <item name="android:button">@drawable/round_selector</item>
     </style>
     <style name="MMDivider">
@@ -185,7 +185,7 @@
         <item name="android:ellipsize">end</item>
         <item name="android:singleLine">true</item>
     </style>
-    <style name="mmdialog" parent="@*android:style/Theme.Dialog">
+    <style name="mmdialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -199,15 +199,15 @@
         <item name="android:paddingLeft">@dimen/SmallPadding</item>
         <item name="android:paddingRight">@dimen/SmallPadding</item>
     </style>
-    <style name="DialogAnimation" parent="@*android:style/Animation.Dialog">
+    <style name="DialogAnimation" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/push_up_in</item>
         <item name="android:windowExitAnimation">@anim/push_down_out</item>
     </style>
-    <style name="DropMenuAnimation" parent="@*android:style/Animation">
+    <style name="DropMenuAnimation" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/dropdown_down</item>
         <item name="android:windowExitAnimation">@anim/dropdown_up</item>
     </style>
-    <style name="CenterMenuAnimation" parent="@*android:style/Animation">
+    <style name="CenterMenuAnimation" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/alpha_in</item>
         <item name="android:windowExitAnimation">@anim/alpha_out</item>
     </style>
@@ -234,7 +234,7 @@
         <item name="android:layout_width">fill_parent</item>
     </style>
     <style name="MMLineActionButton" parent="@style/MMBigGreenButton" />
-    <style name="mmalertdialog" parent="@*android:style/Theme.Dialog">
+    <style name="mmalertdialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -243,7 +243,7 @@
         <item name="android:background">@color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-    <style name="mmtipsdialog" parent="@*android:style/Theme.Dialog">
+    <style name="mmtipsdialog" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@color/transparent</item>
         <item name="android:windowFrame">@null</item>
         <item name="android:windowNoTitle">true</item>
@@ -290,7 +290,7 @@
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowAnimationStyle">@style/MMDialogAnim</item>
     </style>
-    <style name="MMDialogAnim" parent="@*android:style/Animation">
+    <style name="MMDialogAnim" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/push_up_in</item>
         <item name="android:windowExitAnimation">@anim/push_down_out</item>
     </style>
@@ -366,7 +366,7 @@
         <item name="android:layout_marginRight">@dimen/LargePadding</item>
         <item name="android:maxLines">1</item>
     </style>
-    <style name="ConfirmDialogEditText" parent="@*android:style/Widget.EditText">
+    <style name="ConfirmDialogEditText" parent="@android:style/Widget.EditText">
         <item name="android:textSize">@dimen/HintTextSize</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:background">@drawable/edittext_bg_selector</item>
@@ -401,15 +401,15 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="AvatarAnimationLeft" parent="@*android:style/Animation.Dialog">
+    <style name="AvatarAnimationLeft" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/avatar_animation</item>
         <item name="android:windowExitAnimation">@anim/avatar_animation_out</item>
     </style>
-    <style name="AvatarAnimationRight" parent="@*android:style/Animation.Dialog">
+    <style name="AvatarAnimationRight" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/avatar_animation_right_in</item>
         <item name="android:windowExitAnimation">@anim/avatar_animation_right_out</item>
     </style>
-    <style name="AvatarAnimationBottomLeft" parent="@*android:style/Animation.Dialog">
+    <style name="AvatarAnimationBottomLeft" parent="@android:style/Animation.Dialog">
         <item name="android:windowEnterAnimation">@anim/avatar_animation_bottom_left_in</item>
         <item name="android:windowExitAnimation">@anim/avatar_animation_bottom_left_out</item>
     </style>
@@ -727,15 +727,15 @@
     <style name="MMBigBlackButton" parent="@style/MMBigButton">
         <item name="android:background">@drawable/btn_style_black</item>
     </style>
-    <style name="MMProgressHorizontal" parent="@*android:style/Widget.ProgressBar.Horizontal">
+    <style name="MMProgressHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/mm_progress_horizontal</item>
         <item name="android:minHeight">@dimen/big_horizontal_progress_height</item>
     </style>
-    <style name="MMProgressTransparentHorizontal" parent="@*android:style/Widget.ProgressBar.Horizontal">
+    <style name="MMProgressTransparentHorizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/mm_progress_transparent_horizontal</item>
         <item name="android:minHeight">@dimen/big_horizontal_progress_height</item>
     </style>
-    <style name="MMProgressHorizontalSmall" parent="@*android:style/Widget.ProgressBar.Horizontal">
+    <style name="MMProgressHorizontalSmall" parent="@android:style/Widget.ProgressBar.Horizontal">
         <item name="android:progressDrawable">@drawable/mm_progress_horizontal</item>
         <item name="android:minHeight">@dimen/small_horizontal_progress_height</item>
     </style>
@@ -744,7 +744,7 @@
         <item name="android:windowExitAnimation">@anim/toast_fade_out</item>
     </style>
     <style name="MMTheme.Holo" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:buttonStyle">@*android:style/Widget.Button</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:checkboxStyle">@style/MMCheckBox</item>
         <item name="android:listViewStyle">@style/MMListView</item>
@@ -777,10 +777,10 @@
         <item name="actionBarStyle">@style/MMActionBar.Overlay</item>
     </style>
     <style name="MMTheme.Holo.Transparent" parent="@style/MMTheme.Holo.OverlayActionBar">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
     </style>
-    <style name="MMAnimation.Activity.Holo" parent="@*android:style/Animation">
+    <style name="MMAnimation.Activity.Holo" parent="@android:style/Animation">
         <item name="android:activityOpenEnterAnimation">@anim/pop_in</item>
         <item name="android:activityOpenExitAnimation">@anim/anim_not_change</item>
         <item name="android:activityCloseEnterAnimation">@anim/anim_not_change</item>
@@ -848,12 +848,12 @@
         <item name="android:dialogLayout">@layout/mm_preference_dialog_edittext</item>
     </style>
     <style name="MMPreference.DialogPreference.YesNoPreference" parent="@style/MMPreference.DialogPreference">
-        <item name="android:positiveButtonText">@*android:string/yes</item>
-        <item name="android:negativeButtonText">@*android:string/no</item>
+        <item name="android:positiveButtonText">@android:string/yes</item>
+        <item name="android:negativeButtonText">@android:string/no</item>
     </style>
     <style name="MMPreference.DialogPreference" parent="@style/MMPreference">
-        <item name="android:positiveButtonText">@*android:string/ok</item>
-        <item name="android:negativeButtonText">@*android:string/cancel</item>
+        <item name="android:positiveButtonText">@android:string/ok</item>
+        <item name="android:negativeButtonText">@android:string/cancel</item>
     </style>
     <style name="MMListView">
         <item name="android:scrollbars">vertical</item>
@@ -861,7 +861,7 @@
         <item name="android:divider">@null</item>
         <item name="android:dividerHeight">0.0px</item>
     </style>
-    <style name="MMTheme.Basic" parent="@*android:style/Theme">
+    <style name="MMTheme.Basic" parent="@android:style/Theme">
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:checkboxStyle">@style/MMCheckBox</item>
         <item name="android:listViewStyle">@style/MMListView</item>
@@ -874,7 +874,7 @@
         <item name="android:ringtonePreferenceStyle">@style/MMPreference.RingtonePreference</item>
         <item name="android:preferenceLayoutChild">@style/MMPreference.Child</item>
     </style>
-    <style name="MMAnimation.Activity" parent="@*android:style/Animation">
+    <style name="MMAnimation.Activity" parent="@android:style/Animation">
         <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
         <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
         <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
@@ -894,7 +894,7 @@
         <item name="android:windowBackground">@color/semitransparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowAnimationStyle">@*android:style/Animation.Translucent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
     </style>
     <style name="MMTheme.Launcher" parent="@style/MMTheme.Basic">
         <item name="android:windowBackground">@drawable/mm_trans</item>
@@ -913,7 +913,7 @@
         <item name="android:windowActionModeOverlay">true</item>
     </style>
     <style name="MMTheme.NoTitleTranslucent" parent="@style/MMTheme.Holo">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -923,14 +923,14 @@
         <item name="windowActionBar">false</item>
     </style>
     <style name="MMTheme.FullTranslucent" parent="@style/MMTheme.Holo">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
     <style name="noBgFullScreen">
-        <item name="android:windowBackground">@*android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -939,5 +939,5 @@
         <item name="android:windowActionBar">false</item>
         <item name="windowActionBar">false</item>
     </style>
-    <style name="AppBaseTheme" parent="@*android:style/Theme.Holo.Light" />
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light" />
 </resources>

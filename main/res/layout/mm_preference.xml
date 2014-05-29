@@ -2,8 +2,8 @@
 <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/SmallListHeight"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout android:gravity="left|center" android:id="@id/content" android:paddingLeft="@dimen/SmallPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/SmallListHeight" android:layout_weight="1.0">
-        <TextView android:id="@*android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
-        <TextView android:id="@*android:id/summary" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:singleLine="true" style="@style/MMFontPreferenceSummary" />
+        <TextView android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/MMFontPreferenceLarge" />
+        <TextView android:id="@android:id/summary" android:paddingTop="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:paddingBottom="@dimen/SmallPadding" android:singleLine="true" style="@style/MMFontPreferenceSummary" />
     </LinearLayout>
-    <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@*android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" />
 </LinearLayout>

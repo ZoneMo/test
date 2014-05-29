@@ -8,7 +8,7 @@
         <LinearLayout android:orientation="horizontal" android:id="@id/ruler" android:layout_width="wrap_content" android:layout_height="120.0dip" />
     </LinearLayout>
     <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
-        <TextView android:gravity="left|center" android:id="@*android:id/summary" android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/MMFontPreferenceSmall" />
+        <TextView android:gravity="left|center" android:id="@android:id/summary" android:layout_width="fill_parent" android:layout_weight="1.0" style="@style/MMFontPreferenceSmall" />
         <View android:background="#ff808080" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_margin="5.0dip" />
         <TextView android:text="@string/settings_netstat_source_total" style="@style/MMFontPreferenceSmall" />
         <View android:background="#ff00ff00" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_margin="5.0dip" />

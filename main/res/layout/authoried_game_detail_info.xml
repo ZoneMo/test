@@ -5,9 +5,9 @@
         <include layout="@layout/game_detail_info_header" />
         <LinearLayout android:gravity="center_vertical" android:id="@id/ac_game_msg" android:background="@drawable/comm_list_item_selector" android:paddingLeft="@dimen/SmallPadding" android:paddingRight="@dimen/SmallPadding" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/SmallPadding" android:layout_marginTop="22.0dip" android:layout_marginRight="@dimen/SmallPadding">
             <LinearLayout android:gravity="left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:minHeight="@dimen/SmallListHeight" android:layout_weight="1.0">
-                <TextView android:id="@*android:id/summary" android:text="@string/game_accept_message" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
+                <TextView android:id="@android:id/summary" android:text="@string/game_accept_message" android:singleLine="true" style="@style/MMFontPreferenceLarge" />
             </LinearLayout>
-            <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@*android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="wrap_content" android:layout_height="fill_parent">
                 <CheckBox android:gravity="right|center" android:layout_gravity="center_vertical" android:id="@id/checkbox" android:background="@drawable/mm_checkbox_selector" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" />
             </LinearLayout>
         </LinearLayout>

@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android">
     <com.tencent.mm.plugin.bottle.ui.PickedBottleImageView android:layout_gravity="bottom|center" android:id="@id/bottle_picked_result_img" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     <RelativeLayout android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
-        <View android:background="@*android:color/white" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" />
+        <View android:background="@android:color/white" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" />
         <ImageView android:background="@drawable/bottle_brand_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
     </RelativeLayout>
     <RelativeLayout android:layout_gravity="top|left|center" android:id="@id/bottle_pick_open_hint_rl" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
