@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest android:versionCode="380" android:versionName="5.2" android:installLocation="auto" package="com.tencent.mm"
   xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    
     <permission android:name="com.tencent.mm.oauth.permission.SEND" android:protectionLevel="signature" />
     <permission android:name="com.tencent.mm.plugin.permission.WRITE" android:protectionLevel="signature" />
     <permission android:name="com.tencent.mm.plugin.permission.READ" android:protectionLevel="signature" />
